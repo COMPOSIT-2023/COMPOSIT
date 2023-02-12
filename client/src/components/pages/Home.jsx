@@ -5,7 +5,7 @@ import WhyUs from '../Common/WhyUs';
 import Speakers from '../Home/Speakers';
 import GoTop from '../Shared/GoTop';
 import Footer from '../Common/Footer';
-import EventSchedules from '../Home/EventSchedules';
+// import EventSchedules from '../Home/EventSchedules';
 import FunFact from '../Common/FunFact';
 import lax from 'lax.js';
 import Partner from '../Common/Partner';
@@ -34,7 +34,7 @@ class Home extends React.Component {
                 {/* Speakers Area */}
                 <Speakers />
                 {/* Schedule Area */}
-                <EventSchedules />
+                {/* <EventSchedules /> */}
                 {/* FunFacts Area */}
                 <FunFact />
                 {/* Pricing Area */}

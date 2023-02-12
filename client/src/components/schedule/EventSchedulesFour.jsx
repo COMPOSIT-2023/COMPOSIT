@@ -664,233 +664,7 @@ class EventSchedulesFour extends React.Component {
                                                 </ul>	
                                             </div>
 
-                                            <div id="tab4" className="tabs_item">
-                                                <ul className="accordion">
-                                                    <li className="accordion-item">
-                                                        <Link className="accordion-title" to="#">
-                                                            <div className="author">
-                                                                <img 
-                                                                    src={require("../../assets/images/author1.jpg")} 
-                                                                    data-toggle="tooltip" 
-                                                                    data-placement="top" 
-                                                                    title="Steven Smith" 
-                                                                    alt="Schedule" 
-                                                                />
-                                                            </div>
-                                                            
-                                                            <div className="schedule-info">
-                                                                <h3>Digital Marketing Theory</h3>
-
-                                                                <ul>
-                                                                    <li>
-                                                                        <i className="icofont-user-suited"></i> 
-                                                                        By <span>Steven Smith</span> CEO of EnvyTheme
-                                                                    </li>
-                                                                    <li>
-                                                                        <i className="icofont-wall-clock"></i> 13:00AM - 20:00PM
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </Link>
-                                                        
-                                                        <div className="accordion-content">
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took Link galley of type and scrambled it to make Link type specimen book.</p>
-
-                                                            <div className="row h-100 align-items-center">
-                                                                <div className="col-lg-6">
-                                                                    <div className="location">
-                                                                        <b>Location:</b> Hall 1, Building C , King Street , <span>USA</span>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div className="col-lg-6 text-right">
-                                                                    <Link to="#" className="btn btn-primary">View Details</Link>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-
-                                                    <li className="accordion-item">
-                                                        <Link className="accordion-title" to="#">
-                                                            <div className="author author-multi">
-                                                                <img 
-                                                                    src={require("../../assets/images/author5.jpg")} 
-                                                                    data-toggle="tooltip" 
-                                                                    data-placement="top" 
-                                                                    title="Steven Lucy" 
-                                                                    alt="Schedule" 
-                                                                />
-                                                                <img 
-                                                                    src={require("../../assets/images/author2.jpg")} 
-                                                                    data-toggle="tooltip" 
-                                                                    data-placement="top" 
-                                                                    title="Jonaton Smith" 
-                                                                    alt="Schedule" 
-                                                                />
-                                                                <img 
-                                                                    src={require("../../assets/images/author3.jpg")} 
-                                                                    data-toggle="tooltip" 
-                                                                    data-placement="top" 
-                                                                    title="John Smith" 
-                                                                    alt="Schedule" 
-                                                                />
-                                                                <img 
-                                                                    src={require("../../assets/images/author4.jpg")} 
-                                                                    data-toggle="tooltip" 
-                                                                    data-placement="top" 
-                                                                    title="John Doe" 
-                                                                    alt="Schedule" 
-                                                                />
-                                                            </div>
-                                                            
-                                                            <div className="schedule-info">
-                                                                <h3>Digital World Event Information</h3>
-
-                                                                <ul>
-                                                                    <li>
-                                                                        <i className="icofont-user-suited"></i> 
-                                                                        By <span>Milton</span> of USA Inc
-                                                                    </li>
-                                                                    <li>
-                                                                        <i className="icofont-wall-clock"></i> 13:00AM - 20:00PM
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </Link>
-                                                        
-                                                        <div className="accordion-content">
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took Link galley of type and scrambled it to make Link type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took Link galley of type and scrambled it to make Link type specimen book.</p>
-
-                                                            <div className="row h-100 align-items-center">
-                                                                <div className="col-lg-6">
-                                                                    <div className="location">
-                                                                        <b>Location:</b> Hall 1, Building C , King Street , <span>USA</span>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div className="col-lg-6 text-right">
-                                                                    <Link to="#" className="btn btn-primary">View Details</Link>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-
-                                                    <li className="accordion-item">
-                                                        <Link className="accordion-title" to="#">
-                                                            <div className="author author-multi">
-                                                                <img 
-                                                                    src={require("../../assets/images/author6.jpg")} 
-                                                                    data-toggle="tooltip" 
-                                                                    data-placement="top" 
-                                                                    title="Steven Lucy" 
-                                                                    alt="Schedule" 
-                                                                />
-                                                                <img 
-                                                                    src={require("../../assets/images/author7.jpg")} 
-                                                                    data-toggle="tooltip" 
-                                                                    data-placement="top" 
-                                                                    title="Jonaton Smith" 
-                                                                    alt="Schedule" 
-                                                                />
-                                                            </div>
-                                                            
-                                                            <div className="schedule-info">
-                                                                <h3>HTML, CSS and Bootstrap Introduction</h3>
-
-                                                                <ul>
-                                                                    <li>
-                                                                        <i className="icofont-user-suited"></i> By <span>Claude</span> of USA Inc
-                                                                    </li>
-                                                                    <li>
-                                                                        <i className="icofont-wall-clock"></i> 13:00AM - 20:00PM
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </Link>
-                                                        
-                                                        <div className="accordion-content">
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took Link galley of type and scrambled it to make Link type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took Link galley of type and scrambled it to make Link type specimen book.</p>
-
-                                                            <div className="row h-100 align-items-center">
-                                                                <div className="col-lg-6">
-                                                                    <div className="location">
-                                                                        <b>Location:</b> Hall 1, Building C , King Street , <span>USA</span>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div className="col-lg-6 text-right">
-                                                                    <Link to="#" className="btn btn-primary">View Details</Link>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-
-                                                    <li className="accordion-item">
-                                                        <Link className="accordion-title" to="#">
-                                                            <div className="author author-multi">
-                                                                <img 
-                                                                    src={require("../../assets/images/author8.jpg")} 
-                                                                    data-toggle="tooltip" 
-                                                                    data-placement="top" 
-                                                                    title="Steven Lucy" 
-                                                                    alt="Schedule" 
-                                                                />
-                                                                <img 
-                                                                    src={require("../../assets/images/author9.jpg")} 
-                                                                    data-toggle="tooltip" 
-                                                                    data-placement="top" 
-                                                                    title="Jonaton Smith" 
-                                                                    alt="Schedule" 
-                                                                />
-                                                                <img 
-                                                                    src={require("../../assets/images/author3.jpg")} 
-                                                                    data-toggle="tooltip" 
-                                                                    data-placement="top" 
-                                                                    title="John Smith" 
-                                                                    alt="Schedule" 
-                                                                />
-                                                                <img 
-                                                                    src={require("../../assets/images/author4.jpg")} 
-                                                                    data-toggle="tooltip" 
-                                                                    data-placement="top" 
-                                                                    title="John Doe" 
-                                                                    alt="Schedule" 
-                                                                />
-                                                            </div>
-                                                            
-                                                            <div className="schedule-info">
-                                                                <h3>Digital World Event Information</h3>
-
-                                                                <ul>
-                                                                    <li>
-                                                                        <i className="icofont-user-suited"></i> 
-                                                                        By <span>Joshua</span> of USA Inc
-                                                                    </li>
-                                                                    <li>
-                                                                        <i className="icofont-wall-clock"></i> 13:00AM - 20:00PM
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </Link>
-                                                        
-                                                        <div className="accordion-content">
-                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took Link galley of type and scrambled it to make Link type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took Link galley of type and scrambled it to make Link type specimen book.</p>
-
-                                                            <div className="row h-100 align-items-center">
-                                                                <div className="col-lg-6">
-                                                                    <div className="location">
-                                                                        <b>Location:</b> Hall 1, Building C , King Street , <span>USA</span>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div className="col-lg-6 text-right">
-                                                                    <Link to="#" className="btn btn-primary">View Details</Link>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>	
-                                            </div>
+                                            
                                         </div>
                                     </div>
 
@@ -902,30 +676,24 @@ class EventSchedulesFour extends React.Component {
                                             >
                                                 <Link to="#">
                                                     First Day
-                                                    <span>4 April 2020</span>
+                                                    <span>30 March 2023</span>
                                                 </Link>
                                             </li>
             
                                             <li onClick={(e) => this.openTabSection(e, 'tab2')}>
                                                 <Link to="#">
                                                     Second Day
-                                                    <span>5 April 2020</span>
+                                                    <span>31 March 2023</span>
                                                 </Link>
                                             </li>
             
                                             <li onClick={(e) => this.openTabSection(e, 'tab3')}>
                                                 <Link to="#">
                                                     Third Day
-                                                    <span>6 April 2020</span>
+                                                    <span>1 April 2023</span>
                                                 </Link>
                                             </li>
-            
-                                            <li onClick={(e) => this.openTabSection(e, 'tab4')}>
-                                                <Link to="#">
-                                                    Fourth Day
-                                                    <span>7 April 2020</span>
-                                                </Link>
-                                            </li>
+                                            
                                         </ul>
                                     </div>
                                 </div>

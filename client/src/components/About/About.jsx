@@ -59,9 +59,9 @@ class About extends React.Component {
 
                         <div className="col-lg-6">
                             <div className="about-image">
-                                <img src={require("../../assets/images/about1.jpg")} className="about-img1" alt="about" />
+                                <img src={require("../../assets/images/crowd about 1.jpg")} className="about-img1" alt="about" />
 
-                                <img src={require("../../assets/images/about2.jpg")} className="about-img2" alt="about" />
+                                <img src={require("../../assets/images/crowd about 2.jpg")} className="about-img2" alt="about" />
 
                                 <img src={require("../../assets/images/shapes/5.png")} className="shape-img" alt="about" />
 

@@ -48,10 +48,7 @@ class MainBanner extends React.Component {
                     onClose={() => this.setState({isOpen: false})} 
                 />
             
-                <div className="main-banner video-banner">
-                    <video loop muted autoPlay poster="#" className="video-background">
-                        <source src={require("../../assets/video/promo-video.mp4")} type="video/mp4" />
-                    </video>
+                <div className="main-banner item-bg2">
                     
                     <div className="d-table">
                         <div className="d-table-cell">

@@ -277,7 +277,7 @@ label {
 
 .section-title h2 b {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(0, 0, 0, 0)), color-stop(80%, #3F0071));
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, #3F0071 80%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, #fec564 80%);
   font-weight: unset;
   background-size: 100px 1.07em !important;
 }
@@ -535,11 +535,11 @@ Navbar CSS
 }
 
 .elkevent-nav nav .navbar-nav .nav-item a:hover, .elkevent-nav nav .navbar-nav .nav-item a:focus, .elkevent-nav nav .navbar-nav .nav-item a.active {
-  color: #3F0071;
+  color: #efa506;
 }
 
 .elkevent-nav nav .navbar-nav .nav-item:hover a {
-  color: #3F0071;
+  color: #fec564;
 }
 
 .elkevent-nav nav .navbar-nav .nav-item .dropdown-menu {
@@ -653,7 +653,7 @@ Main Banner CSS
   width: 100%;
   height: 100%;
   background: #150050;
-  opacity: .77;
+  opacity: .37;
 }
 
 .slideshow-banner::before {
@@ -799,11 +799,11 @@ Main Banner CSS
 }
 
 .main-banner-content h1 b:nth-of-type(1) {
-  color: #efa506;
+  color: #fec564;
 }
 
 .main-banner-content h1 b:nth-of-type(2) {
-  color: #3F0071;
+  color: #8051ed;
 }
 
 .main-banner-content h1 b:nth-of-type(3) {
@@ -813,7 +813,7 @@ Main Banner CSS
 }
 
 .main-banner-content h1 b:nth-of-type(4) {
-  color: #610094;
+  color: #9807e6;
 }
 
 .main-banner-content ul {
@@ -831,7 +831,7 @@ Main Banner CSS
 
 .main-banner-content ul li i {
   margin-right: 3px;
-  color: #3F0071;
+  color: #cb84f1;
 }
 
 .main-banner-content ul li:last-child {
@@ -839,14 +839,14 @@ Main Banner CSS
 }
 
 .main-banner-content p {
-  color: #efa506;
+  color: #fec66d;
   font-size: 22px;
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
 
 .main-banner-content p span {
-  color: #610094;
+  color: #cb84f1;
 }
 
 .main-banner-content .button-box a {
@@ -943,11 +943,11 @@ Main Banner CSS
 }
 
 .event-countdown #timer div#days {
-  color: #3F0071;
+  color: #8051ed;
 }
 
 .event-countdown #timer div#hours {
-  color: #610094;
+  color: #9807e6;
 }
 
 .event-countdown #timer div#hours span {
@@ -965,7 +965,7 @@ Main Banner CSS
 }
 
 .event-countdown #timer div#seconds {
-  color: #efa506;
+  color: #fec66d;
 }
 
 .event-countdown #timer div#seconds span {
@@ -1245,7 +1245,7 @@ About CSS
 
 .about-content h2 b {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(0, 0, 0, 0)), color-stop(80%, #3F0071));
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, #3F0071 80%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, #fec66d 80%);
   font-weight: unset;
   background-size: 100px 1.05em !important;
 }
@@ -1491,7 +1491,7 @@ Why Choose Us CSS
 
 .single-box .content .icon {
   font-size: 45px;
-  color: #3F0071;
+  color: #efa506;
 }
 
 .single-box .content h3 {
@@ -1674,11 +1674,11 @@ Speakers CSS
 }
 
 .single-speakers .speakers-content h3 a {
-  color: #3F0071;
+  color: #fec66d;
 }
 
 .single-speakers .speakers-content h3 a:hover, .single-speakers .speakers-content h3 a:focus {
-  color: #8dc63f;
+  color: #cb84f1;
 }
 
 .single-speakers .speakers-content span {
@@ -2728,7 +2728,7 @@ FunFacts CSS
   z-index: -1;
   width: 100%;
   height: 100%;
-  background: #150050;
+  background: #0c002b;
   opacity: .88;
 }
 
@@ -2786,19 +2786,19 @@ FunFacts CSS
 }
 
 .col-lg-3:nth-child(1) .single-funfact h3, .col-lg-3:nth-child(1) .funFact h3 {
-  color: #3F0071;
+  color: #8051ed;
 }
 
 .col-lg-3:nth-child(2) .single-funfact h3, .col-lg-3:nth-child(2) .funFact h3 {
-  color: #610094;
+  color: #fec564;
 }
 
 .col-lg-3:nth-child(3) .single-funfact h3, .col-lg-3:nth-child(3) .funFact h3 {
-  color: #efa506;
+  color: #9807e6;
 }
 
 .col-lg-3:nth-child(4) .single-funfact h3, .col-lg-3:nth-child(4) .funFact h3 {
-  color: #8dc63f;
+  color: #efa506;
 }
 
 /*================================================
@@ -3040,7 +3040,7 @@ Partner CSS
 }
 
 .partner-area .partner-title.gold-sponsor h3 {
-  color: #8dc63f;
+  color: #9807e6;
 }
 
 .partner-area .partner-item {
@@ -3436,8 +3436,8 @@ Page Title CSS
   z-index: -1;
   width: 100%;
   height: 100%;
-  background: #150050;
-  opacity: .88;
+  background: #090021;
+  opacity: .93;
 }
 
 .page-title-area h1 {
@@ -3463,7 +3463,7 @@ Page Title CSS
 .page-title-area ul li {
   display: inline-block;
   position: relative;
-  color: #3F0071;
+  color: #cb84f1;
   font-size: 16px;
   margin: 0 13px;
 }
@@ -3483,7 +3483,7 @@ Page Title CSS
   top: 50%;
   width: 2px;
   height: 15px;
-  background: #efa506;
+  background: white;
   margin-top: -9px;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);

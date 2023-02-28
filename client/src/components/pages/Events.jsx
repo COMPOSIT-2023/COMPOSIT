@@ -1,6 +1,6 @@
 import React from 'react';
 import MainBanner from '../Events/MainBanner';
-import About from '../Events/About';
+
 import WhyUs from '../Common/WhyUs';
 import Footer from '../Common/Footer';
 class EventPage extends React.Component {
@@ -19,8 +19,9 @@ class EventPage extends React.Component {
             <React.Fragment>
                 {/* Main Banner */}
                 <MainBanner />
-                {/* About Area */}
-                <About />
+                
+                {/* Why Choose Us Area */}
+                <WhyUs />
                 {/* Why Choose Us Area */}
                 <WhyUs />
                 

@@ -31,24 +31,24 @@ class Footer extends React.Component {
                                 
                                 <ul className="social-links">
                                     <li>
-                                        <Link to="https://www.facebook.com/" className="facebook" target="_blank">
+                                        <a href="https://www.facebook.com/composit.iitkgp/" className="facebook" target="_blank">
                                             <i className="icofont-facebook"></i>
-                                        </Link>
+                                        </a>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <Link to="https://twitter.com/" className="twitter" target="_blank">
                                             <i className="icofont-twitter"></i>
                                         </Link>
-                                    </li>
+                                    </li> */}
                                     <li>
-                                        <Link to="https://www.linkedin.com/" className="linkedin" target="_blank">
+                                        <a href="https://www.linkedin.com/company/composit-iit-kharagpur/?originalSubdomain=in" className="linkedin" target="_blank">
                                             <i className="icofont-linkedin"></i>
-                                        </Link>
+                                        </a>
                                     </li>
                                     <li>
-                                        <Link to="https://www.instagram.com/" className="instagram" target="_blank">
+                                        <a href="https://www.instagram.com/composit_iitkgp/?utm_medium=copy_link" className="instagram" target="_blank">
                                             <i className="icofont-instagram"></i>
-                                        </Link>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>

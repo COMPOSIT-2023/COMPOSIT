@@ -3,7 +3,7 @@ import MainBanner from '../Events/MainBanner';
 
 import WhyUs from '../Common/WhyUs';
 import Footer from '../Common/Footer';
-class EventPage extends React.Component {
+class AboutPage extends React.Component {
     constructor(props) {
         super(props)
         lax.setup()
@@ -35,4 +35,4 @@ class EventPage extends React.Component {
     }
 }
  
-export default EventPage;
+export default AboutPage;

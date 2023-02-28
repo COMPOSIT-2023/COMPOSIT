@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/pages/Home";
+import Events from "./components/pages/Events";
 import Navigation from "./components/Navigation/Navigation";
 import About from "./components/pages/About";
 import Speakers from "./components/pages/Speakers";
@@ -27,6 +28,7 @@ const AppRouter = () => {
             <Switch>
                 <Route path="/" exact component={Home} />
                 <Route path="/about" exact component={About} />
+                <Route path="/events" exact component={Events} />
                 <Route path="/speakers" exact component={Speakers} />
                 <Route path="/schedule" exact component={Schedule} />
                 <Route path="/login" exact component={Login} />

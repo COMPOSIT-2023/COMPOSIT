@@ -21,11 +21,11 @@ class Speakers extends React.Component {
             <section className="speakers-area ptb-120 pb-0">
                 <div className="container">
                     <div className="section-title">
-                        <span>Listen to the Event Speakers</span>
-                        <h2>Who's Speaking</h2>
+                        <span>People Behind The Fest</span>
+                        <h2>Meet Our Team</h2>
                         <div className="bar"></div>
-                        <LaxDiv text="Speakers" dataPreset="driftRight" />
-                        <Link to="#" className="btn btn-primary">View More Speakers</Link>
+                        <LaxDiv text="OURTEAM" dataPreset="driftRight" />
+                        {/* <Link to="#" className="btn btn-primary">View More Speakers</Link> */}
                     </div>
                 </div>
 

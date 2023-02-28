@@ -30,14 +30,14 @@ class Home extends React.Component {
                 <About />
                 {/* Why Choose Us Area */}
                 <WhyUs />
-                {/* Speakers Area */}
-                <Speakers />
                 {/* Schedule Area */}
                 {/* <EventSchedules /> */}
                 {/* FunFacts Area */}
                 <FunFact />
                 {/* Pricing Area */}
                 <Partner />
+                {/* Speakers Area */}
+                <Speakers />
 
                 <Footer />
 

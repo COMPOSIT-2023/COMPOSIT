@@ -156,31 +156,31 @@ class Contact extends React.Component {
                                         <h3>Stay Connected</h3>
                                         <ul>
                                             <li>
-                                                <Link to="#" target="_blank">
+                                                <a href="https://www.facebook.com/composit.iitkgp/" target="_blank">
                                                     <i className="icofont-facebook"></i>
                                                     <span>Facebook</span>
-                                                </Link>
+                                                </a>
                                             </li>
                                             
-                                            <li>
+                                            {/* <li>
                                                 <Link to="#" target="_blank">
                                                     <i className="icofont-twitter"></i>
                                                     <span>Twitter</span>
                                                 </Link>
-                                            </li>
+                                            </li> */}
                                             
                                             <li>
-                                                <Link to="#" target="_blank">
+                                                <a href="https://www.instagram.com/composit_iitkgp/?utm_medium=copy_link" target="_blank">
                                                     <i className="icofont-instagram"></i>
                                                     <span>Instagram</span>
-                                                </Link>
+                                                </a>
                                             </li>
                                             
                                             <li>
-                                                <Link to="#" target="_blank">
+                                                <a href="https://www.linkedin.com/company/composit-iit-kharagpur/?originalSubdomain=in" target="_blank">
                                                     <i className="icofont-linkedin"></i>
                                                     <span>Linkedin</span>
-                                                </Link>
+                                                </a>
                                             </li>
                                         </ul>
                                     </div>

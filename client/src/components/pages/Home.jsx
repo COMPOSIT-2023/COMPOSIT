@@ -9,7 +9,6 @@ import Footer from '../Common/Footer';
 import FunFact from '../Common/FunFact';
 import lax from 'lax.js';
 import Partner from '../Common/Partner';
-import Subscribe from '../Common/Subscribe';
  
 class Home extends React.Component {
     constructor(props) {
@@ -39,8 +38,6 @@ class Home extends React.Component {
                 <FunFact />
                 {/* Pricing Area */}
                 <Partner />
-                {/* Blog Area */}
-                <Subscribe />
 
                 <Footer />
 

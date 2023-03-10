@@ -13,6 +13,8 @@ import NotFound from "./components/pages/NotFound";
 import Faq from "./components/pages/Faq";
 import Contact from "./components/pages/Contact";
 import Sponsor from "./components/pages/Sponsor";
+import EventDetails from "./components/EventDetails/EventDetails";
+import EventDetailsPage from "./components/pages/EventDetails";
 
 // Conditionally render Navigation
 const renderNavigation = () => {
@@ -29,6 +31,7 @@ const AppRouter = () => {
                 <Route path="/" exact component={Home} />
                 <Route path="/about" exact component={About} />
                 <Route path="/events" exact component={Events} />
+                <Route path="/eventdetails" exact component={EventDetailsPage} />
                 <Route path="/speakers" exact component={Speakers} />
                 <Route path="/schedule" exact component={Schedule} />
                 <Route path="/login" exact component={Login} />

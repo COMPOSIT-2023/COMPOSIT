@@ -4821,4 +4821,16 @@ Back To Top CSS
 .modal-video {
   position: absolute !important;
 }
+
+/*Event Details*/
+.event-area {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: inherit;
+  justify-content: space-between;
+}
+.single-events {
+  display: flex;
+  flex-direction: column;
+}
 /*# sourceMappingURL=style.css.map */

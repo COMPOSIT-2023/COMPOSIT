@@ -1,5 +1,5 @@
 import React from 'react';
-import MainBanner from '../About/MainBanner';
+import MainBanner from '../EventDetails/MainBanner';
 import EventDetails from '../EventDetails/EventDetails';
 import Footer from '../Common/Footer';
 import lax from 'lax.js';

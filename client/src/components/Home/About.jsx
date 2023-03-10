@@ -24,21 +24,19 @@ class About extends React.Component {
                         <div className="col-lg-6">
                             <div className="about-content">
                                 <span>Join The Event</span>
-                                <h2>We Create and <b>Turn</b> Into Reality</h2>
-                                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                <h2>Motto and Vision</h2>
+                                <p>Materials science has shaped the development of civilizations since the dawn of mankind. From the atomic level to high engineering structures or the greatest space endeavors, material science is intrinsically diffused in every aspect of human advancement. </p>
                                 
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <p>With the aim of raising consciousness on materials science across the nation, COMPOSIT strives to nurture and enrich interest in material science and metallurgy among the students of the nation and explore tremendous possibilities of future applications of materials science in space technology due to their multi-functionality and diverse properties. It furnishes a chance for entrepreneurs, industrialists, teaching professionals, and students to experience the wide beauty and nature of materials. We seek to spread awareness about material science-driven innovation in research and industry in everything from aerospace to medicine.</p>
 
-                                <div className="signature">
-                                    <img src={require("../../assets/images/signature.png")} alt="signature" />
-                                </div>
+                                
 
-                                <Link to="/about-3" className="btn btn-primary">
+                                <Link to="/about" className="btn btn-primary">
                                     Read More 
                                     <i className="icofont-double-right"></i>
                                 </Link>
 
-                                <Link to="#" className="btn btn-secondary">Buy Ticket</Link>
+                                
                             </div>
                         </div>
 
@@ -50,7 +48,7 @@ class About extends React.Component {
 
                                 <img src={require("../../assets/images/shapes/5.png")} className="shape-img" alt="about" />
 
-                                <LaxButton buttonText="Explore More About" />
+                                
                             </div>
                         </div>
                     </div>

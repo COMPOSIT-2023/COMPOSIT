@@ -30,10 +30,7 @@ class About extends React.Component {
 
                                 <p>Starting in 1994, It is a national congregation of bright and ambitious minds to invoke their innovation and bridge their ingenious thoughts and ideas into exorbitant assets for humanity. It also gives the young enthusiasts a chance to explore and showcase their talents and also interact with the stalwarts in the field who share their expertise. Compelled by the thirst for knowledge and adventure the exuberant minds, IIT Kharagpur is all set to conduct yet another edition of COMPOSIT, which promises an exciting odyssey embracing a plethora of events and all its trademark features.</p>
 
-                                <span>Motto and Vision</span>
-                                <p>
-                                    Materials science has shaped the development of civilizations since the dawn of mankind. From the atomic level to high engineering structures or the greatest space endeavors, material science is intrinsically diffused in every aspect of human advancement. With the aim of raising consciousness on materials science across the nation, COMPOSIT strives to nurture and enrich interest in material science and metallurgy among the students of the nation and explore tremendous possibilities of future applications of materials science in space technology due to their multi-functionality and diverse properties. It furnishes a chance for entrepreneurs, industrialists, teaching professionals, and students to experience the wide beauty and nature of materials. We seek to spread awareness about material science-driven innovation in research and industry in everything from aerospace to medicine.
-                                </p>
+                                
                                 <span>Theme Description</span>
                                 <p>
                                     January 28, 1986, the Space Shuttle Challenger broke apart 73 seconds into its flight, killing all seven crew members aboard and causing a whooping $3.7 Billion loss due to the mere failure of the two O-ring seals in a joint in the shuttle's right solid rocket booster. Year after year, the realisation that material science is the dorsum of the augmenting space endeavours is coagulating in the scintillating brains.

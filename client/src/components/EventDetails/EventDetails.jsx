@@ -19,41 +19,21 @@ class EventDetails extends React.Component {
     }
     render(){
         return (
-            <section className="schedule-area bg-image ptb-120">
+            <div className="event-details-area ptb-120">
+            <section className="event-area bg-image ptb-120">
                 <div className="col-lg-3 col-sm-6 p-0" style={{textAlign:"center"}}>
-                        <div className="single-speakers">
+                        <div className="single-events">
                             <img src={require("../../assets/images/speakers2.jpg")} alt="Speaker" />
 
-                            <div className="speakers-content">
+                            <div className="events-content">
                                 <h3><Link to="#">Steven Smith</Link></h3>
                                 <span>Lead Designer</span>
                             </div>
-                            <ul>
-                                <li>
-                                    <Link to="https://www.facebook.com/" target="_blank" className="facebook">
-                                        <i className="icofont-facebook"></i>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="https://twitter.com/" target="_blank" className="twitter">
-                                        <i className="icofont-twitter"></i>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="https://www.instagram.com/" target="_blank" className="instagram">
-                                        <i className="icofont-instagram"></i>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="https://www.linkedin.com/" target="_blank" className="linkedin">
-                                        <i className="icofont-linkedin"></i>
-                                    </Link>
-                                </li>
-                            </ul>
+                            
                         </div>
                     </div>
 
-                <div className="col-lg-12">
+                <div className="col-lg-13">
                     <div className="btn-box" style={{marginBottom: "20px"}}>
                         <Link to="#" className="btn btn-primary">Problem Statement</Link>
                         <Link to="#" className="btn btn-secondary">Apply for Accomodation</Link>
@@ -905,6 +885,7 @@ class EventDetails extends React.Component {
                 <div className="shape3 rotateme"><img src={require("../../assets/images/shapes/3.png")} alt="shape3" /></div>
                 <div className="shape4"><img src={require("../../assets/images/shapes/4.png")} alt="shape4" /></div>
             </section>
+            </div>
         );
     }
 }

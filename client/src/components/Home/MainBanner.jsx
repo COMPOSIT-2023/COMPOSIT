@@ -16,7 +16,7 @@ class MainBanner extends React.Component {
     }
 
     makeTimer = () => {
-        let endTime = new Date("March 17, 2023 17:00:00 PDT");			
+        let endTime = new Date("March 31, 2023 17:00:00 PDT");			
         let endTimeParse = (Date.parse(endTime)) / 1000;
         let now = new Date();
         let nowParse = (Date.parse(now) / 1000);
@@ -58,7 +58,7 @@ class MainBanner extends React.Component {
                                     <h1>COMPOSIT <b>2</b><b>0</b><b>2</b><b>3</b></h1>
                                     <ul>
                                         <li><i className="icofont-compass"></i> IIT Kharagpur</li>
-                                        <li><i className="icofont-calendar"></i> 17-19 Mar, 2023</li>
+                                        <li><i className="icofont-calendar"></i> 31 Mar - 2 Apr, 2023</li>
                                     </ul>
                                     <div className="button-box">
                                         <Link to="#" className="btn btn-primary">Register</Link>

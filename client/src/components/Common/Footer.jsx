@@ -11,7 +11,7 @@ class Footer extends React.Component {
                             <div className="single-footer-widget">
                                 <h3>Venue Location</h3>
                                 <span>
-                                    <i className="icofont-calendar"></i> 17-19 March, 2023
+                                    <i className="icofont-calendar"></i> 31 March-2 April, 2023
                                 </span>
 
                                 <p className="location">

@@ -7,7 +7,7 @@ class MainBanner extends React.Component {
             <div className="page-title-area item-bg1">
                 <div className="container">
                     <h1>Schedule</h1>
-                    <span>Listen to the Event Speakers</span>
+                    <span>Take a look at our Schedule</span>
                     <ul>
                         <li><Link to="/">Home</Link></li>
                         <li>Schedule</li>

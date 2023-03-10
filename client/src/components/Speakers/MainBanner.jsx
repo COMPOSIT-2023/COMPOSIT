@@ -10,7 +10,7 @@ class MainBanner extends React.Component {
                     <span>One Team, One Dream</span>
                     <ul>
                         <li><Link to="/">Home</Link></li>
-                        <li>Speakers</li>
+                        <li>Our Team</li>
                     </ul>
                 </div>
             </div>

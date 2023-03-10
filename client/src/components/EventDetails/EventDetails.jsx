@@ -31,14 +31,15 @@ class EventDetails extends React.Component {
                             </div>
                             
                         </div>
-                    </div>
-
-                <div className="col-lg-13">
+                        <div className="col-lg-13">
                     <div className="btn-box" style={{marginBottom: "20px"}}>
                         <Link to="#" className="btn btn-primary">Problem Statement</Link>
                         <Link to="#" className="btn btn-secondary">Apply for Accomodation</Link>
                     </div>
                 </div>
+                </div>
+
+                
                 
                 <div className="container">
                     <div className="row">

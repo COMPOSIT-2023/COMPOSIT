@@ -1528,6 +1528,7 @@ Why Choose Us CSS
   margin-bottom: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  height: 30vh;
 }
 
 .single-box .content .btn {

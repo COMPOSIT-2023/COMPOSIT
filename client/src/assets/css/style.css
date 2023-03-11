@@ -2818,10 +2818,13 @@ Pricing CSS
 }
 
 .pricing-table-box {
+  margin:10px;
   padding-bottom: 30px;
   background: #ffffff;
   text-align: center;
   z-index: 1;
+  height:380px;
+  
   position: relative;
   border-radius: 5px;
   background-image: url("../images/patt.png");
@@ -2839,6 +2842,10 @@ Pricing CSS
   -webkit-clip-path: polygon(50% 100%, 100% 60%, 100% 0, 0 0, 0 60%);
           clip-path: polygon(50% 100%, 100% 60%, 100% 0, 0 0, 0 60%);
   position: relative;
+}
+.row{
+  display: flex;
+  justify-content: center;
 }
 
 .pricing-table-box .pricingTable-header::before {
@@ -2998,23 +3005,23 @@ Pricing CSS
 }
 
 .col-lg-4:nth-child(3) .pricing-table-box .pricingTable-header {
-  background: #8dc63f;
+  background: #610094;
 }
 
 .col-lg-4:nth-child(3) .pricing-table-box .btn-primary::before, .col-lg-4:nth-child(3) .pricing-table-box .btn-primary::after {
-  background: #8dc63f;
+  background: #610094;
 }
 
 .col-lg-4:nth-child(3) .pricing-plan h3 {
-  background: #8dc63f;
+  background: #610094;
 }
 
 .col-lg-4:nth-child(3) .pricing-plan h3 span {
-  color: #8dc63f;
+  background: #610094;
 }
 
 .col-lg-4:nth-child(3) .pricing-plan .btn-primary::before, .col-lg-4:nth-child(3) .pricing-plan .btn-primary::after {
-  background: #8dc63f;
+  /*background: #8dc63f;*/
 }
 
 /*================================================

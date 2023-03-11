@@ -1,5 +1,6 @@
 import React from 'react';
 import MainBanner from '../Events/MainBanner';
+import PricingOne from '../Events/PricingOne';
 import lax from 'lax.js';
 import GoTop from '../Shared/GoTop';
 import WhyUs from '../Common/WhyUs';
@@ -20,11 +21,12 @@ class EventPage extends React.Component {
             <React.Fragment>
                 {/* Main Banner */}
                 <MainBanner />
+                <PricingOne/>
                 
                 {/* Why Choose Us Area */}
-                <WhyUs />
+                {/*<WhyUs />*/}
                 {/* Why Choose Us Area */}
-                <WhyUs />
+                {/*<WhyUs />*/}
                 
 
                 <Footer />

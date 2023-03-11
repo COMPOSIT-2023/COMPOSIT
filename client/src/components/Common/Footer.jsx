@@ -26,8 +26,8 @@ class Footer extends React.Component {
 
                         <div className="col-lg-6 col-md-6">
                             <div className="single-footer-widget">
-                                <h3>Social Connection</h3>
-                                <p>Don't miss Link thing! Receive daily news You should connect social area for Any Proper Updates Anytime.</p>
+                                <h3>Follow us on Social Media</h3>
+                                <p>Don't miss important updates! Follow us on Facebook, Instagram and Linkedin</p>
                                 
                                 <ul className="social-links">
                                     <li>
@@ -62,9 +62,9 @@ class Footer extends React.Component {
                                     </Link>
                                 </div>
                                 <ul>
-                                    <li><Link to="/speakers">Team</Link></li>
+                                    <li><Link to="/ourteam">Team</Link></li>
                                     <li><Link to="/contact">Contact</Link></li>
-                                    <li><Link to="#">Venue</Link></li>
+                                    <li><a href="https://goo.gl/maps/DUpGj7rLicHZgPBy6" target="_blank">Venue</a></li>
                                     <li><Link to="#">Terms & Conditions</Link></li>
                                 </ul>
                                 <p>

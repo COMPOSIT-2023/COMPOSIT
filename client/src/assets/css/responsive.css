@@ -33,7 +33,12 @@
   }
   .btn {
     font-size: 14px;
-    padding: 13px 50px;
+    padding: 13px 24px;
+    box-sizing: content-box;
+  }
+  .btn-modal {
+    font-size: 14px;
+    padding: 13px 24px;
   }
   .preloader .loader {
     margin: -80px 0 0 -55px;

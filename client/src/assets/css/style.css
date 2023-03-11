@@ -125,6 +125,22 @@ label {
   font-size: 20px;
   width: 15vw;
   color: #ffffff;
+  background: #150050;
+  -webkit-box-shadow: 0 8px 6px -6px rgba(50, 51, 51, 0.4);
+          box-shadow: 0 8px 6px -6px rgba(50, 51, 51, 0.4);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-modal {
+  font-weight: 700;
+  font-size: 20px;
+  width: 15vw;
+  color: #ffffff;
+  background: #150050;
   -webkit-box-shadow: 0 8px 6px -6px rgba(50, 51, 51, 0.4);
           box-shadow: 0 8px 6px -6px rgba(50, 51, 51, 0.4);
   border: none;
@@ -283,6 +299,13 @@ label {
 }
 
 .section-title .btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -18px;
+}
+
+.section-title .btn-modal {
   position: absolute;
   top: 50%;
   right: 0;
@@ -799,21 +822,19 @@ Main Banner CSS
 }
 
 .main-banner-content h1 b:nth-of-type(1) {
-  color: #fec564;
+  color: #b856ec;
 }
 
 .main-banner-content h1 b:nth-of-type(2) {
-  color: #8051ed;
+  color: #ffffff;
 }
 
 .main-banner-content h1 b:nth-of-type(3) {
-  color: #ffffff;
-  -webkit-animation: colorchange 20s;
-          animation: colorchange 20s;
+  color: #b856ec;
 }
 
 .main-banner-content h1 b:nth-of-type(4) {
-  color: #9807e6;
+  color: #ffffff;
 }
 
 .main-banner-content ul {
@@ -943,11 +964,11 @@ Main Banner CSS
 }
 
 .event-countdown #timer div#days {
-  color: #8051ed;
+  color: #8d64ec;
 }
 
 .event-countdown #timer div#hours {
-  color: #9807e6;
+  color: #ffffff;
 }
 
 .event-countdown #timer div#hours span {
@@ -956,7 +977,7 @@ Main Banner CSS
 }
 
 .event-countdown #timer div#minutes {
-  color: #ffffff;
+  color: #8d64ec;
 }
 
 .event-countdown #timer div#minutes span {
@@ -965,7 +986,7 @@ Main Banner CSS
 }
 
 .event-countdown #timer div#seconds {
-  color: #fec66d;
+  color: #ffffff;
 }
 
 .event-countdown #timer div#seconds span {
@@ -1312,6 +1333,7 @@ About CSS
 .about-area-two .about-image .btn {
   bottom: 0;
 }
+
 
 .about-area-two .about-content .signature {
   margin-bottom: 0;
@@ -3568,6 +3590,12 @@ Login CSS
   margin-top: 20px;
 }
 
+.login-area .login-form .btn-modal {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
 .login-area .login-form p {
   overflow: hidden;
   margin-bottom: 0;
@@ -3646,6 +3674,12 @@ Signup CSS
 }
 
 .signup-area .signup-form .btn {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.signup-area .signup-form .btn-modal {
   display: block;
   width: 100%;
   margin-top: 20px;
@@ -4840,4 +4874,5 @@ Back To Top CSS
   display: flex;
   flex-direction: column;
 }
+
 /*# sourceMappingURL=style.css.map */

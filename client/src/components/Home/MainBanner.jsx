@@ -61,7 +61,7 @@ class MainBanner extends React.Component {
                                         <li><i className="icofont-calendar"></i> 31 Mar - 2 Apr, 2023</li>
                                     </ul>
                                     <div className="button-box">
-                                        <Link to="#" className="btn btn-primary">Register</Link>
+                                        <Link to="/signup" className="btn btn-primary">Register</Link>
                                     </div>
                                 </div>
                             </div>

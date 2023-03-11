@@ -4,7 +4,7 @@ import Home from "./components/pages/Home";
 import Events from "./components/pages/Events";
 import Navigation from "./components/Navigation/Navigation";
 import About from "./components/pages/About";
-import Speakers from "./components/pages/Speakers";
+import OurTeam from "./components/pages/Ourteam";
 import Schedule from "./components/pages/Schedule";
 import Login from "./components/pages/Login";
 import Signup from "./components/pages/Signup";
@@ -32,7 +32,7 @@ const AppRouter = () => {
                 <Route path="/about" exact component={About} />
                 <Route path="/events" exact component={Events} />
                 <Route path="/eventdetails" exact component={EventDetailsPage} />
-                <Route path="/speakers" exact component={Speakers} />
+                <Route path="/ourteam" exact component={OurTeam} />
                 <Route path="/schedule" exact component={Schedule} />
                 <Route path="/login" exact component={Login} />
                 <Route path="/signup" exact component={Signup} />

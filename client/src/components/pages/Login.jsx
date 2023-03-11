@@ -17,7 +17,10 @@ class Login extends React.Component {
                 <div className="d-table">
                     <div className="d-table-cell">
                         <div className="login-form">
+                            
+                            <Link to="/" className="btn-modal btn-primary">&#xab; Back to Home</Link>
                             <h3>Welcome Back!</h3>
+                            
 
                             <form onSubmit={this.onSubmit}>
                                 <div className="form-group">
@@ -42,7 +45,7 @@ class Login extends React.Component {
                                     />
                                 </div>
 
-                                <button type="submit" className="btn btn-primary">Login</button>
+                                <button type="submit" className="btn-modal btn-primary">Login</button>
 
                                 <p>
                                     <Link to="/signup" className="pull-left">Create a new account</Link>

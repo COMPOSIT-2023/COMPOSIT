@@ -17,6 +17,7 @@ class Signup extends React.Component {
                 <div className="d-table">
                     <div className="d-table-cell">
                         <div className="signup-form">
+                            <Link to="/" className="btn-modal btn-primary">&#xab; Back to Home</Link>
                             <h3>Create your Account</h3>
 
                             <form onSubmit={this.onSubmit}>
@@ -53,7 +54,7 @@ class Signup extends React.Component {
                                     />
                                 </div>
 
-                                <button type="submit" className="btn btn-primary">Signup</button>
+                                <button type="submit" className="btn-modal btn-primary">Signup</button>
 
                                 <p>Already a registered user? <Link to="/login">Login!</Link></p>
                             </form>

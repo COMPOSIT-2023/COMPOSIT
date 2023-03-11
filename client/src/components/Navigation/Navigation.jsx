@@ -41,6 +41,7 @@ class Navigation extends React.Component {
         this.setState({ isOpen: !this.state.isOpen });
     }
 
+
     render(){
         const { collapsed } = this.state;
         const classOne = collapsed ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
@@ -93,7 +94,7 @@ class Navigation extends React.Component {
 
                                     <li className="nav-item">
                                         <NavLink 
-                                            to="/speakers" 
+                                            to="/ourteam" 
                                             className="nav-link"
                                             onClick={this.toggleNavbar}
                                         >
@@ -149,6 +150,26 @@ class Navigation extends React.Component {
                                             onClick={this.toggleNavbar}
                                         >
                                             Contact
+                                        </NavLink>
+                                    </li>
+
+                                    <li className="nav-item">
+                                        <NavLink 
+                                            to="/login" 
+                                            className="nav-link" 
+                                            onClick={this.toggleNavbar}
+                                        >
+                                            Login
+                                        </NavLink>
+                                    </li>
+
+                                    <li className="nav-item">
+                                        <NavLink 
+                                            to="/signup" 
+                                            className="nav-link" 
+                                            onClick={this.toggleNavbar}
+                                        >
+                                            Sign up
                                         </NavLink>
                                     </li>
                                 </ul>

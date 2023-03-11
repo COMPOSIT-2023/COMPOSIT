@@ -553,8 +553,8 @@ Navbar CSS
   padding-right: 0;
   padding-top: 0;
   padding-bottom: 0;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 12px;
+  margin-right: 13px;
 }
 
 .elkevent-nav nav .navbar-nav .nav-item a:hover, .elkevent-nav nav .navbar-nav .nav-item a:focus, .elkevent-nav nav .navbar-nav .nav-item a.active {
@@ -2845,7 +2845,7 @@ Pricing CSS
   background: #ffffff;
   text-align: center;
   z-index: 1;
-  height:380px;
+  height: 55vh;
   
   position: relative;
   border-radius: 5px;
@@ -2905,9 +2905,10 @@ Pricing CSS
 }
 
 .pricing-table-box .pricing-content {
-  padding: 35px 0;
+  padding: 35px 2vw;
   margin-bottom: 0;
   list-style-type: none;
+  height: 25vh;
 }
 
 .pricing-table-box .pricing-content li {

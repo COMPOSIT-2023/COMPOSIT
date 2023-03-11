@@ -10,66 +10,166 @@ class PricingOne extends React.Component {
                         <div className="col-lg-4 col-md-6">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
-                                    <h3 className="title">Competitions</h3>
+                                    <h3 className="title">Technova</h3>
                                {/* <div className="price-value"><sup>$</sup>59</div>*/}
                                 </div>
                                 
                                 <ul className="pricing-content">
-                                <p>A multitude of events ranging from mesmerizing data analytics, stunning photography, compelling case studies and engaging research competitions, unleashing your full potential and developing a spirit of healthy competitiveness.</p>
+                                <p>Test your research acumen and get a glimpse of presenting scientific work in a conference-like environment!</p>
             
                                         
                                 </ul>
                                 
-                                <Link to="#" className="btn btn-primary">READ MORE</Link>
+                                <Link to="/event_technova" className="btn btn-primary">READ MORE</Link>
+                                <Link to="#" className="btn btn-secondary">Register</Link>
                             </div>
                         </div>
 
                         <div className="col-lg-4 col-md-6">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
-                                    <h3 className="title">Guest Lectures</h3>
+                                    <h3 className="title">Ideathon</h3>
                                     {/*<div className="price-value"><sup>$</sup>89</div>*/}
                                 </div>
                                 
                                 <ul className="pricing-content">
-                                <p>Deliverance of guest lectures by eminent professionals in the field of Materials Science, enriching your learning experience and broadening your horizons.</p>
+                                <p>Pitch your next amazing business idea and get valuable feedback!</p>
             
                                        
                                 </ul>
                                 
-                                <Link to="#" className="btn btn-primary">READ MORE</Link>
+                                <Link to="/event_ideathon" className="btn btn-primary">READ MORE</Link>
+                                <Link to="#" className="btn btn-secondary">Register</Link>
                             </div>
                         </div>
 
                         <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
-                                    <h3 className="title">Workshops</h3>
+                                    <h3 className="title">Enigma</h3>
                                     {/*<div className="price-value"><sup>$</sup>99</div>*/}
                                 </div>
                                 
                                 <ul className="pricing-content">
-                                <p>Conductance of informative workshops on captivating concepts, providing you with hands-on experience and practical knowledge about cutting-edge research and innovations in the field of materials and beyond.</p>
+                                <p>Test your knowledge in general as well as core topics. So Quizzers, get ready for Buzzers!</p>
             
                                        
                                 </ul>
                                 
-                                <Link to="#" className="btn btn-primary">READ MORE</Link>
+                                <Link to="/event_enigma" className="btn btn-primary">READ MORE</Link>
+                                <Link to="#" className="btn btn-secondary">Register</Link>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                             <div className="pricing-table-box">
                                 <div className="pricingTable-header">
-                                    <h3 className="title">Webinars</h3>
+                                    <h3 className="title">School Quiz</h3>
                                     {/*<div className="price-value"><sup>$</sup>99</div>*/}
                                 </div>
                                 
                                 <ul className="pricing-content">
-                                <p>A plethora of engrossing webinars, providing a platform to interact with prominent persnoalities including Material Scientists and Professionals from all across the globe and to gain valuable insights about the field of Materials Science and beyond.</p>
+                                <p>An intriguing quiz event for school students to test their knowledge from various topics ranging from Science to Language. So get ready with your thinking caps on!</p>
             
                                          </ul>
                                 
-                                <Link to="#" className="btn btn-primary">READ MORE</Link>
+                                <Link to="/event_schoolquiz" className="btn btn-primary">READ MORE</Link>
+                                <Link to="#" className="btn btn-secondary">Register</Link>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                            <div className="pricing-table-box">
+                                <div className="pricingTable-header">
+                                    <h3 className="title">Excavate</h3>
+                                    {/*<div className="price-value"><sup>$</sup>99</div>*/}
+                                </div>
+                                
+                                <ul className="pricing-content">
+                                <p>Get ready to put your analytical skills to the test in the ultimate data analytics competition!</p>
+            
+                                         </ul>
+                                
+                                <Link to="/event_excavate" className="btn btn-primary">READ MORE</Link>
+                                <Link to="#" className="btn btn-secondary">Register</Link>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                            <div className="pricing-table-box">
+                                <div className="pricingTable-header">
+                                    <h3 className="title">Techtoon</h3>
+                                    {/*<div className="price-value"><sup>$</sup>99</div>*/}
+                                </div>
+                                
+                                <ul className="pricing-content">
+                                <p>Let your imagination run wild as you create hilarious and witty memes/ artwork that leave everyone in stitches.</p>
+            
+                                         </ul>
+                                
+                                <Link to="/event_techtoon" className="btn btn-primary">READ MORE</Link>
+                                <Link to="#" className="btn btn-secondary">Register</Link>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                            <div className="pricing-table-box">
+                                <div className="pricingTable-header">
+                                    <h3 className="title">Metaclix</h3>
+                                    {/*<div className="price-value"><sup>$</sup>99</div>*/}
+                                </div>
+                                
+                                <ul className="pricing-content">
+                                <p>Capture the beauty of materials used in everyday life, exciting industrial applications, or the awe-inspiring universe beyond our planet with our online photography contest!</p>
+            
+                                         </ul>
+                                
+                                <Link to="/event_metaclix" className="btn btn-primary">READ MORE</Link>
+                                <Link to="#" className="btn btn-secondary">Register</Link>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                            <div className="pricing-table-box">
+                                <div className="pricingTable-header">
+                                    <h3 className="title">CAD</h3>
+                                    {/*<div className="price-value"><sup>$</sup>99</div>*/}
+                                </div>
+                                
+                                <ul className="pricing-content">
+                                <p>An intriguing quiz event for school students to test their knowledge from various topics ranging from Science to Language. So get ready with your thinking caps on!</p>
+            
+                                         </ul>
+                                
+                                <Link to="/event_cad" className="btn btn-primary">READ MORE</Link>
+                                <Link to="#" className="btn btn-secondary">Register</Link>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                            <div className="pricing-table-box">
+                                <div className="pricingTable-header">
+                                    <h3 className="title">Case Study</h3>
+                                    {/*<div className="price-value"><sup>$</sup>99</div>*/}
+                                </div>
+                                
+                                <ul className="pricing-content">
+                                <p>Challenge your critical thinking ability and grab this opportunity to do in depth research about a problem statement!</p>
+            
+                                         </ul>
+                                
+                                <Link to="/event_casestudy" className="btn btn-primary">READ MORE</Link>
+                                <Link to="#" className="btn btn-secondary">Register</Link>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                            <div className="pricing-table-box">
+                                <div className="pricingTable-header">
+                                    <h3 className="title">Metallomania</h3>
+                                    {/*<div className="price-value"><sup>$</sup>99</div>*/}
+                                </div>
+                                
+                                <ul className="pricing-content">
+                                <p>An intriguing quiz event for school students to test their knowledge from various topics ranging from Science to Language. So get ready with your thinking caps on!</p>
+            
+                                         </ul>
+                                
+                                <Link to="/event_metallomania" className="btn btn-primary">READ MORE</Link>
+                                <Link to="#" className="btn btn-secondary">Register</Link>
                             </div>
                         </div>
                     </div>

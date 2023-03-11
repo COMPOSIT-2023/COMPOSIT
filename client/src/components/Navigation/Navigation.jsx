@@ -125,16 +125,6 @@ class Navigation extends React.Component {
 
                                     <li className="nav-item">
                                         <NavLink 
-                                            to="/eventdetails" 
-                                            className="nav-link" 
-                                            onClick={this.toggleNavbar}
-                                        >
-                                            EventPage
-                                        </NavLink>
-                                    </li>
-
-                                    <li className="nav-item">
-                                        <NavLink 
                                             to="/sponsors" 
                                             className="nav-link" 
                                             onClick={this.toggleNavbar}

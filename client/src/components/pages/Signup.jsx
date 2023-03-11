@@ -5,7 +5,8 @@ class Signup extends React.Component {
     state = {
         username: '',
         email: '',
-        password: ''
+        password: '',
+        phone: ''
     };
 
     onSubmit = (e) => {
@@ -51,6 +52,17 @@ class Signup extends React.Component {
                                         placeholder="Password" 
                                         value={this.state.password}
                                         onChange={e => this.setState({ password: e.target.value })}
+                                    />
+                                </div>
+
+                                <div className="form-group">
+                                    <label>Phone</label>
+                                    <input
+                                        type="number"
+                                        className="form-control" 
+                                        placeholder="Phone" 
+                                        value={this.state.phone}
+                                        onChange={e => this.setState({ phone: e.target.value })}
                                     />
                                 </div>
 

@@ -29,7 +29,7 @@ class Home extends React.Component {
                 {/* About Area */}
                 <About />
                 {/* Why Choose Us Area */}
-                {/*<WhyUs />*/}
+                <WhyUs />
                 {/* Schedule Area */}
                 {/* <EventSchedules /> */}
                 {/* FunFacts Area */}

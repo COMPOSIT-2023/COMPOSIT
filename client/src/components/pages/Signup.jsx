@@ -8,10 +8,17 @@ class Signup extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            username: '',
+            name: '',
             email: '',
             password: '',
+            dob: '',
+            rollno: '',
+            department: '',
+            institution: '',
             contact: '',
+            gradyear: '',
+            address: '',
+            gender: '',
             errorr: null,
         };
       }
@@ -172,8 +179,8 @@ class Signup extends React.Component {
                                     </select>
                                 </div>
 
-                                <button type="submit" className="btn-modal btn-primary">Signup</button>
-
+                                <button type="submit" className="btn-modal btn-primary" onClick={this.handleSubmit}>Signup</button>
+                                {this.state.errorr && <p>{this.state.errorr}</p>}
                                 <p>Already a registered user? <Link to="/login">Login!</Link></p>
                             </form>
                         </div>

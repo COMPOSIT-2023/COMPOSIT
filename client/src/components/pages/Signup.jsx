@@ -1,17 +1,37 @@
-import React from 'react';
+// import React from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
- 
-class Signup extends React.Component {
-    state = {
-        username: '',
-        email: '',
-        password: '',
-        phone: ''
-    };
+import axios from "axios"
 
-    onSubmit = (e) => {
-        e.preventDefault();
-    }
+class Signup extends React.Component {
+    
+    constructor(props) {
+        super(props);
+        this.state = {
+            username: '',
+            email: '',
+            password: '',
+            contact: '',
+            errorr: null,
+        };
+      }
+    
+    
+    
+    handleSubmit = async (e) =>{
+        e.preventDefault()
+        try {
+          await axios.post("/auth/register", this.state)
+          this.setState({ errorr: "SignUp Successfull" })
+          window.location = '/login'
+        } catch (err) {
+            console.log(err.response.data, "my")
+            this.setState({ errorr: "Email already in use!!" })
+            console.log(this.errorr, "react")
+        //   setError(err.response.data);
+        }
+      };
+
     render(){
         return (
             <section className="signup-area">
@@ -56,18 +76,19 @@ class Signup extends React.Component {
                                 </div>
 
                                 <div className="form-group">
-                                    <label>Phone</label>
+                                    <label>Contact</label>
                                     <input
                                         type="number"
                                         className="form-control" 
-                                        placeholder="Phone" 
-                                        value={this.state.phone}
-                                        onChange={e => this.setState({ phone: e.target.value })}
+                                        placeholder="Contact" 
+                                        value={this.state.contact}
+                                        onChange={e => this.setState({ contact: e.target.value })}
                                     />
                                 </div>
 
-                                <button type="submit" className="btn-modal btn-primary">Signup</button>
-
+                                <button type="submit" className="btn-modal btn-primary" onClick={ this.handleSubmit}>Signup</button>
+                                
+                                {this.state.errorr && <p>{this.state.errorr}</p>}
                                 <p>Already a registered user? <Link to="/login">Login!</Link></p>
                             </form>
                         </div>

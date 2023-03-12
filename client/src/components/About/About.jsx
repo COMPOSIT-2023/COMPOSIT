@@ -64,6 +64,15 @@ class About extends React.Component {
 
                                 {/* <LaxButton buttonText="Explore More About" /> */}
                             </div>
+                            <div className="about-image2">
+                                <img src={require("../../assets/images/about22.jpg")} className="about-img1" alt="about" />
+
+                                <img src={require("../../assets/images/slideshow-bg4.jpg")} className="about-img2" alt="about" />
+
+                                <img src={require("../../assets/images/shapes/5.png")} className="shape-img" alt="about" />
+
+                                {/* <LaxButton buttonText="Explore More About" /> */}
+                            </div>
                         </div>
                     </div>
                 </div>

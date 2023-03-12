@@ -1,17 +1,37 @@
-import React from 'react';
+// import React from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
- 
-class Signup extends React.Component {
-    state = {
-        username: '',
-        email: '',
-        password: '',
-        phone: ''
-    };
+import axios from "axios"
 
-    onSubmit = (e) => {
-        e.preventDefault();
-    }
+class Signup extends React.Component {
+    
+    constructor(props) {
+        super(props);
+        this.state = {
+            username: '',
+            email: '',
+            password: '',
+            contact: '',
+            errorr: null,
+        };
+      }
+    
+    
+    
+    handleSubmit = async (e) =>{
+        e.preventDefault()
+        try {
+          await axios.post("/auth/register", this.state)
+          this.setState({ errorr: "SignUp Successfull" })
+          window.location = '/login'
+        } catch (err) {
+            console.log(err.response.data, "my")
+            this.setState({ errorr: "Email already in use!!" })
+            console.log(this.errorr, "react")
+        //   setError(err.response.data);
+        }
+      };
+
     render(){
         return (
             <section className="signup-area">
@@ -56,6 +76,7 @@ class Signup extends React.Component {
                                 </div>
 
                                 <div className="form-group">
+
                                     <label>Date of Birth</label>
                                     <input 
                                         type="date" 
@@ -100,15 +121,19 @@ class Signup extends React.Component {
                                 </div>
 
                                 <div className="form-group">
+
                                     <label>Contact</label>
                                     <input
                                         type="number"
                                         className="form-control" 
+
                                         placeholder="Contact Number" 
+
                                         value={this.state.contact}
                                         onChange={e => this.setState({ contact: e.target.value })}
                                     />
                                 </div>
+
 
                                 <div className="form-group">
                                     <label>Address</label>

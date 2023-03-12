@@ -1,15 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios'
  
 class Login extends React.Component {
-    state = {
-        email: '',
-        password: ''
-    };
-
-    onSubmit = (e) => {
-        e.preventDefault();
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: '',
+      password: '',
+      errorr: null,
+  };
+  }
+  handleClick = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await axios.post("/auth/login", this.state);
+      // this.setState({ errorr: err.response.data.message })
+      // console.log("logged in")
+      window.location = '/'
+    } catch (err) {
+      this.setState({ errorr: err.response.data.message })
+      // console.log(err.response.data.message, "error")
     }
+  };
+    
+
+    // onSubmit = (e) => {
+    //     e.preventDefault();
+    // }
 
     render(){
         return (
@@ -45,8 +63,8 @@ class Login extends React.Component {
                                     />
                                 </div>
 
-                                <button type="submit" className="btn-modal btn-primary">Login</button>
-
+                                <button type="submit" className="btn-modal btn-primary" onClick={this.handleClick}>Login</button>
+                                {this.state.errorr && <p>{this.state.errorr}</p>}
                                 <p>
                                     <Link to="/signup" className="pull-left">Create a new account</Link>
                                     

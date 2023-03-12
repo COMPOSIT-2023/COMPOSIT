@@ -3539,7 +3539,7 @@ Login CSS
   height: 100vh;
   position: relative;
   z-index: 100000;
-  background-image: url("../images/main-bg1.jpg");
+  background-image: url("../images/main-bg2.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3625,7 +3625,6 @@ Login CSS
 Signup CSS
 =================================================*/
 .signup-area {
-  height: 100vh;
   position: relative;
   z-index: 10000;
   background-image: url("../images/main-bg2.jpg");

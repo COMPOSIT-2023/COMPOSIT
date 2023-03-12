@@ -27,7 +27,7 @@ class EventTechtoon extends React.Component {
 
                             <div className="events-content">
                                 <h4>Techtoon</h4>
-                                <h3>Win Goodies and Certificates</h3>
+                                <h3>Goodies to the top 5!</h3>
                                 {/* <span>12000</span> */}
                             </div>
                             
@@ -88,7 +88,7 @@ class EventTechtoon extends React.Component {
                                                     <div className="schedule-info">
                                                         <h3>Techtoon</h3>
 
-                                                        <p>A non-technical online event. A “techtoon” can be any creative, visual art on topics related to the themes (listed above) in the form of sketches, memes, cartoons, comics, etc. based on the following themes: </p>
+                                                        <p>A non-technical online event. It is a fun-filled celebration of science and engineering, where creativity takes the center stage. A “techtoon” can be any creative, visual art on topics related to the themes (listed above) in the form of sketches, memes, cartoons, comics, etc. based on the following themes:  </p>
 
                                                         <ul>
                                                             <li><i className="icofont-wall-clock"></i> Space technology</li><br />
@@ -112,8 +112,7 @@ class EventTechtoon extends React.Component {
                                                         <h3>Participation Criteria</h3>
 
                                                         <ul>
-                                                            <li> Individual participation is allowed. </li>
-                                                            <li> All members should be students pursuing a B.Tech/ BSc./ Dual/ MTech/ MSc degree in any engineering college in India. </li>
+                                                            <li> Open to all </li>
                                                         </ul>
                                                     </div>
                                                 </Link>
@@ -126,7 +125,13 @@ class EventTechtoon extends React.Component {
                                                     
                                                     <div className="schedule-info">
                                                         <h3>Rounds of the Event</h3>
-                                                        <p>The event will be online in which participants are expected to create and submit entries that depict the theme in a humorous and creative way through a google form within the deadline.</p>
+                                                        <p>The event will be online:</p>
+
+                                                        <ul>
+                                                            <li><b>Online Submission:</b>
+                                                            <ul><li>Participants are expected to submit their work which depicts the theme in a humorous and creative way through the google form within the deadline. </li></ul>
+                                                            </li>
+                                                        </ul>
                                                     </div>
                                                 </Link>
                                             </li>
@@ -144,12 +149,12 @@ class EventTechtoon extends React.Component {
                                                         <h3>Important Dates</h3>
 
                                                         <ul>
-                                                            <li><b>Abstract Submission Deadline:</b></li>
-                                                            <li><i className="icofont-wall-clock"></i>20th March 2023, 11:59 PM</li>
+                                                            <li><b>Submission Deadline:</b></li>
+                                                            <li><i className="icofont-wall-clock"></i>30th March 2023</li>
                                                             <br></br>
                                                             <br></br>
-                                                            <li><b>Final presentation:</b></li>
-                                                            <li><i className="icofont-wall-clock"></i>31st March 2023, 11:59 PM</li>
+                                                            {/* <li><b>Final presentation:</b></li>
+                                                            <li><i className="icofont-wall-clock"></i>31st March 2023, 11:59 PM</li> */}
                                                         </ul>
                                                     </div>
                                                 </Link>

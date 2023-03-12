@@ -102,7 +102,7 @@ class Navigation extends React.Component {
                                         </NavLink>
                                     </li>
 
-                                    <li className="nav-item">
+                                    {/* <li className="nav-item">
                                         <NavLink 
                                             to="/schedule" 
                                             className="nav-link"
@@ -110,7 +110,7 @@ class Navigation extends React.Component {
                                         >
                                             Schedule
                                         </NavLink>
-                                    </li>
+                                    </li> */}
 
                                     
                                     <li className="nav-item">

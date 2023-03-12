@@ -93,7 +93,7 @@ class Contact extends React.Component {
                 <div className="page-title-area item-bg1">
                     <div className="container">
                         <h1>Contact Us</h1>
-                        <span>Send me your Message</span>
+                        <span>Send us your Message</span>
                         <ul>
                             <li><Link to="/">Home</Link></li>
                             <li>Contact</li>
@@ -111,9 +111,9 @@ class Contact extends React.Component {
                                     </div>
                                     
                                     <div className="content">
-                                        <h4>Phone / Fax</h4>
-                                        <p>(+021) 245522455</p>
-                                        <p>(+000) 245522455</p>
+                                        <h4>Phone</h4>
+                                        <p><i className="icofont-phone"></i> Gourav Pathak : 6204935889</p>
+                                        <p><i className="icofont-phone"></i> Alluri Hasitha : 9392703946</p>
                                     </div>
                                 </div>
                             </div>
@@ -126,8 +126,7 @@ class Contact extends React.Component {
                                     
                                     <div className="content">
                                         <h4>E-mail</h4>
-                                        <p>info@evnia.com</p>
-                                        <p>support@evnia.com</p>
+                                        <p>composit.iit@gmail.com</p>
                                     </div>
                                 </div>
                             </div>
@@ -140,7 +139,7 @@ class Contact extends React.Component {
                                     
                                     <div className="content">
                                         <h4>Location</h4>
-                                        <p>2750 Quadra Street Victoria, City, Canada</p>
+                                        <p>Metallurgical and Materials Engineering Depatment, IIT Kharagpur</p>
                                     </div>
                                 </div>
                             </div>

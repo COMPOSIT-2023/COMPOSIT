@@ -26,8 +26,8 @@ class EventMetaclix extends React.Component {
                             <img src={require("../../assets/images/speakers2.jpg")} alt="Speaker" />
 
                             <div className="events-content">
-                                <h4>Techtoon</h4>
-                                <h3>Win Goodies and Certificates</h3>
+                                <h4>Metaclix</h4>
+                                <h3>Cash Prize worth 9K</h3>
                                 {/* <span>12000</span> */}
                             </div>
                             
@@ -86,15 +86,17 @@ class EventMetaclix extends React.Component {
                                                 <Link className="accordion-title" to="#">
                                                     
                                                     <div className="schedule-info">
-                                                        <h3>Techtoon</h3>
+                                                        <h3>Metaclix</h3>
 
-                                                        <p>A non-technical online event. A “techtoon” can be any creative, visual art on topics related to the themes (listed above) in the form of sketches, memes, cartoons, comics, etc. based on the following themes: </p>
+                                                        <p>Photography contest that challenges participants to capture stunning images based on themes at the intersection of materials and space. In this individual event, participants will be required to click and upload pictures that fall under the following categories: </p>
 
                                                         <ul>
-                                                            <li><i className="icofont-wall-clock"></i> Space technology</li><br />
-                                                            <li><i className="icofont-wall-clock"></i> Science and Math</li><br />
-                                                            <li><i className="icofont-wall-clock"></i> Enginnering</li>
+                                                            <li><i className="icofont-wall-clock"></i> Metals and materials in everyday life and nature</li><br />
+                                                            <li><i className="icofont-wall-clock"></i> Snaps taken in industries (could be the electronic industry, construction, aerospace and more)</li><br />
+                                                            <li><i className="icofont-wall-clock"></i> Astrophotography</li>
                                                         </ul>
+                                                        <br />
+                                                        <p>This competition is an excellent opportunity to showcase your creativity, technical skills, and artistic eye, and win exciting prizes in the process. So, join us and let your photography skills shine!</p>
                                                     </div>
                                                 </Link>
                                             </li>
@@ -112,8 +114,7 @@ class EventMetaclix extends React.Component {
                                                         <h3>Participation Criteria</h3>
 
                                                         <ul>
-                                                            <li> Individual participation is allowed. </li>
-                                                            <li> All members should be students pursuing a B.Tech/ BSc./ Dual/ MTech/ MSc degree in any engineering college in India. </li>
+                                                            <li> Open to all. </li>
                                                         </ul>
                                                     </div>
                                                 </Link>
@@ -126,7 +127,13 @@ class EventMetaclix extends React.Component {
                                                     
                                                     <div className="schedule-info">
                                                         <h3>Rounds of the Event</h3>
-                                                        <p>The event will be online in which participants are expected to create and submit entries that depict the theme in a humorous and creative way through a google form within the deadline.</p>
+                                                        <p>The event will be online:</p>
+
+                                                        <ul>
+                                                            <li><b>Submission round (Online):</b>
+                                                            <ul><li>Participants are expected to create and submit entries that depict the theme in a humorous and creative way through a google form within the deadline. </li></ul>
+                                                            </li>
+                                                        </ul>
                                                     </div>
                                                 </Link>
                                             </li>
@@ -144,12 +151,12 @@ class EventMetaclix extends React.Component {
                                                         <h3>Important Dates</h3>
 
                                                         <ul>
-                                                            <li><b>Abstract Submission Deadline:</b></li>
-                                                            <li><i className="icofont-wall-clock"></i>20th March 2023, 11:59 PM</li>
+                                                            <li><b>Submission Deadline:</b></li>
+                                                            <li><i className="icofont-wall-clock"></i>30th March 2023</li>
                                                             <br></br>
                                                             <br></br>
-                                                            <li><b>Final presentation:</b></li>
-                                                            <li><i className="icofont-wall-clock"></i>31st March 2023, 11:59 PM</li>
+                                                            {/* <li><b>Final presentation:</b></li>
+                                                            <li><i className="icofont-wall-clock"></i>31st March 2023, 11:59 PM</li> */}
                                                         </ul>
                                                     </div>
                                                 </Link>

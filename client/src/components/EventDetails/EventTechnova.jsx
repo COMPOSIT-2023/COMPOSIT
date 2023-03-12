@@ -27,7 +27,7 @@ class EventTechnova extends React.Component {
 
                             <div className="events-content">
                                 <h4>Technova</h4>
-                                <h3>Cash Prize worth 12K</h3>
+                                <h3>Cash Prize worth 22K</h3>
                                 {/* <span>12000</span> */}
                             </div>
                             
@@ -134,7 +134,7 @@ class EventTechnova extends React.Component {
                                                             </li>
                                                             <li></li>
                                                             <li><b>Final Presentation Round:</b>
-                                                            <ul><li>Presentation of the paper before a panel of judges who will evaluate the participant based on the understanding of the paper.</li></ul>
+                                                            <ul><li>Presentation of the paper before a panel of judges who will evaluate the participant based on the understanding and analysis of the literature.</li></ul>
                                                             </li>
                                                         </ul>
                                                     </div>

@@ -26,8 +26,8 @@ class EventCasestudy extends React.Component {
                             <img src={require("../../assets/images/speakers2.jpg")} alt="Speaker" />
 
                             <div className="events-content">
-                                <h4>Techtoon</h4>
-                                <h3>Win Goodies and Certificates</h3>
+                                <h4>Case Study</h4>
+                                <h3>Cash Prize worth 18K</h3>
                                 {/* <span>12000</span> */}
                             </div>
                             
@@ -86,15 +86,10 @@ class EventCasestudy extends React.Component {
                                                 <Link className="accordion-title" to="#">
                                                     
                                                     <div className="schedule-info">
-                                                        <h3>Techtoon</h3>
+                                                        <h3>Case Study</h3>
 
-                                                        <p>A non-technical online event. A “techtoon” can be any creative, visual art on topics related to the themes (listed above) in the form of sketches, memes, cartoons, comics, etc. based on the following themes: </p>
+                                                        <p>A case study competition is one that challenges teams to analyze real-world business problems and develop innovative solutions. Participants will be required to use their analytical and creative skills to develop a strategic plan that analyzes and addresses the problem statement. The solutions will be presented to an accomplished panel of judges composed and the winning teams will receive exciting prizes. So, get your team together, register, and let's see how you can tackle real-world challenges with your problem-solving skills! </p>
 
-                                                        <ul>
-                                                            <li><i className="icofont-wall-clock"></i> Space technology</li><br />
-                                                            <li><i className="icofont-wall-clock"></i> Science and Math</li><br />
-                                                            <li><i className="icofont-wall-clock"></i> Enginnering</li>
-                                                        </ul>
                                                     </div>
                                                 </Link>
                                             </li>
@@ -112,7 +107,7 @@ class EventCasestudy extends React.Component {
                                                         <h3>Participation Criteria</h3>
 
                                                         <ul>
-                                                            <li> Individual participation is allowed. </li>
+                                                            <li> Team participation of a maximum of three is expected. </li>
                                                             <li> All members should be students pursuing a B.Tech/ BSc./ Dual/ MTech/ MSc degree in any engineering college in India. </li>
                                                         </ul>
                                                     </div>
@@ -126,7 +121,18 @@ class EventCasestudy extends React.Component {
                                                     
                                                     <div className="schedule-info">
                                                         <h3>Rounds of the Event</h3>
-                                                        <p>The event will be online in which participants are expected to create and submit entries that depict the theme in a humorous and creative way through a google form within the deadline.</p>
+                                                        <p>The event will have two rounds as follows:</p>
+
+                                                        <ul>
+                                                            <li><b>Abstract submission round (Online):</b>
+                                                            <ul><li>The participating teams have to submit their presentation and report by the deadline. Selected teams will advance to the final round.</li></ul>
+                                                            </li>
+                                                            <br></br>
+                                                            <br />
+                                                            <li><b>Final Presentation Round:</b>
+                                                            <ul><li>Presentation will be done before a panel of judges.</li></ul>
+                                                            </li>
+                                                        </ul>
                                                     </div>
                                                 </Link>
                                             </li>
@@ -144,12 +150,12 @@ class EventCasestudy extends React.Component {
                                                         <h3>Important Dates</h3>
 
                                                         <ul>
-                                                            <li><b>Abstract Submission Deadline:</b></li>
-                                                            <li><i className="icofont-wall-clock"></i>20th March 2023, 11:59 PM</li>
+                                                            <li><b>Report Submission:</b></li>
+                                                            <li><i className="icofont-wall-clock"></i>19th March 2023, 11:59 PM</li>
                                                             <br></br>
                                                             <br></br>
                                                             <li><b>Final presentation:</b></li>
-                                                            <li><i className="icofont-wall-clock"></i>31st March 2023, 11:59 PM</li>
+                                                            <li><i className="icofont-wall-clock"></i>1st April 2023</li>
                                                         </ul>
                                                     </div>
                                                 </Link>

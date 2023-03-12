@@ -88,7 +88,7 @@ class EventExcavate extends React.Component {
                                                     <div className="schedule-info">
                                                         <h3>Excavate</h3>
 
-                                                        <p>An event is to ignite the spark of curiosity among the participants in the field of Data Analytics and to introduce how data science can be used in the field of metallurgical and materials engineering. Any student pursuing a Science or Engineering degree from any of the engineering colleges in India is eligible to participate.</p>
+                                                        <p>An exhilarating competition inviting all aspiring data analysts to join us for an event that will challenge their ability to make sense of complex data sets. Showcase your problem-solving skills, critical thinking, and creativity as you explore and analyze real-world datasets. So, whether you're an experienced data scientist or a budding enthusiast, register now and join us for an unforgettable experience that will test your data science mettle!</p>
 
                                                         {/* <ul>
                                                             <li><i className="icofont-wall-clock"></i> Electronic Materials and Nanotechnology, Computational Material Science</li>
@@ -130,12 +130,12 @@ class EventExcavate extends React.Component {
 
                                                         <ul>
                                                             <li><b>Knockout round (Online):</b>
-                                                            <ul><li>An online round will be conducted on Kaggle and the teams which will have more accurate results will proceed in the 2nd round.</li></ul>
+                                                            <ul><li>The problem statement and data set will be released on Day 0 of COMPOSIT. This round will be conducted in the form of a 24 hour data science hackathon. Teams will be ranked according to the accuracy of the model predictions on the test set. Top teams will be invited for a final presentation round of the final report.</li></ul>
                                                             </li>
                                                             <br></br>
                                                             <br />
                                                             <li><b>Final Presentation Round:</b>
-                                                            <ul><li>Presentation of the solution and the results before a panel of judges who will evaluate the teams based on their justification of the problem statement.</li></ul>
+                                                            <ul><li>Presentation of the solution and the results before a panel of judges who will evaluate the models presented by the teams.</li></ul>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -155,12 +155,12 @@ class EventExcavate extends React.Component {
                                                         <h3>Important Dates</h3>
 
                                                         <ul>
-                                                            <li><b>Idea Submission Deadline:</b></li>
-                                                            <li><i className="icofont-wall-clock"></i>20th March 11;59PM</li>
+                                                            <li><b>Problem Statement Release:</b></li>
+                                                            <li><i className="icofont-wall-clock"></i>31st March 2023 [6:00 pm]</li>
                                                             <br></br>
                                                             <br></br>
-                                                            <li><b>Final presentation:</b></li>
-                                                            <li><i className="icofont-wall-clock"></i>2nd April</li>
+                                                            <li><b>Submission Deadline:</b></li>
+                                                            <li><i className="icofont-wall-clock"></i>1st April 2023 [6: 00 pm]</li>
                                                         </ul>
                                                     </div>
                                                 </Link>

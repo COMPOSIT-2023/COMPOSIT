@@ -18,9 +18,12 @@ class Footer extends React.Component {
                                     <i className="icofont-google-map"></i> Indian Institute of Technology, Kharagpur
                                 </p>
 
-                                <Link to="/contact" className="contact-authority">
-                                    <i className="icofont-phone"></i> Contact Our Authority
-                                </Link>
+                                <p>
+                                    <i className="icofont-phone"></i> Gouri Vignesh Jawalkar( General Secretary ) : 6302468417
+                                </p>
+                                <p>
+                                    <i className="icofont-phone"></i> Riyan Biswas( Student Coordinator ) : 6291079485
+                                </p>
                             </div>
                         </div>
 

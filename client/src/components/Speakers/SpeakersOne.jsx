@@ -6,6 +6,11 @@ class SpeakersOne extends React.Component {
         return (
             <section className="speakers-area ptb-120">
                 <div className="row m-0">
+                    <div className="section-title">
+                        <h2>Our<b> Heads</b></h2>
+
+                        <div className="bar"></div>
+                    </div>
                     <div className="col-lg-3 col-md-6 p-0">
                         <div className="single-speakers">
                             <img 
@@ -14,29 +19,29 @@ class SpeakersOne extends React.Component {
                             />
 
                             <div className="speakers-content">
-                                <h3><Link to="#">James Anderson</Link></h3>
-                                <span>Founder & CEO</span>
+                                <h3 style={{color:"#fec66d"}}>Gouri Vignesh Jawalkar</h3>
+                                <span>General Secretary</span>
                             </div>
                             <ul>
                                 <li>
-                                    <Link to="#" target="_blank" className="facebook">
+                                    <a href="#" target="_blank" className="facebook">
                                         <i className="icofont-facebook"></i>
-                                    </Link>
+                                    </a>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link to="#" target="_blank" className="twitter">
                                         <i className="icofont-twitter"></i>
                                     </Link>
-                                </li>
+                                </li> */}
                                 <li>
-                                    <Link to="#" target="_blank" className="instagram">
+                                    <a href="#" target="_blank" className="instagram">
                                         <i className="icofont-instagram"></i>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li>
-                                    <Link to="#" target="_blank" className="linkedin">
+                                    <a href="#" target="_blank" className="linkedin">
                                         <i className="icofont-linkedin"></i>
-                                    </Link>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -45,34 +50,34 @@ class SpeakersOne extends React.Component {
                     <div className="col-lg-3 col-md-6 p-0">
                         <div className="single-speakers">
                             <img 
-                                src={require("../../assets/images/speakers2.jpg")} 
+                                src={require("../../assets/images/speakers1.jpg")} 
                                 alt="speakers" 
                             />
 
                             <div className="speakers-content">
-                                <h3><Link to="#">Steven Smith</Link></h3>
-                                <span>Lead Designer</span>
+                                <h3 style={{color:"#fec66d"}}>Riyan Biswas</h3>
+                                <span>Student Coordinator</span>
                             </div>
                             <ul>
                                 <li>
-                                    <Link to="#" target="_blank" className="facebook">
+                                    <a href="#" target="_blank" className="facebook">
                                         <i className="icofont-facebook"></i>
-                                    </Link>
+                                    </a>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link to="#" target="_blank" className="twitter">
                                         <i className="icofont-twitter"></i>
                                     </Link>
-                                </li>
+                                </li> */}
                                 <li>
-                                    <Link to="#" target="_blank" className="instagram">
+                                    <a href="#" target="_blank" className="instagram">
                                         <i className="icofont-instagram"></i>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li>
-                                    <Link to="#" target="_blank" className="linkedin">
+                                    <a href="#" target="_blank" className="linkedin">
                                         <i className="icofont-linkedin"></i>
-                                    </Link>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -81,34 +86,34 @@ class SpeakersOne extends React.Component {
                     <div className="col-lg-3 col-md-6 p-0">
                         <div className="single-speakers">
                             <img 
-                                src={require("../../assets/images/speakers3.jpg")} 
+                                src={require("../../assets/images/speakers1.jpg")} 
                                 alt="speakers" 
                             />
 
                             <div className="speakers-content">
-                                <h3><Link to="#">Lucy Mandana</Link></h3>
-                                <span>Developer Expert</span>
+                                <h3 style={{color:"#fec66d"}}>Gourav Pathak</h3>
+                                <span>Publicity and Hospitality Head</span>
                             </div>
                             <ul>
                                 <li>
-                                    <Link to="#" target="_blank" className="facebook">
+                                    <a href="#" target="_blank" className="facebook">
                                         <i className="icofont-facebook"></i>
-                                    </Link>
+                                    </a>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link to="#" target="_blank" className="twitter">
                                         <i className="icofont-twitter"></i>
                                     </Link>
-                                </li>
+                                </li> */}
                                 <li>
-                                    <Link to="#" target="_blank" className="instagram">
+                                    <a href="#" target="_blank" className="instagram">
                                         <i className="icofont-instagram"></i>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li>
-                                    <Link to="#" target="_blank" className="linkedin">
+                                    <a href="#" target="_blank" className="linkedin">
                                         <i className="icofont-linkedin"></i>
-                                    </Link>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -117,34 +122,34 @@ class SpeakersOne extends React.Component {
                     <div className="col-lg-3 col-md-6 p-0">
                         <div className="single-speakers">
                             <img 
-                                src={require("../../assets/images/speakers4.jpg")} 
+                                src={require("../../assets/images/speakers1.jpg")} 
                                 alt="speakers" 
                             />
 
                             <div className="speakers-content">
-                                <h3><Link to="#">David Warner</Link></h3>
-                                <span>Senio Visual Designer</span>
+                                <h3 style={{color:"#fec66d"}}>Alluri Hasitha</h3>
+                                <span>Publicitya and Hospitality Head</span>
                             </div>
                             <ul>
                                 <li>
-                                    <Link to="#" target="_blank" className="facebook">
+                                    <a href="#" target="_blank" className="facebook">
                                         <i className="icofont-facebook"></i>
-                                    </Link>
+                                    </a>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link to="#" target="_blank" className="twitter">
                                         <i className="icofont-twitter"></i>
                                     </Link>
-                                </li>
+                                </li> */}
                                 <li>
-                                    <Link to="#" target="_blank" className="instagram">
+                                    <a href="#" target="_blank" className="instagram">
                                         <i className="icofont-instagram"></i>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li>
-                                    <Link to="#" target="_blank" className="linkedin">
+                                    <a href="#" target="_blank" className="linkedin">
                                         <i className="icofont-linkedin"></i>
-                                    </Link>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -153,34 +158,34 @@ class SpeakersOne extends React.Component {
                     <div className="col-lg-3 col-md-6 p-0">
                         <div className="single-speakers">
                             <img 
-                                src={require("../../assets/images/speakers5.jpg")} 
+                                src={require("../../assets/images/speakers1.jpg")} 
                                 alt="speakers" 
                             />
 
                             <div className="speakers-content">
-                                <h3><Link to="#">Alberta Amelia</Link></h3>
-                                <span>Lead Designer</span>
+                                <h3 style={{color:"#fec66d"}}>Karabi Saha</h3>
+                                <span>Events Head</span>
                             </div>
                             <ul>
                                 <li>
-                                    <Link to="#" target="_blank" className="facebook">
+                                    <a href="#" target="_blank" className="facebook">
                                         <i className="icofont-facebook"></i>
-                                    </Link>
+                                    </a>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link to="#" target="_blank" className="twitter">
                                         <i className="icofont-twitter"></i>
                                     </Link>
-                                </li>
+                                </li> */}
                                 <li>
-                                    <Link to="#" target="_blank" className="instagram">
+                                    <a href="#" target="_blank" className="instagram">
                                         <i className="icofont-instagram"></i>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li>
-                                    <Link to="#" target="_blank" className="linkedin">
+                                    <a href="#" target="_blank" className="linkedin">
                                         <i className="icofont-linkedin"></i>
-                                    </Link>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -189,34 +194,34 @@ class SpeakersOne extends React.Component {
                     <div className="col-lg-3 col-md-6 p-0">
                         <div className="single-speakers">
                             <img 
-                                src={require("../../assets/images/speakers6.jpg")} 
+                                src={require("../../assets/images/speakers1.jpg")} 
                                 alt="speakers" 
                             />
 
                             <div className="speakers-content">
-                                <h3><Link to="#">Abbie Edie</Link></h3>
-                                <span>Lead Designer</span>
+                                <h3 style={{color:"#fec66d"}}>Ramona Kodkani</h3>
+                                <span>Events Head</span>
                             </div>
                             <ul>
                                 <li>
-                                    <Link to="#" target="_blank" className="facebook">
+                                    <a href="#" target="_blank" className="facebook">
                                         <i className="icofont-facebook"></i>
-                                    </Link>
+                                    </a>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link to="#" target="_blank" className="twitter">
                                         <i className="icofont-twitter"></i>
                                     </Link>
-                                </li>
+                                </li> */}
                                 <li>
-                                    <Link to="#" target="_blank" className="instagram">
+                                    <a href="#" target="_blank" className="instagram">
                                         <i className="icofont-instagram"></i>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li>
-                                    <Link to="#" target="_blank" className="linkedin">
+                                    <a href="#" target="_blank" className="linkedin">
                                         <i className="icofont-linkedin"></i>
-                                    </Link>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -225,34 +230,34 @@ class SpeakersOne extends React.Component {
                     <div className="col-lg-3 col-md-6 p-0">
                         <div className="single-speakers">
                             <img 
-                                src={require("../../assets/images/speakers7.jpg")} 
+                                src={require("../../assets/images/speakers1.jpg")} 
                                 alt="speakers" 
                             />
 
                             <div className="speakers-content">
-                                <h3><Link to="#">Steven Garrad</Link></h3>
-                                <span>Developer Expert</span>
+                                <h3 style={{color:"#fec66d"}}>Priya Kumari</h3>
+                                <span>Events Head</span>
                             </div>
                             <ul>
                                 <li>
-                                    <Link to="#" target="_blank" className="facebook">
+                                    <a href="#" target="_blank" className="facebook">
                                         <i className="icofont-facebook"></i>
-                                    </Link>
+                                    </a>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link to="#" target="_blank" className="twitter">
                                         <i className="icofont-twitter"></i>
                                     </Link>
-                                </li>
+                                </li> */}
                                 <li>
-                                    <Link to="#" target="_blank" className="instagram">
+                                    <a href="#" target="_blank" className="instagram">
                                         <i className="icofont-instagram"></i>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li>
-                                    <Link to="#" target="_blank" className="linkedin">
+                                    <a href="#" target="_blank" className="linkedin">
                                         <i className="icofont-linkedin"></i>
-                                    </Link>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -261,40 +266,699 @@ class SpeakersOne extends React.Component {
                     <div className="col-lg-3 col-md-6 p-0">
                         <div className="single-speakers">
                             <img 
-                                src={require("../../assets/images/speakers8.jpg")} 
+                                src={require("../../assets/images/speakers1.jpg")} 
                                 alt="speakers" 
                             />
 
                             <div className="speakers-content">
-                                <h3><Link to="#">David Wiley</Link></h3>
-                                <span>Senio Visual Designer</span>
+                                <h3 style={{color:"#fec66d"}}>Abyuday Agarwal</h3>
+                                <span>Web Development Head</span>
                             </div>
                             <ul>
                                 <li>
-                                    <Link to="#" target="_blank" className="facebook">
+                                    <a href="#" target="_blank" className="facebook">
                                         <i className="icofont-facebook"></i>
-                                    </Link>
+                                    </a>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link to="#" target="_blank" className="twitter">
                                         <i className="icofont-twitter"></i>
                                     </Link>
-                                </li>
+                                </li> */}
                                 <li>
-                                    <Link to="#" target="_blank" className="instagram">
+                                    <a href="#" target="_blank" className="instagram">
                                         <i className="icofont-instagram"></i>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li>
-                                    <Link to="#" target="_blank" className="linkedin">
+                                    <a href="#" target="_blank" className="linkedin">
                                         <i className="icofont-linkedin"></i>
-                                    </Link>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
+
+                    <div className="col-lg-3 col-md-6 p-0">
+                        <div className="single-speakers">
+                            <img 
+                                src={require("../../assets/images/speakers1.jpg")} 
+                                alt="speakers" 
+                            />
+
+                            <div className="speakers-content">
+                                <h3 style={{color:"#fec66d"}}>Ananay Singh</h3>
+                                <span>Web Development Head</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank" className="facebook">
+                                        <i className="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                {/* <li>
+                                    <Link to="#" target="_blank" className="twitter">
+                                        <i className="icofont-twitter"></i>
+                                    </Link>
+                                </li> */}
+                                <li>
+                                    <a href="#" target="_blank" className="instagram">
+                                        <i className="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" className="linkedin">
+                                        <i className="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 p-0">
+                        <div className="single-speakers">
+                            <img 
+                                src={require("../../assets/images/speakers1.jpg")} 
+                                alt="speakers" 
+                            />
+
+                            <div className="speakers-content">
+                                <h3 style={{color:"#fec66d"}}>Prabodh Kumar Singh</h3>
+                                <span>Sponsorship Head</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank" className="facebook">
+                                        <i className="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                {/* <li>
+                                    <Link to="#" target="_blank" className="twitter">
+                                        <i className="icofont-twitter"></i>
+                                    </Link>
+                                </li> */}
+                                <li>
+                                    <a href="#" target="_blank" className="instagram">
+                                        <i className="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" className="linkedin">
+                                        <i className="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 p-0">
+                        <div className="single-speakers">
+                            <img 
+                                src={require("../../assets/images/speakers1.jpg")} 
+                                alt="speakers" 
+                            />
+
+                            <div className="speakers-content">
+                                <h3 style={{color:"#fec66d"}}>Sudarshana Jaiswal</h3>
+                                <span>Sponsorship Head</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank" className="facebook">
+                                        <i className="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                {/* <li>
+                                    <Link to="#" target="_blank" className="twitter">
+                                        <i className="icofont-twitter"></i>
+                                    </Link>
+                                </li> */}
+                                <li>
+                                    <a href="#" target="_blank" className="instagram">
+                                        <i className="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" className="linkedin">
+                                        <i className="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 p-0">
+                        <div className="single-speakers">
+                            <img 
+                                src={require("../../assets/images/speakers1.jpg")} 
+                                alt="speakers" 
+                            />
+
+                            <div className="speakers-content">
+                                <h3 style={{color:"#fec66d"}}>Nitish Kumar</h3>
+                                <span>Guest Lecture and Webinar Head</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank" className="facebook">
+                                        <i className="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                {/* <li>
+                                    <Link to="#" target="_blank" className="twitter">
+                                        <i className="icofont-twitter"></i>
+                                    </Link>
+                                </li> */}
+                                <li>
+                                    <a href="#" target="_blank" className="instagram">
+                                        <i className="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" className="linkedin">
+                                        <i className="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 p-0">
+                        <div className="single-speakers">
+                            <img 
+                                src={require("../../assets/images/speakers1.jpg")} 
+                                alt="speakers" 
+                            />
+
+                            <div className="speakers-content">
+                                <h3 style={{color:"#fec66d"}}>Hari Prasad Lallam</h3>
+                                <span>Guest Lecture and Webinar Head</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank" className="facebook">
+                                        <i className="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                {/* <li>
+                                    <Link to="#" target="_blank" className="twitter">
+                                        <i className="icofont-twitter"></i>
+                                    </Link>
+                                </li> */}
+                                <li>
+                                    <a href="#" target="_blank" className="instagram">
+                                        <i className="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" className="linkedin">
+                                        <i className="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div className="row m-0">
+                    <div className="section-title">
+                        <h2>Our<b> Sub Heads</b></h2>
+
+                        <div className="bar"></div>
+                    </div>
+                    <div className="col-lg-3 col-md-6 p-0">
+                        <div className="single-speakers">
+                            <img 
+                                src={require("../../assets/images/speakers1.jpg")} 
+                                alt="speakers" 
+                            />
+
+                            <div className="speakers-content">
+                                <h3 style={{color:"#fec66d"}}>Gouri Vignesh Jawalkar</h3>
+                                <span>General Secretary</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank" className="facebook">
+                                        <i className="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                {/* <li>
+                                    <Link to="#" target="_blank" className="twitter">
+                                        <i className="icofont-twitter"></i>
+                                    </Link>
+                                </li> */}
+                                <li>
+                                    <a href="#" target="_blank" className="instagram">
+                                        <i className="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" className="linkedin">
+                                        <i className="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 p-0">
+                        <div className="single-speakers">
+                            <img 
+                                src={require("../../assets/images/speakers1.jpg")} 
+                                alt="speakers" 
+                            />
+
+                            <div className="speakers-content">
+                                <h3 style={{color:"#fec66d"}}>Riyan Biswas</h3>
+                                <span>Student Coordinator</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank" className="facebook">
+                                        <i className="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                {/* <li>
+                                    <Link to="#" target="_blank" className="twitter">
+                                        <i className="icofont-twitter"></i>
+                                    </Link>
+                                </li> */}
+                                <li>
+                                    <a href="#" target="_blank" className="instagram">
+                                        <i className="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" className="linkedin">
+                                        <i className="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 p-0">
+                        <div className="single-speakers">
+                            <img 
+                                src={require("../../assets/images/speakers1.jpg")} 
+                                alt="speakers" 
+                            />
+
+                            <div className="speakers-content">
+                                <h3 style={{color:"#fec66d"}}>Gourav Pathak</h3>
+                                <span>Publicity and Hospitality Head</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank" className="facebook">
+                                        <i className="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                {/* <li>
+                                    <Link to="#" target="_blank" className="twitter">
+                                        <i className="icofont-twitter"></i>
+                                    </Link>
+                                </li> */}
+                                <li>
+                                    <a href="#" target="_blank" className="instagram">
+                                        <i className="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" className="linkedin">
+                                        <i className="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 p-0">
+                        <div className="single-speakers">
+                            <img 
+                                src={require("../../assets/images/speakers1.jpg")} 
+                                alt="speakers" 
+                            />
+
+                            <div className="speakers-content">
+                                <h3 style={{color:"#fec66d"}}>Alluri Hasitha</h3>
+                                <span>Publicitya and Hospitality Head</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank" className="facebook">
+                                        <i className="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                {/* <li>
+                                    <Link to="#" target="_blank" className="twitter">
+                                        <i className="icofont-twitter"></i>
+                                    </Link>
+                                </li> */}
+                                <li>
+                                    <a href="#" target="_blank" className="instagram">
+                                        <i className="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" className="linkedin">
+                                        <i className="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 p-0">
+                        <div className="single-speakers">
+                            <img 
+                                src={require("../../assets/images/speakers1.jpg")} 
+                                alt="speakers" 
+                            />
+
+                            <div className="speakers-content">
+                                <h3 style={{color:"#fec66d"}}>Karabi Saha</h3>
+                                <span>Events Head</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank" className="facebook">
+                                        <i className="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                {/* <li>
+                                    <Link to="#" target="_blank" className="twitter">
+                                        <i className="icofont-twitter"></i>
+                                    </Link>
+                                </li> */}
+                                <li>
+                                    <a href="#" target="_blank" className="instagram">
+                                        <i className="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" className="linkedin">
+                                        <i className="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 p-0">
+                        <div className="single-speakers">
+                            <img 
+                                src={require("../../assets/images/speakers1.jpg")} 
+                                alt="speakers" 
+                            />
+
+                            <div className="speakers-content">
+                                <h3 style={{color:"#fec66d"}}>Ramona Kodkani</h3>
+                                <span>Events Head</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank" className="facebook">
+                                        <i className="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                {/* <li>
+                                    <Link to="#" target="_blank" className="twitter">
+                                        <i className="icofont-twitter"></i>
+                                    </Link>
+                                </li> */}
+                                <li>
+                                    <a href="#" target="_blank" className="instagram">
+                                        <i className="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" className="linkedin">
+                                        <i className="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 p-0">
+                        <div className="single-speakers">
+                            <img 
+                                src={require("../../assets/images/speakers1.jpg")} 
+                                alt="speakers" 
+                            />
+
+                            <div className="speakers-content">
+                                <h3 style={{color:"#fec66d"}}>Priya Kumari</h3>
+                                <span>Events Head</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank" className="facebook">
+                                        <i className="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                {/* <li>
+                                    <Link to="#" target="_blank" className="twitter">
+                                        <i className="icofont-twitter"></i>
+                                    </Link>
+                                </li> */}
+                                <li>
+                                    <a href="#" target="_blank" className="instagram">
+                                        <i className="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" className="linkedin">
+                                        <i className="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 p-0">
+                        <div className="single-speakers">
+                            <img 
+                                src={require("../../assets/images/speakers1.jpg")} 
+                                alt="speakers" 
+                            />
+
+                            <div className="speakers-content">
+                                <h3 style={{color:"#fec66d"}}>Abyuday Agarwal</h3>
+                                <span>Web Development Head</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank" className="facebook">
+                                        <i className="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                {/* <li>
+                                    <Link to="#" target="_blank" className="twitter">
+                                        <i className="icofont-twitter"></i>
+                                    </Link>
+                                </li> */}
+                                <li>
+                                    <a href="#" target="_blank" className="instagram">
+                                        <i className="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" className="linkedin">
+                                        <i className="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 p-0">
+                        <div className="single-speakers">
+                            <img 
+                                src={require("../../assets/images/speakers1.jpg")} 
+                                alt="speakers" 
+                            />
+
+                            <div className="speakers-content">
+                                <h3 style={{color:"#fec66d"}}>Ananay Singh</h3>
+                                <span>Web Development Head</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank" className="facebook">
+                                        <i className="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                {/* <li>
+                                    <Link to="#" target="_blank" className="twitter">
+                                        <i className="icofont-twitter"></i>
+                                    </Link>
+                                </li> */}
+                                <li>
+                                    <a href="#" target="_blank" className="instagram">
+                                        <i className="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" className="linkedin">
+                                        <i className="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 p-0">
+                        <div className="single-speakers">
+                            <img 
+                                src={require("../../assets/images/speakers1.jpg")} 
+                                alt="speakers" 
+                            />
+
+                            <div className="speakers-content">
+                                <h3 style={{color:"#fec66d"}}>Prabodh Kumar Singh</h3>
+                                <span>Sponsorship Head</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank" className="facebook">
+                                        <i className="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                {/* <li>
+                                    <Link to="#" target="_blank" className="twitter">
+                                        <i className="icofont-twitter"></i>
+                                    </Link>
+                                </li> */}
+                                <li>
+                                    <a href="#" target="_blank" className="instagram">
+                                        <i className="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" className="linkedin">
+                                        <i className="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 p-0">
+                        <div className="single-speakers">
+                            <img 
+                                src={require("../../assets/images/speakers1.jpg")} 
+                                alt="speakers" 
+                            />
+
+                            <div className="speakers-content">
+                                <h3 style={{color:"#fec66d"}}>Sudarshana Jaiswal</h3>
+                                <span>Sponsorship Head</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank" className="facebook">
+                                        <i className="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                {/* <li>
+                                    <Link to="#" target="_blank" className="twitter">
+                                        <i className="icofont-twitter"></i>
+                                    </Link>
+                                </li> */}
+                                <li>
+                                    <a href="#" target="_blank" className="instagram">
+                                        <i className="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" className="linkedin">
+                                        <i className="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 p-0">
+                        <div className="single-speakers">
+                            <img 
+                                src={require("../../assets/images/speakers1.jpg")} 
+                                alt="speakers" 
+                            />
+
+                            <div className="speakers-content">
+                                <h3 style={{color:"#fec66d"}}>Nitish Kumar</h3>
+                                <span>Guest Lecture and Webinar Head</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank" className="facebook">
+                                        <i className="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                {/* <li>
+                                    <Link to="#" target="_blank" className="twitter">
+                                        <i className="icofont-twitter"></i>
+                                    </Link>
+                                </li> */}
+                                <li>
+                                    <a href="#" target="_blank" className="instagram">
+                                        <i className="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" className="linkedin">
+                                        <i className="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 p-0">
+                        <div className="single-speakers">
+                            <img 
+                                src={require("../../assets/images/speakers1.jpg")} 
+                                alt="speakers" 
+                            />
+
+                            <div className="speakers-content">
+                                <h3 style={{color:"#fec66d"}}>Hari Prasad Lallam</h3>
+                                <span>Guest Lecture and Webinar Head</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank" className="facebook">
+                                        <i className="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                {/* <li>
+                                    <Link to="#" target="_blank" className="twitter">
+                                        <i className="icofont-twitter"></i>
+                                    </Link>
+                                </li> */}
+                                <li>
+                                    <a href="#" target="_blank" className="instagram">
+                                        <i className="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" className="linkedin">
+                                        <i className="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </section>
+
+            
         );
     }
 }

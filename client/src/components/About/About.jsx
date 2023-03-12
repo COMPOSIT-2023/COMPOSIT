@@ -24,14 +24,14 @@ class About extends React.Component {
                         <div className="col-lg-6">
                             <div className="about-content">
                                 <span>Join The Event</span>
-                                {/* <h2>We Create and <b>Turn</b> Into Reality</h2> */}
+                                <h2>About Us</h2>
 
                                 <p>With Science and Technology running in the veins of today’s generation determined to push their talents to the edge only to take flight, COMPOSIT provides the perfect platform to knit those aspirations into a skyful of opportunities. Being one of the largest fests in the genre all over India, COMPOSIT, an abbreviation of Congress of Metallurgical Professionals involving Students, Industry, and Teachers, is one of India’s largest Materials Science Fest conducted by the Society of Metallurgical Engineers (SME), Indian Institute of Technology Kharagpur. It is a unique congregation of students, professionals, academicians, and eminent personalities sharing the belief that materials will define the next revolution, a path-breaking concept to compile and share knowledge and enthusiasm for the development of ‘The Science of Materials.</p>
 
                                 <p>Starting in 1994, It is a national congregation of bright and ambitious minds to invoke their innovation and bridge their ingenious thoughts and ideas into exorbitant assets for humanity. It also gives the young enthusiasts a chance to explore and showcase their talents and also interact with the stalwarts in the field who share their expertise. Compelled by the thirst for knowledge and adventure the exuberant minds, IIT Kharagpur is all set to conduct yet another edition of COMPOSIT, which promises an exciting odyssey embracing a plethora of events and all its trademark features.</p>
 
                                 
-                                <span>Theme Description</span>
+                                <h2>Theme Description</h2>
                                 <p>
                                     January 28, 1986, the Space Shuttle Challenger broke apart 73 seconds into its flight, killing all seven crew members aboard and causing a whooping $3.7 Billion loss due to the mere failure of the two O-ring seals in a joint in the shuttle's right solid rocket booster. Year after year, the realisation that material science is the dorsum of the augmenting space endeavours is coagulating in the scintillating brains.
                                 </p>

@@ -26,7 +26,7 @@ class EventCad extends React.Component {
                             <img src={require("../../assets/images/speakers2.jpg")} alt="Speaker" />
 
                             <div className="events-content">
-                                <h4>Techtoon</h4>
+                                <h4>CAD</h4>
                                 <h3>Win Goodies and Certificates</h3>
                                 {/* <span>12000</span> */}
                             </div>
@@ -86,7 +86,7 @@ class EventCad extends React.Component {
                                                 <Link className="accordion-title" to="#">
                                                     
                                                     <div className="schedule-info">
-                                                        <h3>Techtoon</h3>
+                                                        <h3>CAD</h3>
 
                                                         <p>A non-technical online event. A “techtoon” can be any creative, visual art on topics related to the themes (listed above) in the form of sketches, memes, cartoons, comics, etc. based on the following themes: </p>
 

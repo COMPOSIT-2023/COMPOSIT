@@ -26,8 +26,8 @@ class EventMetallomania extends React.Component {
                             <img src={require("../../assets/images/speakers2.jpg")} alt="Speaker" />
 
                             <div className="events-content">
-                                <h4>Techtoon</h4>
-                                <h3>Win Goodies and Certificates</h3>
+                                <h4>Metallomania</h4>
+                                <h3>Cash Prize worth 15K</h3>
                                 {/* <span>12000</span> */}
                             </div>
                             
@@ -86,15 +86,10 @@ class EventMetallomania extends React.Component {
                                                 <Link className="accordion-title" to="#">
                                                     
                                                     <div className="schedule-info">
-                                                        <h3>Techtoon</h3>
+                                                        <h3>Metallomania</h3>
 
-                                                        <p>A non-technical online event. A “techtoon” can be any creative, visual art on topics related to the themes (listed above) in the form of sketches, memes, cartoons, comics, etc. based on the following themes: </p>
+                                                        <p>A technical poster presentation competition that acts as a platform to express and present original research to your peers, teachers and industry in the fields of metallurgy and materials. The goal of the poster presentation competition is to offer a venue to students to present their original research in the field of metallurgy and to provide a forum for informal discussion with interested students, teachers and industrialists. </p>
 
-                                                        <ul>
-                                                            <li><i className="icofont-wall-clock"></i> Space technology</li><br />
-                                                            <li><i className="icofont-wall-clock"></i> Science and Math</li><br />
-                                                            <li><i className="icofont-wall-clock"></i> Enginnering</li>
-                                                        </ul>
                                                     </div>
                                                 </Link>
                                             </li>
@@ -112,8 +107,8 @@ class EventMetallomania extends React.Component {
                                                         <h3>Participation Criteria</h3>
 
                                                         <ul>
-                                                            <li> Individual participation is allowed. </li>
-                                                            <li> All members should be students pursuing a B.Tech/ BSc./ Dual/ MTech/ MSc degree in any engineering college in India. </li>
+                                                            <li> It will be a team event (of max 2 participants) </li>
+                                                            <li>  Any student pursuing science or engineering in India is eligible to participate. </li>
                                                         </ul>
                                                     </div>
                                                 </Link>
@@ -126,7 +121,7 @@ class EventMetallomania extends React.Component {
                                                     
                                                     <div className="schedule-info">
                                                         <h3>Rounds of the Event</h3>
-                                                        <p>The event will be online in which participants are expected to create and submit entries that depict the theme in a humorous and creative way through a google form within the deadline.</p>
+                                                        <p>It will be an offline event but The poster and abstract should be submitted online in the link provided in the website by 22nd March and at the time of event you have to present the poster in front of judges.</p>
                                                     </div>
                                                 </Link>
                                             </li>
@@ -144,12 +139,12 @@ class EventMetallomania extends React.Component {
                                                         <h3>Important Dates</h3>
 
                                                         <ul>
-                                                            <li><b>Abstract Submission Deadline:</b></li>
-                                                            <li><i className="icofont-wall-clock"></i>20th March 2023, 11:59 PM</li>
-                                                            <br></br>
+                                                            <li><b>Poster and Abstract submission:</b></li>
+                                                            <li><i className="icofont-wall-clock"></i>22th March 2023, 11:59 PM</li>
+                                                            {/* <br></br>
                                                             <br></br>
                                                             <li><b>Final presentation:</b></li>
-                                                            <li><i className="icofont-wall-clock"></i>31st March 2023, 11:59 PM</li>
+                                                            <li><i className="icofont-wall-clock"></i>31st March 2023, 11:59 PM</li> */}
                                                         </ul>
                                                     </div>
                                                 </Link>

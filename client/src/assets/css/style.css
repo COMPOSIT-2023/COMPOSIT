@@ -822,7 +822,7 @@ Main Banner CSS
 }
 
 .main-banner-content h1 b:nth-of-type(1) {
-  color: #b856ec;
+  color: #8d64ec;
 }
 
 .main-banner-content h1 b:nth-of-type(2) {
@@ -830,7 +830,7 @@ Main Banner CSS
 }
 
 .main-banner-content h1 b:nth-of-type(3) {
-  color: #b856ec;
+  color: #8d64ec;
 }
 
 .main-banner-content h1 b:nth-of-type(4) {
@@ -867,7 +867,7 @@ Main Banner CSS
 }
 
 .main-banner-content p span {
-  color: #cb84f1;
+  color: #8d64ec;
 }
 
 .main-banner-content .button-box a {
@@ -1300,6 +1300,7 @@ About CSS
   position: absolute;
   top: -28px;
   left: 48%;
+  opacity: 0.4;
   -webkit-animation: movebounce 5s linear infinite;
           animation: movebounce 5s linear infinite;
 }
@@ -1525,7 +1526,7 @@ Why Choose Us CSS
 
 .single-box .content p {
   color: #ffffff;
-  margin-bottom: 0;
+  margin-bottom: 45px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   height: 30vh;
@@ -3539,7 +3540,7 @@ Login CSS
   height: 100vh;
   position: relative;
   z-index: 100000;
-  background-image: url("../images/main-bg1.jpg");
+  background-image: url("../images/main-bg2.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3625,7 +3626,6 @@ Login CSS
 Signup CSS
 =================================================*/
 .signup-area {
-  height: 100vh;
   position: relative;
   z-index: 10000;
   background-image: url("../images/main-bg2.jpg");

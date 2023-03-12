@@ -68,7 +68,7 @@ class PricingOne extends React.Component {
                                 </div>
                                 
                                 <ul className="pricing-content">
-                                <p>An intriguing quiz event for school students to test their knowledge from various topics ranging from Science to Language. So get ready with your thinking caps on!</p>
+                                <p>An intriguing quiz event for school students to test their knowledge from various topics ranging from Science to Language. Get ready to think!</p>
             
                                          </ul>
                                 
@@ -116,7 +116,7 @@ class PricingOne extends React.Component {
                                 </div>
                                 
                                 <ul className="pricing-content">
-                                <p>Capture the beauty of materials used in everyday life, exciting industrial applications, or the awe-inspiring universe beyond our planet with our online photography contest!</p>
+                                <p>Enter our online photography contest and capture everyday materials, industrial applications, or the universe beyond!</p>
             
                                          </ul>
                                 
@@ -132,7 +132,7 @@ class PricingOne extends React.Component {
                                 </div>
                                 
                                 <ul className="pricing-content">
-                                <p>An intriguing quiz event for school students to test their knowledge from various topics ranging from Science to Language. So get ready with your thinking caps on!</p>
+                                <p></p>
             
                                          </ul>
                                 
@@ -164,7 +164,7 @@ class PricingOne extends React.Component {
                                 </div>
                                 
                                 <ul className="pricing-content">
-                                <p>An intriguing quiz event for school students to test their knowledge from various topics ranging from Science to Language. So get ready with your thinking caps on!</p>
+                                <p></p>
             
                                          </ul>
                                 

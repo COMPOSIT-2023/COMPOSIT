@@ -112,7 +112,7 @@ class EventSchoolquiz extends React.Component {
                                                         <h3>Participation Criteria</h3>
 
                                                         <ul>
-                                                            <li> Individual participation is allowed for students of class 9 to class 12. </li>
+                                                            <li> Team participation is allowed for students of class 9 to class 12, up to a maximum of 2 members. </li>
                                                         </ul>
                                                     </div>
                                                 </Link>
@@ -125,7 +125,7 @@ class EventSchoolquiz extends React.Component {
                                                     
                                                     <div className="schedule-info">
                                                         <h3>Rounds of the Event</h3>
-                                                        <p>The event will be conducted in online mode by a quiz master.</p>
+                                                        <p>The event will be conducted in online mode by a quiz master. The team must complete registration before the deadline in order to take part.</p>
                                                     </div>
                                                 </Link>
                                             </li>
@@ -143,12 +143,12 @@ class EventSchoolquiz extends React.Component {
                                                         <h3>Important Dates</h3>
 
                                                         <ul>
-                                                            <li><b>Online Round:</b></li>
-                                                            <li><i className="icofont-wall-clock"></i>15th March - 22nd March</li>
+                                                            <li><b>Deadline for registration:</b></li>
+                                                            <li><i className="icofont-wall-clock"></i>29th March 2023</li>
                                                             <br></br>
                                                             <br></br>
-                                                            <li><b>Final round:</b></li>
-                                                            <li><i className="icofont-wall-clock"></i>2nd April</li>
+                                                            <li><b>Final Quiz:</b></li>
+                                                            <li><i className="icofont-wall-clock"></i>31st March 2023</li>
                                                         </ul>
                                                     </div>
                                                 </Link>

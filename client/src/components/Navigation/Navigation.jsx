@@ -15,6 +15,7 @@ class Navigation extends React.Component {
         });
     }
 
+
     componentDidMount() {
         let elementId = document.getElementById("navbar");
         document.addEventListener("scroll", () => {
@@ -47,6 +48,7 @@ class Navigation extends React.Component {
         const classOne = collapsed ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
         const classTwo = collapsed ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler navbar-toggler-right';
         const menuClass = `dropdown-menu${this.state.isOpen ? " show" : ""}`;
+        const jwtToken = document.cookie
         return (
             <header id="header" className="header-area">
                 <div id="navbar" className="elkevent-nav">
@@ -143,7 +145,7 @@ class Navigation extends React.Component {
                                         </NavLink>
                                     </li>
 
-                                    <li className="nav-item">
+                                    {<li className="nav-item">
                                         <NavLink 
                                             to="/login" 
                                             className="nav-link" 
@@ -151,7 +153,7 @@ class Navigation extends React.Component {
                                         >
                                             Login
                                         </NavLink>
-                                    </li>
+                                    </li>}
 
                                     <li className="nav-item">
                                         <NavLink 
@@ -159,7 +161,7 @@ class Navigation extends React.Component {
                                             className="nav-link" 
                                             onClick={this.toggleNavbar}
                                         >
-                                            Sign up
+                                            {jwtToken}
                                         </NavLink>
                                     </li>
                                 </ul>
@@ -172,5 +174,5 @@ class Navigation extends React.Component {
         );
     }
 }
- 
+
 export default withRouter(Navigation);

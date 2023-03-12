@@ -11,7 +11,7 @@ class WhyUs extends React.Component {
                             <div className="d-table">
                                 <div className="d-table-cell">
                                     <div className="content">
-                                        <div className="icon">
+                                        <div className="icon" style={{textAlign:"center"}}>
                                             <i className="icofont-headphone-alt-1"></i>
                                         </div>
                                         <h3>Competitions</h3>
@@ -29,7 +29,7 @@ class WhyUs extends React.Component {
                             <div className="d-table">
                                 <div className="d-table-cell">
                                     <div className="content">
-                                        <div className="icon">
+                                        <div className="icon" style={{textAlign:"center"}}>
                                             <i className="icofont-network-tower"></i>
                                         </div>
                                         <h3>Guest Lectures</h3>
@@ -47,7 +47,7 @@ class WhyUs extends React.Component {
                             <div className="d-table">
                                 <div className="d-table-cell">
                                     <div className="content">
-                                        <div className="icon">
+                                        <div className="icon" style={{textAlign:"center"}}>
                                             <i className="icofont-users-social"></i>
                                         </div>
                                         <h3>Workshops</h3>
@@ -65,7 +65,7 @@ class WhyUs extends React.Component {
                             <div className="d-table">
                                 <div className="d-table-cell">
                                     <div className="content">
-                                        <div className="icon">
+                                        <div className="icon" style={{textAlign:"center"}}> 
                                             <i className="icofont-wink-smile"></i>
                                         </div>
                                         <h3>Webinars</h3>

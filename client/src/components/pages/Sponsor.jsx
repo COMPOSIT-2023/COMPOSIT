@@ -113,7 +113,7 @@ class Sponsor extends React.Component {
                                 </div>
                             </OwlCarousel>
 
-                            <div className="col-lg-12">
+                            {/* <div className="col-lg-12">
                                 <div className="border"></div>
                             </div>
 
@@ -171,7 +171,7 @@ class Sponsor extends React.Component {
                                         </Link>
                                     </div>
                                 </div>
-                            </OwlCarousel>
+                            </OwlCarousel> */}
                         </div>
                     </div>
                 </section>

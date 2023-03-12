@@ -130,7 +130,7 @@ class EventIdeathon extends React.Component {
 
                                                         <ul>
                                                             <li><b>Idea Submission (Online):</b>
-                                                            <ul><li>Participants are to submit a PowerPoint presentation of a pitch deck describing their idea that should not exceed 20 slides. Based on the quality of the presentation, idea proposed, and its impact, selected teams will be invited for the final presentation round at IIT Kharagpur.</li></ul>
+                                                            <ul><li>Participants are to submit a PowerPoint presentation of a pitch deck describing their idea that should not exceed 15 slides. Based on the quality of the presentation, idea proposed, and its impact, selected teams will be invited for the final presentation round at IIT Kharagpur.</li></ul>
                                                             </li>
                                                             <br></br>
                                                             <br />
@@ -160,7 +160,7 @@ class EventIdeathon extends React.Component {
                                                             <br></br>
                                                             <br></br>
                                                             <li><b>Final presentation:</b></li>
-                                                            <li><i className="icofont-wall-clock"></i>2nd April</li>
+                                                            <li><i className="icofont-wall-clock"></i>2nd April 2023</li>
                                                         </ul>
                                                     </div>
                                                 </Link>

@@ -171,11 +171,11 @@ class EventEnigma extends React.Component {
 
                                                         <ul>
                                                             <li><b>Online Round:</b></li>
-                                                            <li><i className="icofont-wall-clock"></i>15th March - 22nd March</li>
+                                                            <li><i className="icofont-wall-clock"></i>15th March 2023 - 22nd March 2023</li>
                                                             <br></br>
                                                             <br></br>
                                                             <li><b>Final round:</b></li>
-                                                            <li><i className="icofont-wall-clock"></i>2nd April</li>
+                                                            <li><i className="icofont-wall-clock"></i>31st March 2023</li>
                                                         </ul>
                                                     </div>
                                                 </Link>

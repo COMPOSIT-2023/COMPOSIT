@@ -1282,6 +1282,7 @@ About CSS
 
 .about-image {
   position: relative;
+  margin-bottom: 10vh;
 }
 
 .about-image .about-img1 {
@@ -1306,6 +1307,39 @@ About CSS
 }
 
 .about-image .btn {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+}
+
+/*aboutimage2*/
+.about-image2 {
+  position: relative;
+  margin-top: 25vh;
+}
+
+.about-image2 .about-img1 {
+  position: relative;
+  right: -300px;
+  top: -60px;
+}
+
+.about-image2 .about-img2 {
+  position: absolute;
+  left: 20px;
+  bottom: -140px;
+}
+
+.about-image2 .shape-img {
+  position: absolute;
+  top: -28px;
+  left: 48%;
+  opacity: 0.4;
+  -webkit-animation: movebounce 5s linear infinite;
+          animation: movebounce 5s linear infinite;
+}
+
+.about-image2 .btn {
   position: absolute;
   bottom: -20px;
   right: 0;
@@ -3010,11 +3044,11 @@ Pricing CSS
 }
 
 .col-lg-4:nth-child(2) .pricing-table-box .pricingTable-header {
-  background: #610094;
+  background: #3F0071;
 }
 
 .col-lg-4:nth-child(2) .pricing-table-box .btn-primary::before, .col-lg-4:nth-child(2) .pricing-table-box .btn-primary::after {
-  background: #610094;
+  background: #3F0071;
 }
 
 .col-lg-4:nth-child(2) .pricing-plan h3 {
@@ -3030,15 +3064,15 @@ Pricing CSS
 }
 
 .col-lg-4:nth-child(3) .pricing-table-box .pricingTable-header {
-  background: #610094;
+  background: #3F0071;
 }
 
 .col-lg-4:nth-child(3) .pricing-table-box .btn-primary::before, .col-lg-4:nth-child(3) .pricing-table-box .btn-primary::after {
-  background: #610094;
+  background: #3F0071;
 }
 
 .col-lg-4:nth-child(3) .pricing-plan h3 {
-  background: #610094;
+  background: #3F0071;
 }
 
 .col-lg-4:nth-child(3) .pricing-plan h3 span {

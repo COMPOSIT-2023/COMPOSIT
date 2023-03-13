@@ -155,6 +155,16 @@ class Navigation extends React.Component {
                                         </NavLink>
                                     </li>}
 
+                                    {/* <li className="nav-item">
+                                        <NavLink 
+                                            to="/profile" 
+                                            className="nav-link" 
+                                            onClick={this.toggleNavbar}
+                                        >
+                                            Profile
+                                        </NavLink>
+                                    </li> */}
+
                                     <li className="nav-item">
                                         <NavLink 
                                             to="/signup" 

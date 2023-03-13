@@ -24,6 +24,7 @@ export default function Profile() {
                             <li className='form-group form-control'><strong>Address:</strong> {userData.address}</li>
                             <li className='form-group form-control'><strong>Year of Graduation:</strong> {userData.gradyear}</li>
                             <li className='form-group form-control'><strong>Gender:</strong> {userData.gender}</li>
+                            <li className='form-group form-control'><strong>Events Registered:</strong> Metaclix</li>
                         </ul>
 
                         <Link to='/edit-profile' className="btn btn-primary">Edit Profile</Link>

@@ -35,6 +35,7 @@ import RegisterExcavate from "./components/pages/EventRegistration/RegisterExcav
 import RegisterSchoolquiz from "./components/pages/EventRegistration/RegisterSchoolquiz";
 import RegisterCad from "./components/pages/EventRegistration/RegisterCad";
 import RegisterCasestudy from "./components/pages/EventRegistration/RegisterCasestudy";
+import Popup from "./components/pages/MyPopup";
 
 // Conditionally render Navigation
 const renderNavigation = () => {
@@ -81,6 +82,7 @@ const AppRouter = () => {
                 <Route path="/sponsors" exact component={Sponsor} />
                 <Route path="/profile" exact component={Profile} />
                 <Route path="/edit-profile" exact component={EditProfile} />
+                <Route path="/popup" exact component={Popup} />
                 <Route path="/error-404" exact component={NotFound} />
                 <Route component={NotFound} />
             </Switch>

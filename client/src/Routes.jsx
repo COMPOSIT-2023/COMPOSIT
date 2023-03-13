@@ -50,7 +50,6 @@ const AppRouter = () => {
             <Switch>
                 <Route path="/" exact component={Home} />
                 <Route path="/about" exact component={About} />
-                <Route path="/events/:id" exact component={Events} />
                 <Route path="/events" exact component={Events} />
                 <Route path="/event_cad" exact component={EventCadPage} />
                 <Route path="/event_casestudy" exact component={EventCasestudyPage} />

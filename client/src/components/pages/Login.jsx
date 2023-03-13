@@ -9,18 +9,27 @@ class Login extends React.Component {
       email: '',
       password: '',
       errorr: null,
+      userData: null,
   };
   }
   handleClick = async (e) => {
     e.preventDefault();
     try {
       const res = await axios.post("/auth/login", this.state);
+    //   console.log(res.data.details);
+      const a = res.data.details;
+      console.log(a)
+      localStorage.setItem("COMPOSITuser", JSON.stringify(a));
+      this.setState({ errorr: "Login Successful"+a._id })
+    //   this.setState({ userData: a._id })
       // this.setState({ errorr: err.response.data.message })
-      // console.log("logged in")
-      window.location = '/'
+      console.log("logged in")
+      const b = JSON.parse(localStorage.getItem("COMPOSITuser"))
+      console.log(b)
+      window.location = `/events/${a._id}`
     } catch (err) {
       this.setState({ errorr: err.response.data.message })
-      // console.log(err.response.data.message, "error")
+      console.log(err.response.data.message, "error")
     }
   };
     
@@ -30,6 +39,7 @@ class Login extends React.Component {
     // }
 
     render(){
+        
         return (
             <section className="login-area">
                 <div className="d-table">
@@ -65,6 +75,9 @@ class Login extends React.Component {
 
                                 <button type="submit" className="btn-modal btn-primary" onClick={this.handleClick}>Login</button>
                                 {this.state.errorr && <p>{this.state.errorr}</p>}
+                                {/* <p>pp</p> */}
+                            
+                                {/* {this.state.userData && <p>{this.state.userData}</p>} */}
                                 <p>
                                     <Link to="/signup" className="pull-left">Create a new account</Link>
                                     

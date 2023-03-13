@@ -1,8 +1,31 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
  
 class PricingOne extends React.Component {
     render(){
+        const b = JSON.parse(localStorage.getItem("COMPOSITuser"))
+        console.log(b)
+        // const [registerData, setRegisterData] = useState({});
+
+    // const handleChange = (event) => {
+    //     setRegisterData({
+    //         ...signupData,
+    //         [event.target.name]: event.target.value,
+    //     })
+    // }
+    const onClickHandler = async (event, source) => {
+        event.preventDefault()
+        console.log(event);
+        console.log(source)
+        // try {
+        //     await axios.post(`/auth/eventRegistration/posts/${postId}`,  source )
+        //     console.log(signupData)
+        //     window.location = '/login'
+        // }
+        // catch(error){
+        //     console.log(error)
+        // }
+      };
         return (
             <section className="pricing-area ptb-120 bg-image">
                 <div className="container">
@@ -21,7 +44,10 @@ class PricingOne extends React.Component {
                                 </ul>
                                 
                                 <Link to="/event_technova" className="btn btn-primary">READ MORE</Link>
-                                <Link to="#" className="btn btn-secondary">Register</Link>
+                                
+            
+                                <button type="submit" className="btn btn-secondary" onClick={(event) => onClickHandler(event, "technova")}>Register</button>
+                                {/* <Link className="btn btn-secondary" onClick={handleClick("Technova")}>Register</Link> */}
                             </div>
                         </div>
 

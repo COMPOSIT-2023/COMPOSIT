@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import { v4 } from 'uuid';
 const EventSchema = new mongoose.Schema(
   {
     eventName: {
@@ -29,7 +30,11 @@ const EventSchema = new mongoose.Schema(
       teamStrength: {
         type: Number,
         default: 1,
-      }
+      },
+      // serial: {
+      //   type: String,
+      //   default: v4,
+      // }
     }],
   },
   { timestamps: true }

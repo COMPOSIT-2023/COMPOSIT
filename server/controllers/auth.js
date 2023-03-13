@@ -2,6 +2,10 @@ import User from "../models/User.js";
 import bcrypt from "bcryptjs";
 import { createError } from "../utils/error.js";
 import jwt from "jsonwebtoken";
+import nodemailer from 'nodemailer';
+import { v4 } from 'uuid';
+
+
 
 export const register = async (req, res, next) => {
   try {
@@ -15,7 +19,38 @@ export const register = async (req, res, next) => {
     });
 
     await newUser.save();
-    res.status(200).send("User has been created.");
+    const user = await User.findOne({ email: req.body.email });
+    // const rId = user.__v;
+    // console.log(rId)
+
+    // mailing
+    const transporter = nodemailer.createTransport({
+      host: 'smtp.gmail.com',
+      port: 465,
+      secure: true,
+      auth: {
+          user: 'ujjawalkgp@gmail.com',
+          pass: 'oyvziqntqpvlpdti'
+      }
+  })
+
+  const mailOptions = {
+      from: 'ujjawalkgp@gmail.com',
+      to: req.body.email,
+      subject: `Registration Successful`,
+      html: `<h1> Hey ${req.body.name}!! Greetings from COMPOSIT, IIT KHARAGPUR. You have been successfully registered for COMPOSIT. Your registration id is COMP23${req.body.contact} .<h1>`
+  }
+
+  transporter.sendMail(mailOptions, (error, info) => {
+      if(error){
+          console.log(error);
+          res.send('error');
+      }else{
+          // res.redirect('/contact')
+          res.status(200).send("User has been created.");
+      }
+  })
+    // res.status(200).send("User has been created.");
   } catch (err) {
     console.log(err)
     res.status(500).send(err);
@@ -24,6 +59,7 @@ export const register = async (req, res, next) => {
   }
 };
 export const login = async (req, res, next) => {
+  // console.log("bad",req)
   try {
     const user = await User.findOne({ email: req.body.email });
     if (!user) return next(createError(404, "User not found!"));

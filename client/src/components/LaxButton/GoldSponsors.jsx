@@ -15,7 +15,7 @@ class GoldSponsors extends React.Component {
     
     render(){
         return (
-            <h3 className="lax" data-lax-preset="driftLeft">Gold Sponsors</h3>
+            <h3 className="lax" data-lax-preset="driftLeft">Our Sponsors</h3>
         );
     }
 }

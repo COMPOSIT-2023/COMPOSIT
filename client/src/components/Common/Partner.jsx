@@ -72,10 +72,10 @@ class Partner extends React.Component {
                         >
                             <div className="col-lg-12 col-md-12">
                                 <div className="partner-item">
-                                    <Link to="/sponsors" target="_blank">
+                                    <a href="https://couponswala.com/" target="_blank">
                                         <img src={require("../../assets/images/Couponswala.jpg")} alt="Partner Logo" />
                                         <img src={require("../../assets/images/Couponswala.jpg")} alt="Partner Logo" />
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
 

@@ -1,10 +1,14 @@
 import React, { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
  
 class PricingOne extends React.Component {
     render(){
         const b = JSON.parse(localStorage.getItem("COMPOSITuser"))
         console.log(b)
+        console.log(window.location)
+        // const location = useLocation()
+
+        // const postId = location.pathname.split("/")[2]
         // const [registerData, setRegisterData] = useState({});
 
     // const handleChange = (event) => {

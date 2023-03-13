@@ -14,8 +14,7 @@ class Navigation extends React.Component {
             collapsed: !this.state.collapsed,
         });
     }
-
-
+    userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
     componentDidMount() {
         let elementId = document.getElementById("navbar");
         document.addEventListener("scroll", () => {
@@ -144,8 +143,8 @@ class Navigation extends React.Component {
                                             Contact
                                         </NavLink>
                                     </li>
-
-                                    {<li className="nav-item">
+                                   
+                                    {/* {<li className="nav-item">
                                         <NavLink 
                                             to="/login" 
                                             className="nav-link" 
@@ -153,7 +152,26 @@ class Navigation extends React.Component {
                                         >
                                             Login
                                         </NavLink>
-                                    </li>}
+                                    </li>} */}
+                                    {<li className="nav-item">
+                                        {
+                                            this.userData ? <NavLink 
+                                            to="/events" 
+                                            className="nav-link" 
+                                            onClick={this.toggleNavbar}
+                                        >
+                                            Logout
+                                        </NavLink> :
+                                        
+                                    <NavLink 
+                                        to="/login" 
+                                        className="nav-link" 
+                                        onClick={this.toggleNavbar}
+                                    >
+                                        Login
+                                    </NavLink> }
+                                </li>}
+                                    
 
                                     {/* <li className="nav-item">
                                         <NavLink 

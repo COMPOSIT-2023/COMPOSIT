@@ -121,7 +121,7 @@ export default function Signup() {
 
                                 <label>Contact</label>
                                 <input
-                                    type="number"
+                                    type="text"
                                     className="form-control"
                                     name="contact"
                                     placeholder="Contact Number"
@@ -147,7 +147,7 @@ export default function Signup() {
                             <div className="form-group">
                                 <label>Year of Graduation</label>
                                 <input
-                                    type="number"
+                                    type="text"
                                     className="form-control"
                                     placeholder="Year of Graduation"
                                     name="gradyear"

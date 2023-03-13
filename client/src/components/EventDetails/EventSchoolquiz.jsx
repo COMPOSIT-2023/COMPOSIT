@@ -125,7 +125,7 @@ class EventSchoolquiz extends React.Component {
                                                     
                                                     <div className="schedule-info">
                                                         <h3>Rounds of the Event</h3>
-                                                        <p>The event will be conducted in online mode by a quiz master. The team must complete registration before the deadline in order to take part.</p>
+                                                        <p>The event will be conducted offline by a quiz master. The team must complete registration before the deadline in order to take part.</p>
                                                     </div>
                                                 </Link>
                                             </li>
@@ -144,7 +144,7 @@ class EventSchoolquiz extends React.Component {
 
                                                         <ul>
                                                             <li><b>Deadline for registration:</b></li>
-                                                            <li><i className="icofont-wall-clock"></i>29th March 2023</li>
+                                                            <li><i className="icofont-wall-clock"></i> On-spot, upto the event</li>
                                                             <br></br>
                                                             <br></br>
                                                             <li><b>Final Quiz:</b></li>

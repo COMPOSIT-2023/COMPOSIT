@@ -51,6 +51,10 @@ export default function RegisterIdeathon() {
                                     required
                                 />
                             </div>
+                            <p class="marquee">
+                                <span>Enter the Participant's id of other team member (if any)</span>
+                            </p>
+                            <br />
                             <div className="form-group">
                                 <label>Member 2 Participant's Id</label>
                                 <input
@@ -61,10 +65,6 @@ export default function RegisterIdeathon() {
                                     onChange={handleChange}
                                 />
                             </div>
-                            <p class="marquee">
-                                <span>Enter the Participant's id of other team member (if any)</span>
-                            </p>
-                            <br />
                             <div className="form-group">
                                 <label>Member 3 Participant's Id</label>
                                 <input

@@ -1,5 +1,5 @@
 import Event from "../models/Event.js";
-// import Event from "../models/Event.js";
+import Metaclix from "../models/Metaclix.js";
 import { createError } from "../utils/error.js";
 
 export const registerUser = async (req, res, next) => {
@@ -19,6 +19,16 @@ export const deregisterUser = async (req, res, next) => {
       res.status(200).json("You have been deregistered for this event.");
     } catch (err) {
       next(err);
+    }
+  };
+
+  export const registerMetaclix = async (req, res, next) => {
+    const newRegistration = new Metaclix({ participantId : req.user.id });
+    try {
+        const savedRegistration = await newRegistration.save();
+        res.status(200).json(savedRegistration);
+    } catch (err) {
+      res.status(500).send("Error in registering");
     }
   };
 

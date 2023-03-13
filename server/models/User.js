@@ -33,6 +33,7 @@ const UserSchema = new mongoose.Schema(
     contact: {
       type: Number,
       required: true,
+      unique: true,
     },
     gradyear: {
       type: Number,

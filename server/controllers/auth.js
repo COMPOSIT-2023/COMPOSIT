@@ -90,8 +90,7 @@ export const login = async (req, res, next) => {
 
 export const logout = (req,res) => {
   res.clearCookie("access_token",{
-      sameSite:"none",
-      secure:true
-  })
-  return next(createError(200, "User has been logged out."));
+    sameSite:"none",
+    secure:true
+}).status(200).json("User has been logged out.")
 }

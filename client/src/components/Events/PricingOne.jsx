@@ -1,12 +1,17 @@
 import React, { useContext, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import axios from 'axios';
  
 class PricingOne extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            displayMsg: null,
+      };
+    }
     render(){
-        const b = JSON.parse(localStorage.getItem("COMPOSITuser"))
-        console.log(b)
-        console.log(window.location)
-        // const location = useLocation()
+        const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
+        const participantId = window.location.pathname.split("/")[2];
 
         // const postId = location.pathname.split("/")[2]
         // const [registerData, setRegisterData] = useState({});
@@ -17,18 +22,20 @@ class PricingOne extends React.Component {
     //         [event.target.name]: event.target.value,
     //     })
     // }
-    const onClickHandler = async (event, source) => {
-        event.preventDefault()
-        console.log(event);
-        console.log(source)
-        // try {
-        //     await axios.post(`/auth/eventRegistration/posts/${postId}`,  source )
-        //     console.log(signupData)
-        //     window.location = '/login'
-        // }
-        // catch(error){
-        //     console.log(error)
-        // }
+    const onClickHandler = async (e, source) => {
+        e.preventDefault()
+        
+        try {
+            console.log(source)
+            await axios.post(`/eventRegistration/${source}/${participantId}`, participantId )
+            this.setState({ displayMsg: `Registered Successfully for ${source}` })
+            alert(this.state.displayMsg)
+            window.location = '/events'
+        }
+        catch(error){
+            this.setState({ displayMsg: `${error.response.data} for ${source}` })
+            alert(this.state.displayMsg)
+        }
       };
         return (
             <section className="pricing-area ptb-120 bg-image">
@@ -149,9 +156,10 @@ class PricingOne extends React.Component {
                                 <p>Enter our online photography contest and capture everyday materials, industrial applications, or the universe beyond!</p>
             
                                          </ul>
-                                
                                 <Link to="/event_metaclix" className="btn btn-primary">READ MORE</Link>
-                                <Link to="#" className="btn btn-secondary">Register</Link>
+                                <button type="submit" className="btn btn-secondary" onClick={(event) => onClickHandler(event, "metaclix")}>Register</button>
+                                
+                                {/* <Link to="#" className="btn btn-secondary">Register</Link> */}
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">

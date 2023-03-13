@@ -1,20 +1,34 @@
 import React from 'react';
 import { Link, withRouter, NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
+import axios from 'axios';
  
 class Navigation extends React.Component {
-
+    userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
     state = {
         collapsed: true,
         isOpen: false
     };
 
-    toggleNavbar = () => {
+    logout = async (e) => {
+        this.setState({
+            collapsed: !this.state.collapsed,
+        });
+        e.preventDefault();
+        try {
+            await axios.post("/auth/logout");
+            localStorage.clear();
+            window.location = `/`
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    login = () => {
         this.setState({
             collapsed: !this.state.collapsed,
         });
     }
-    userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
+    
     componentDidMount() {
         let elementId = document.getElementById("navbar");
         document.addEventListener("scroll", () => {
@@ -40,6 +54,11 @@ class Navigation extends React.Component {
     onRouteChanged = () => {
         this.setState({ isOpen: !this.state.isOpen });
     }
+    // logout = async (e) => {
+    //     e.preventDefault();
+    //     await axios.post("/auth/logout");
+    //     localStorage.clear();
+    // };
 
 
     render(){
@@ -158,7 +177,7 @@ class Navigation extends React.Component {
                                             this.userData ? <NavLink 
                                             to="/events" 
                                             className="nav-link" 
-                                            onClick={this.toggleNavbar}
+                                            onClick={this.logout}
                                         >
                                             Logout
                                         </NavLink> :
@@ -166,7 +185,7 @@ class Navigation extends React.Component {
                                     <NavLink 
                                         to="/login" 
                                         className="nav-link" 
-                                        onClick={this.toggleNavbar}
+                                        onClick={this.login}
                                     >
                                         Login
                                     </NavLink> }

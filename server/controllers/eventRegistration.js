@@ -1,5 +1,6 @@
 import Event from "../models/Event.js";
 import Metaclix from "../models/Metaclix.js";
+import Enigma from "../models/Enigma.js";
 import { createError } from "../utils/error.js";
 
 export const registerUser = async (req, res, next) => {
@@ -28,6 +29,22 @@ export const deregisterUser = async (req, res, next) => {
         const savedRegistration = await newRegistration.save();
         res.status(200).json(savedRegistration);
     } catch (err) {
+      res.status(500).send("Error in registering");
+    }
+  };
+
+  export const registerEnigma = async (req, res, next) => {
+    console.log(req.body)
+    // const newRegistration = new Enigma(req.body);
+    const newRegistration = new Enigma({ pid1 : req.body.pid1 });
+    console.log("e0")
+    try {
+      console.log("e1")
+        const savedRegistration = await newRegistration.save();
+        console.log("e2")
+        res.status(200).json(savedRegistration);
+    } catch (err) {
+      console.log("e3")
       res.status(500).send("Error in registering");
     }
   };

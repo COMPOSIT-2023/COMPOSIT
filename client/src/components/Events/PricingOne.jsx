@@ -11,7 +11,8 @@ class PricingOne extends React.Component {
     }
     render(){
         const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
-        const participantId = window.location.pathname.split("/")[2];
+        const participantId = userData._id
+        // const participantId = window.location.pathname.split("/")[2];
 
         // const postId = location.pathname.split("/")[2]
         // const [registerData, setRegisterData] = useState({});
@@ -22,18 +23,17 @@ class PricingOne extends React.Component {
     //         [event.target.name]: event.target.value,
     //     })
     // }
-    const onClickHandler = async (e, source) => {
+    const onClickHandler = async (e, eventName) => {
         e.preventDefault()
         
         try {
-            console.log(source)
-            await axios.post(`/eventRegistration/${source}/${participantId}`, participantId )
-            this.setState({ displayMsg: `Registered Successfully for ${source}` })
+            await axios.post(`/eventRegistration/${eventName}/${participantId}`, participantId )
+            this.setState({ displayMsg: `Registered Successfully for ${eventName}` })
             alert(this.state.displayMsg)
             window.location = '/events'
         }
         catch(error){
-            this.setState({ displayMsg: `${error.response.data} for ${source}` })
+            this.setState({ displayMsg: `${error.response.data} for ${eventName}` })
             alert(this.state.displayMsg)
         }
       };
@@ -94,7 +94,9 @@ class PricingOne extends React.Component {
                                 </ul>
                                 
                                 <Link to="/event_enigma" className="btn btn-primary">READ MORE</Link>
-                                <Link to="#" className="btn btn-secondary">Register</Link>
+                                {/* <button type="submit" className="btn btn-secondary" onClick={(event) => onClickHandler(event, "enigma")}>Register</button> */}
+                                
+                                <Link to="/register_enigma" className="btn btn-secondary">Register</Link>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 offset-lg-0 offset-md-3">

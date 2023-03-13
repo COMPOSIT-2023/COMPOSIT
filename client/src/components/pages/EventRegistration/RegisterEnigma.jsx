@@ -6,9 +6,15 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 
 export default function RegisterEnigma() {
+    const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
+  
 
+    
+    
+    // const participantId = window.location.pathname.split("/")[2];
+    const participantId = userData._id
     const [registerEnigmaData, setRegisterEnigmaData] = useState({});
-
+    const [displayMsg, setDisplayMsg] = useState(null);
     const handleChange = (event) => {
         setRegisterEnigmaData({
             ...registerEnigmaData,
@@ -16,19 +22,20 @@ export default function RegisterEnigma() {
         })
     }
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e, eventName) => {
         e.preventDefault()
-        console.log(registerEnigmaData)
-
-        // try {
-        //     await axios.post("/auth/register",  registerEnigmaData )
-        //     console.log(registerEnigmaData)
-        //     window.location = '/login'
-        // }
-        // catch(error){
-        //     console.log(error)
-        // }
-            
+        try {
+            await axios.post(`/eventRegistration/${eventName}/${participantId}`, registerEnigmaData )
+            setDisplayMsg(`Registered Successfully for ${eventName}`)
+            // this.setState({ displayMsg: `Registered Successfully for ${eventName}` })
+            alert(displayMsg,"bb")
+            // window.location = '/events'
+        }
+        catch(error){
+            setDisplayMsg(`${error.response.data} for ${eventName}`)
+            // this.setState({ displayMsg: `${error.response.data} for ${eventName}` })
+            alert(displayMsg, "jj")
+        }
     }
 
     return (
@@ -65,11 +72,15 @@ export default function RegisterEnigma() {
                                     onChange={handleChange}
                                 />
                             </div>
-                            
-                            <Popup trigger=
-                                {<button className="btn-modal btn-primary">Register</button>}>
+                            <button type="submit" className="btn btn-secondary" onClick={(event) => handleSubmit(event, "enigma")}>Register</button>
+                                
                                 <p>Thankyou for Registering!!</p>
-                            </Popup>
+                            {/* <Popup trigger=
+
+                                {<button type="submit" className="btn btn-secondary" onClick={(event) => handleSubmit(event, "enigma")}>Register</button>
+                                }>
+                                <p>Thankyou for Registering!!</p>
+                            </Popup> */}
                             <button type="reset" className="btn-modal btn-primary">Reset</button>
                             <p>Already registered for Enigma? <Link to="/login">Login!</Link></p>
                         </form>

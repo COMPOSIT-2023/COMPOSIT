@@ -16,11 +16,9 @@ export default function Signup() {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        console.log(signupData)
 
         try {
             await axios.post("/auth/register",  signupData )
-            console.log(signupData)
             window.location = '/login'
         }
         catch(error){

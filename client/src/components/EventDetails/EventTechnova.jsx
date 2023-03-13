@@ -91,9 +91,9 @@ class EventTechnova extends React.Component {
                                                         <p>Technical paper presentation event of any scientific work (original or of other scientists) in one of the following categories: </p>
 
                                                         <ul>
-                                                            <li><i className="icofont-wall-clock"></i> Electronic Materials and Nanotechnology, Computational Material Science</li>
-                                                            <li><i className="icofont-wall-clock"></i> Advanced Materials and Functional Materials Biomaterials</li>
-                                                            <li><i className="icofont-wall-clock"></i> Material Processes Physical, Extractive and Mechanical Metallurgy</li>
+                                                            <li><i className="icofont-wall-clock"></i> Electronic Materials and Nanotechnology/Computational Material Science</li>
+                                                            <li><i className="icofont-wall-clock"></i> Advanced Materials/Functional Materials/Energy Materials and Biomaterials</li>
+                                                            <li><i className="icofont-wall-clock"></i> Material Processes/Physical, Extractive and Mechanical Metallurgy</li>
                                                         </ul>
                                                     </div>
                                                 </Link>

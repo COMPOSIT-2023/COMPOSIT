@@ -88,7 +88,7 @@ class EventCasestudy extends React.Component {
                                                     <div className="schedule-info">
                                                         <h3>Case Study</h3>
 
-                                                        <p>A case study competition is one that challenges teams to analyze real-world business problems and develop innovative solutions. Participants will be required to use their analytical and creative skills to develop a strategic plan that analyzes and addresses the problem statement. The solutions will be presented to an accomplished panel of judges composed and the winning teams will receive exciting prizes. So, get your team together, register, and let's see how you can tackle real-world challenges with your problem-solving skills! </p>
+                                                        <p>A case study competition is one that challenges teams to analyze real-world business problems and develop innovative solutions. Participants will be required to use their analytical and creative skills to develop a strategic plan that analyzes and addresses the problem statement. The solutions will be presented to an accomplished panel of judges composed and decide the winning team. So, get your team together, register, and let's see how you can tackle real-world challenges with your problem-solving skills! </p>
 
                                                     </div>
                                                 </Link>

@@ -51,6 +51,10 @@ export default function RegisterCad() {
                                     required
                                 />
                             </div>
+                            <p class="marquee">
+                                <span>Enter the Participant's id of other team members (if any)</span>
+                            </p>
+                            <br />
                             <div className="form-group">
                                 <label>Member 2 Participant's Id</label>
                                 <input
@@ -59,13 +63,8 @@ export default function RegisterCad() {
                                     placeholder="Participant's Id"
                                     name="pid2"
                                     onChange={handleChange}
-                                    required
                                 />
                             </div>
-                            <p class="marquee">
-                                <span>Enter the Participant's id of other team members (if any)</span>
-                            </p>
-                            <br />
                             <div className="form-group">
                                 <label>Member 3 Participant's Id</label>
                                 <input

@@ -88,13 +88,13 @@ class EventCad extends React.Component {
                                                     <div className="schedule-info">
                                                         <h3>CAD</h3>
 
-                                                        <p>A non-technical online event. A “techtoon” can be any creative, visual art on topics related to the themes (listed above) in the form of sketches, memes, cartoons, comics, etc. based on the following themes: </p>
+                                                        <p>A materials based modeling event focussing on the aspect of failure analysis. The event aims to investigate what went wrong in engineering some of the crucial system structures and encourages participants to apply their engineering concepts of modeling and structural analysis to solve them</p>
 
-                                                        <ul>
+                                                        {/* <ul>
                                                             <li><i className="icofont-wall-clock"></i> Space technology</li><br />
                                                             <li><i className="icofont-wall-clock"></i> Science and Math</li><br />
                                                             <li><i className="icofont-wall-clock"></i> Enginnering</li>
-                                                        </ul>
+                                                        </ul> */}
                                                     </div>
                                                 </Link>
                                             </li>
@@ -112,8 +112,8 @@ class EventCad extends React.Component {
                                                         <h3>Participation Criteria</h3>
 
                                                         <ul>
-                                                            <li> Individual participation is allowed. </li>
-                                                            <li> All members should be students pursuing a B.Tech/ BSc./ Dual/ MTech/ MSc degree in any engineering college in India. </li>
+                                                            <li> Team participation of a maximum of three is expected. </li>
+                                                            <li> All members should be students pursuing a B.Tech/ BSc./ Dual/ MTech/ MSc degree in any engineering college in India.  </li>
                                                         </ul>
                                                     </div>
                                                 </Link>
@@ -126,7 +126,12 @@ class EventCad extends React.Component {
                                                     
                                                     <div className="schedule-info">
                                                         <h3>Rounds of the Event</h3>
-                                                        <p>The event will be online in which participants are expected to create and submit entries that depict the theme in a humorous and creative way through a google form within the deadline.</p>
+                                                        <p>The event will be conducted in 1 round</p>
+                                                        <ul>
+                                                            <li><b>Offline round:</b>
+                                                            <ul><li>PS will be released on-spot and participants will be given time to discuss and work on the PS. They will be presenting their solutions at the end of the round which will be judged by a panel of field experts. </li></ul>
+                                                            </li>
+                                                        </ul>
                                                     </div>
                                                 </Link>
                                             </li>
@@ -144,12 +149,8 @@ class EventCad extends React.Component {
                                                         <h3>Important Dates</h3>
 
                                                         <ul>
-                                                            <li><b>Abstract Submission Deadline:</b></li>
-                                                            <li><i className="icofont-wall-clock"></i>20th March 2023, 11:59 PM</li>
-                                                            <br></br>
-                                                            <br></br>
                                                             <li><b>Final presentation:</b></li>
-                                                            <li><i className="icofont-wall-clock"></i>31st March 2023, 11:59 PM</li>
+                                                            <li><i className="icofont-wall-clock"></i>1st April 2023</li>
                                                         </ul>
                                                     </div>
                                                 </Link>

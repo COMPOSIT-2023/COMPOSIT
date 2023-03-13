@@ -125,7 +125,7 @@ class EventTechtoon extends React.Component {
                                                     
                                                     <div className="schedule-info">
                                                         <h3>Rounds of the Event</h3>
-                                                        <p>The event will be online:</p>
+                                                        <p>The event will have only one round as follows:</p>
 
                                                         <ul>
                                                             <li><b>Online Submission:</b>

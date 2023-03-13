@@ -33,7 +33,7 @@ class Speakers extends React.Component {
                 <div className="col-lg-3 col-md-6 p-0">
                         <div className="single-speakers">
                             <img 
-                                src={require("../../assets/images/speakers1.jpg")} 
+                                src={require("../../assets/images/gouri1.jpeg")} 
                                 alt="speakers" 
                             />
 
@@ -43,7 +43,7 @@ class Speakers extends React.Component {
                             </div>
                             <ul>
                                 <li>
-                                    <a href="#" target="_blank" className="facebook">
+                                    <a href="https://www.facebook.com/gourivignesh.sjawalkar" target="_blank" className="facebook">
                                         <i className="icofont-facebook"></i>
                                     </a>
                                 </li>
@@ -53,12 +53,12 @@ class Speakers extends React.Component {
                                     </Link>
                                 </li> */}
                                 <li>
-                                    <a href="#" target="_blank" className="instagram">
-                                        <i className="icofont-instagram"></i>
+                                    <a href="mailto:gourivigneshjawalkar@gmail.com" target="_blank" className="twitter">
+                                        <i className="icofont-envelope"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank" className="linkedin">
+                                    <a href="https://www.linkedin.com/in/gouri-vignesh-jawalkar-626258200/" target="_blank" className="linkedin">
                                         <i className="icofont-linkedin"></i>
                                     </a>
                                 </li>
@@ -177,7 +177,7 @@ class Speakers extends React.Component {
                     <div className="col-lg-3 col-md-6 p-0">
                         <div className="single-speakers">
                             <img 
-                                src={require("../../assets/images/speakers1.jpg")} 
+                                src={require("../../assets/images/karabi.jpeg")} 
                                 alt="speakers" 
                             />
 
@@ -187,7 +187,7 @@ class Speakers extends React.Component {
                             </div>
                             <ul>
                                 <li>
-                                    <a href="#" target="_blank" className="facebook">
+                                    <a href="https://www.facebook.com/karabi.saha.501598" target="_blank" className="facebook">
                                         <i className="icofont-facebook"></i>
                                     </a>
                                 </li>
@@ -197,12 +197,12 @@ class Speakers extends React.Component {
                                     </Link>
                                 </li> */}
                                 <li>
-                                    <a href="#" target="_blank" className="instagram">
-                                        <i className="icofont-instagram"></i>
+                                    <a href="mailto:skarabi119@gmail.com" target="_blank" className="twitter">
+                                        <i className="icofont-envelope"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank" className="linkedin">
+                                    <a href="https://www.linkedin.com/in/karabisaha" target="_blank" className="linkedin">
                                         <i className="icofont-linkedin"></i>
                                     </a>
                                 </li>
@@ -249,7 +249,7 @@ class Speakers extends React.Component {
                     <div className="col-lg-3 col-md-6 p-0">
                         <div className="single-speakers">
                             <img 
-                                src={require("../../assets/images/speakers1.jpg")} 
+                                src={require("../../assets/images/priya1.jpeg")} 
                                 alt="speakers" 
                             />
 
@@ -269,12 +269,12 @@ class Speakers extends React.Component {
                                     </Link>
                                 </li> */}
                                 <li>
-                                    <a href="#" target="_blank" className="instagram">
-                                        <i className="icofont-instagram"></i>
+                                    <a href="mailto:Priya.iitkgp01@gmail.com" target="_blank" className="twitter">
+                                        <i className="icofont-envelope"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank" className="linkedin">
+                                    <a href="https://www.linkedin.com/in/priya-kumari-6554aa226" target="_blank" className="linkedin">
                                         <i className="icofont-linkedin"></i>
                                     </a>
                                 </li>
@@ -321,7 +321,7 @@ class Speakers extends React.Component {
                     <div className="col-lg-3 col-md-6 p-0">
                         <div className="single-speakers">
                             <img 
-                                src={require("../../assets/images/speakers1.jpg")} 
+                                src={require("../../assets/images/Ananay.jpg")} 
                                 alt="speakers" 
                             />
 
@@ -331,7 +331,7 @@ class Speakers extends React.Component {
                             </div>
                             <ul>
                                 <li>
-                                    <a href="#" target="_blank" className="facebook">
+                                    <a href="https://m.facebook.com/100056792605310/" target="_blank" className="facebook">
                                         <i className="icofont-facebook"></i>
                                     </a>
                                 </li>
@@ -341,12 +341,12 @@ class Speakers extends React.Component {
                                     </Link>
                                 </li> */}
                                 <li>
-                                    <a href="#" target="_blank" className="instagram">
-                                        <i className="icofont-instagram"></i>
+                                    <a href="mailto:proficientbraniac@gmail.com" target="_blank" className="twitter">
+                                        <i className="icofont-envelope"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank" className="linkedin">
+                                    <a href="https://www.linkedin.com/in/ananaysingh" target="_blank" className="linkedin">
                                         <i className="icofont-linkedin"></i>
                                     </a>
                                 </li>
@@ -429,7 +429,7 @@ class Speakers extends React.Component {
                     <div className="col-lg-3 col-md-6 p-0">
                         <div className="single-speakers">
                             <img 
-                                src={require("../../assets/images/speakers1.jpg")} 
+                                src={require("../../assets/images/Nitishkumar.jpg")} 
                                 alt="speakers" 
                             />
 
@@ -439,7 +439,7 @@ class Speakers extends React.Component {
                             </div>
                             <ul>
                                 <li>
-                                    <a href="#" target="_blank" className="facebook">
+                                    <a href="https://www.facebook.com/profile.php?id=100084202765673&mibextid=ZbWKwL" target="_blank" className="facebook">
                                         <i className="icofont-facebook"></i>
                                     </a>
                                 </li>
@@ -449,12 +449,12 @@ class Speakers extends React.Component {
                                     </Link>
                                 </li> */}
                                 <li>
-                                    <a href="#" target="_blank" className="instagram">
-                                        <i className="icofont-instagram"></i>
+                                    <a href="#" target="_blank" className="twitter">
+                                        <i className="icofont-envelope"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank" className="linkedin">
+                                    <a href="https://www.linkedin.com/in/nitish-kumar-92bb3822b" target="_blank" className="linkedin">
                                         <i className="icofont-linkedin"></i>
                                     </a>
                                 </li>
@@ -465,7 +465,7 @@ class Speakers extends React.Component {
                     <div className="col-lg-3 col-md-6 p-0">
                         <div className="single-speakers">
                             <img 
-                                src={require("../../assets/images/speakers1.jpg")} 
+                                src={require("../../assets/images/harilalam1.jpg")} 
                                 alt="speakers" 
                             />
 
@@ -475,7 +475,7 @@ class Speakers extends React.Component {
                             </div>
                             <ul>
                                 <li>
-                                    <a href="#" target="_blank" className="facebook">
+                                    <a href="https://www.facebook.com/hari.p.l.351" target="_blank" className="facebook">
                                         <i className="icofont-facebook"></i>
                                     </a>
                                 </li>
@@ -485,12 +485,12 @@ class Speakers extends React.Component {
                                     </Link>
                                 </li> */}
                                 <li>
-                                    <a href="#" target="_blank" className="instagram">
-                                        <i className="icofont-instagram"></i>
+                                    <a href="mailto:lhariprasad21@gmail.com" target="_blank" className="twitter">
+                                        <i className="icofont-envelope"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank" className="linkedin">
+                                    <a href="https://www.linkedin.com/in/lalam-hari-prasad-b93820217/" target="_blank" className="linkedin">
                                         <i className="icofont-linkedin"></i>
                                     </a>
                                 </li>

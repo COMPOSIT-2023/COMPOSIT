@@ -1706,6 +1706,10 @@ Speakers CSS
   overflow: hidden;
   position: relative;
 }
+.single-speakers img{
+  aspect-ratio: 1;
+  object-fit: cover;
+}
 
 .single-speakers::before {
   content: "";

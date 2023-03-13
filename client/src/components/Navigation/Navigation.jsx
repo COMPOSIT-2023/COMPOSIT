@@ -132,38 +132,37 @@ class Navigation extends React.Component {
                                         </NavLink>
                                     </li> */}
 
-                                    
-                                    <li className="nav-item">
-                                        <NavLink 
-                                            to="/events" 
-                                            className="nav-link" 
-                                            onClick={this.toggleNavbar}
-                                        >
-                                            Events
-                                        </NavLink>
-                                    </li>
+                  <li className="nav-item">
+                    <NavLink
+                      to="/events"
+                      className="nav-link"
+                      onClick={this.toggleNavbar}
+                    >
+                      Events
+                    </NavLink>
+                  </li>
 
-                                    <li className="nav-item">
-                                        <NavLink 
-                                            to="/sponsors" 
-                                            className="nav-link" 
-                                            onClick={this.toggleNavbar}
-                                        >
-                                            Sponsors
-                                        </NavLink>
-                                    </li>
+                  <li className="nav-item">
+                    <NavLink
+                      to="/sponsors"
+                      className="nav-link"
+                      onClick={this.toggleNavbar}
+                    >
+                      Sponsors
+                    </NavLink>
+                  </li>
 
-                                    <li className="nav-item">
-                                        <NavLink 
-                                            to="/contact" 
-                                            className="nav-link" 
-                                            onClick={this.toggleNavbar}
-                                        >
-                                            Contact
-                                        </NavLink>
-                                    </li>
-                                   
-                                    {/* {<li className="nav-item">
+                  <li className="nav-item">
+                    <NavLink
+                      to="/contact"
+                      className="nav-link"
+                      onClick={this.toggleNavbar}
+                    >
+                      Contact
+                    </NavLink>
+                  </li>
+
+                  {/* {<li className="nav-item">
                                         <NavLink 
                                             to="/login" 
                                             className="nav-link" 
@@ -202,7 +201,7 @@ class Navigation extends React.Component {
                                         </NavLink>
                                     </li> */}
 
-                                    {/* <li className="nav-item">
+                  {/* <li className="nav-item">
                                         <NavLink 
                                             to="/signup" 
                                             className="nav-link" 
@@ -212,24 +211,45 @@ class Navigation extends React.Component {
                                         </NavLink>
                                     </li> */}
 
-                                    <li className="nav-item">
-                                        <NavLink 
-                                            to="/signup" 
-                                            className="nav-link" 
-                                            onClick={this.toggleNavbar}
-                                        >
-                                            Signup
-                                        </NavLink>
-                                    </li>
-                                </ul>
+                  {
+                    <li className="nav-item">
+                      {this.userData ? (
+                        <NavLink
+                          to="/profile"
+                          className="nav-link"
+                          onClick={this.toggleNavbar}
+                        >
+                          Profile
+                        </NavLink>
+                      ) : (
+                        <NavLink
+                          to="/signup"
+                          className="nav-link"
+                          onClick={this.toggleNavbar}
+                        >
+                          SignUp
+                        </NavLink>
+                      )}
+                    </li>
+                  }
 
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </header>
-        );
-    }
+                  {/* <li className="nav-item">
+                    <NavLink
+                      to="/signup"
+                      className="nav-link"
+                      onClick={this.toggleNavbar}
+                    >
+                      Signup
+                    </NavLink>
+                  </li> */}
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    );
+  }
 }
 
 export default withRouter(Navigation);

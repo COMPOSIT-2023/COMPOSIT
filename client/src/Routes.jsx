@@ -14,6 +14,7 @@ import Faq from "./components/pages/Faq";
 import Contact from "./components/pages/Contact";
 import Sponsor from "./components/pages/Sponsor";
 import Profile from "./components/pages/Profile";
+import EditProfile from "./components/pages/EditProfile";
 import EventCadPage from "./components/pages/EventDetails/EventCad";
 import EventCasestudyPage from "./components/pages/EventDetails/EventCasestudy";
 import EventMetallomaniaPage from "./components/pages/EventDetails/EventMetallomania";
@@ -80,6 +81,7 @@ const AppRouter = () => {
                 <Route path="/contact" exact component={Contact} />
                 <Route path="/sponsors" exact component={Sponsor} />
                 <Route path="/profile" exact component={Profile} />
+                <Route path="/edit-profile" exact component={EditProfile} />
                 <Route path="/error-404" exact component={NotFound} />
                 <Route component={NotFound} />
             </Switch>

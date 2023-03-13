@@ -1,75 +1,35 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios'
- 
-class Profile extends React.Component {
+import axios from "axios";
 
-    render(){
-        return (
-            <section className="login-area">
-                <div className="d-table">
-                    <div className="d-table-cell">
-                        <div className="login-form">
-                            
-                            <Link to="/" className="btn-modal btn-primary">&#xab; Back to Home</Link>
-                            <h3>Your Profile</h3>
-                            
+export default function Profile() {
+    
+    const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
+    return (
+        <section className="signup-area">
+            <div className="d-table">
+                <div className="d-table-cell">
+                    <div className="signup-form">
+                        <Link to='/' className="btn-modal btn-primary">&#xab; Back to Home</Link>
+                        <h3>Profile Information</h3>
 
-                            {/* <form onSubmit={this.onSubmit}> */}
-                                <div className="form-group">
-                                    <p>Name: {this.props.user.name}</p>
-                                </div>
+                        <ul>
+                            <li className='form-group form-control'><strong>Name:</strong> {userData.name}</li>
+                            <li className='form-group form-control'><strong>Email:</strong> {userData.email}</li>
+                            <li className='form-group form-control'><strong>Date of Birth:</strong> {userData.dob}</li>
+                            <li className='form-group form-control'><strong>Institute ID / Roll No.:</strong> {userData.rollno}</li>
+                            <li className='form-group form-control'><strong>Department:</strong> {userData.department}</li>
+                            <li className='form-group form-control'><strong>Institution:</strong> {userData.institution}</li>
+                            <li className='form-group form-control'><strong>Contact:</strong> {userData.contact}</li>
+                            <li className='form-group form-control'><strong>Address:</strong> {userData.address}</li>
+                            <li className='form-group form-control'><strong>Year of Graduation:</strong> {userData.gradyear}</li>
+                            <li className='form-group form-control'><strong>Gender:</strong> {userData.gender}</li>
+                        </ul>
 
-                                <div className="form-group">
-                                    <p>Email: {this.props.user.email}</p>
-                                </div>
-
-                                <div className="form-group">
-                                    <p>Date of Birth: {this.props.user.dob}</p>
-                                </div>
-
-                                <div className="form-group">
-                                    <p>Institute ID: {this.props.user.rollno}</p>
-                                </div>
-
-                                <div className="form-group">
-                                    <p>Department: {this.props.user.department}</p>
-                                </div>
-
-                                <div className="form-group">
-                                    <p>Institution: {this.props.user.institution}</p>
-                                </div>
-
-                                <div className="form-group">
-                                    <p>Contact: {this.props.user.phone}</p>
-                                </div>
-
-                                <div className="form-group">
-                                    <p>Address: {this.props.user.address}</p>
-                                </div>
-
-                                <div className="form-group">
-                                    <p>Year of Graduation: {this.props.user.gradyear}</p>
-                                </div>
-
-                                <div className="form-group">
-                                    <p>Gender: {this.props.user.gender}</p>
-                                </div>
-
-                                {/* <button type="submit" className="btn-modal btn-primary" onClick={this.handleClick}>Login</button>
-                                {this.state.errorr && <p>{this.state.errorr}</p>}
-                                <p>
-                                    <Link to="/signup" className="pull-left">Create a new account</Link>
-                                    
-                                    <Link to="#" className="pull-right">Forgot your password?</Link>
-                                </p> */}
-                            {/* </form> */}
-                        </div>
+                        <Link to='/edit-profile' className="btn btn-primary">Edit Profile</Link>
                     </div>
                 </div>
-            </section>
-        );
-    }
+            </div>
+        </section>
+    )
 }
- 
-export default Profile;

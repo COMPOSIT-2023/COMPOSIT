@@ -165,13 +165,23 @@ class Navigation extends React.Component {
                                         </NavLink>
                                     </li> */}
 
-                                    <li className="nav-item">
+                                    {/* <li className="nav-item">
                                         <NavLink 
                                             to="/signup" 
                                             className="nav-link" 
                                             onClick={this.toggleNavbar}
                                         >
                                             {jwtToken}
+                                        </NavLink>
+                                    </li> */}
+
+                                    <li className="nav-item">
+                                        <NavLink 
+                                            to="/signup" 
+                                            className="nav-link" 
+                                            onClick={this.toggleNavbar}
+                                        >
+                                            Signup
                                         </NavLink>
                                     </li>
                                 </ul>

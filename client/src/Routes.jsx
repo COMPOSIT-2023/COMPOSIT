@@ -24,7 +24,16 @@ import EventMetaclixPage from "./components/pages/EventDetails/EventMetaclix";
 import EventSchoolquizPage from "./components/pages/EventDetails/EventSchoolquiz";
 import EventTechnovaPage from "./components/pages/EventDetails/EventTechnova";
 import EventTechtoonPage from "./components/pages/EventDetails/EventTechtoon";
-
+import RegisterMetaclix from "./components/pages/EventRegistration/RegisterMetaclix";
+import RegisterTechtoon from "./components/pages/EventRegistration/RegisterTechtoon";
+import RegisterMetallomania from "./components/pages/EventRegistration/RegisterMetallomania";
+import RegisterTechnova from "./components/pages/EventRegistration/RegisterTechnova";
+import RegisterIdeathon from "./components/pages/EventRegistration/RegisterIdeathon";
+import RegisterEnigma from "./components/pages/EventRegistration/RegisterEnigma";
+import RegisterExcavate from "./components/pages/EventRegistration/RegisterExcavate";
+import RegisterSchoolquiz from "./components/pages/EventRegistration/RegisterSchoolquiz";
+import RegisterCad from "./components/pages/EventRegistration/RegisterCad";
+import RegisterCasestudy from "./components/pages/EventRegistration/RegisterCasestudy";
 
 // Conditionally render Navigation
 const renderNavigation = () => {
@@ -51,6 +60,16 @@ const AppRouter = () => {
                 <Route path="/event_schoolquiz" exact component={EventSchoolquizPage} />
                 <Route path="/event_technova" exact component={EventTechnovaPage} />
                 <Route path="/event_techtoon" exact component={EventTechtoonPage} />
+                <Route path="/register_metaclix" exact component={RegisterMetaclix} />
+                <Route path="/register_techtoon" exact component={RegisterTechtoon} />
+                <Route path="/register_metallomania" exact component={RegisterMetallomania} />
+                <Route path="/register_technova" exact component={RegisterTechnova} />
+                <Route path="/register_ideathon" exact component={RegisterIdeathon} />
+                <Route path="/register_enigma" exact component={RegisterEnigma} />
+                <Route path="/register_excavate" exact component={RegisterExcavate} />
+                <Route path="/register_schoolquiz" exact component={RegisterSchoolquiz} />
+                <Route path="/register_cad" exact component={RegisterCad} />
+                <Route path="/register_casestudy" exact component={RegisterCasestudy} />
                 <Route path="/ourteam" exact component={OurTeam} />
                 <Route path="/schedule" exact component={Schedule} />
                 <Route path="/login" exact component={Login} />

@@ -125,6 +125,7 @@ export default function Signup() {
                                     className="form-control"
                                     name="contact"
                                     placeholder="Contact Number"
+                                    maxlength="10"  max="9999999999" min="0" step="1" pattern="[0-9]{10}"
 
 
                                     onChange={handleChange}
@@ -146,7 +147,7 @@ export default function Signup() {
                             <div className="form-group">
                                 <label>Year of Graduation</label>
                                 <input
-                                    type="year"
+                                    type="number"
                                     className="form-control"
                                     placeholder="Year of Graduation"
                                     name="gradyear"

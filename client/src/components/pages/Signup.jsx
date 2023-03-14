@@ -1,6 +1,4 @@
 import React, { useContext, useState } from 'react';
-import Popup from 'reactjs-popup';
-import MyPopup from './Popup/MyPopup';
 import { Link } from 'react-router-dom';
 import axios from "axios"
 import './Popup/PopupMsg.css'
@@ -16,6 +14,7 @@ export default function Signup() {
     }
     function closeForm() {
         document.getElementById("popupForm").style.display = "none";
+        setErrorr(null)
     }
     window.onclick = function (event) {
         let modal = document.getElementById('loginPopup');
@@ -153,13 +152,12 @@ export default function Signup() {
 
                                 <label>Contact</label>
                                 <input
-                                    type="text"
+                                    type="number"
                                     className="form-control"
                                     name="contact"
                                     placeholder="Contact Number"
-                                    maxlength="10" max="9999999999" min="0" step="1" pattern="[0-9]{10}"
-
-
+                                    // maxlength="10" max="9999999999" min="0" step="1" pattern="[0-9]{10}"
+                                   
                                     onChange={handleChange}
                                 />
                             </div>
@@ -179,7 +177,7 @@ export default function Signup() {
                             <div className="form-group">
                                 <label>Year of Graduation</label>
                                 <input
-                                    type="text"
+                                    type="number"
                                     className="form-control"
                                     placeholder="Year of Graduation"
                                     name="gradyear"
@@ -202,7 +200,7 @@ export default function Signup() {
                                 </select>
                             </div>
                             <div className="form-group">
-                                <label>Referral Id</label>
+                                <label>Referral Id (if given by Student's Ambassador)</label>
                                 <input
                                     type="text"
                                     className="form-control"
@@ -215,8 +213,8 @@ export default function Signup() {
                             <button type="submit" className="btn-modal btn-primary" onClick={handleSubmit}>Signup</button>
                             <div className="loginPopup" id='loginPopup'>
                                 <div className="formPopup" id="popupForm">
-                                    {errorr ? <h2>{errorr}</h2> : <h2>Dear ${signupData.name}. You have Successfully Registered for COMPOSIT 2023. Your participation id is COMP23${signupData.contact}</h2>}
-
+                                    {errorr ? <h2>{errorr}</h2> : <h2>Dear {signupData.name}. You have Successfully Registered for COMPOSIT 2023. Your participation id is COMP23{signupData.contact}</h2>}
+                                    <Link to="/login" className='/login'>Login!</Link>
                                 </div>
                             </div>
                             <p>Already a registered user? <Link to="/login">Login!</Link></p>

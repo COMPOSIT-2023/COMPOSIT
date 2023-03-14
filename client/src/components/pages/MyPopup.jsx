@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Popup from 'reactjs-popup';
-import MyPopup from './Popup/MyPopup';
+// import MyPopup from './Popup/MyPopup';
 
 const OpenPopupButton = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -71,9 +71,9 @@ const AppRouter = () => {
                 <Route path="/register_ideathon" exact component={RegisterIdeathon} />
                 <Route path="/register_enigma" exact component={RegisterEnigma} />
                 <Route path="/register_excavate" exact component={RegisterExcavate} />
-                <Route path="/register_schoolquiz" exact component={RegisterSchoolquiz} />
+                <Route path="/register_schoolQuiz" exact component={RegisterSchoolquiz} />
                 <Route path="/register_cad" exact component={RegisterCad} />
-                <Route path="/register_casestudy" exact component={RegisterCasestudy} />
+                <Route path="/register_caseStudy" exact component={RegisterCasestudy} />
                 <Route path="/ourteam" exact component={OurTeam} />
                 <Route path="/schedule" exact component={Schedule} />
                 <Route path="/login" exact component={Login} />

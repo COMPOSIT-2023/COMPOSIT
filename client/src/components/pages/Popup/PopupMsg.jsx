@@ -12,7 +12,7 @@ const PopupMsg = () => {
       window.onclick = function (event) {
         let modal = document.getElementById('loginPopup');
         let popupBtn = document.getElementById('popupBtn');
-        if (event.target != modal) {
+        if (event.target !== modal) {
           closeForm();
         }
         if (event.target === popupBtn) {
@@ -27,7 +27,7 @@ const PopupMsg = () => {
             <div className="loginPopup" id='loginPopup'>
                 <div className="formPopup" id="popupForm">
                     <h2>Error</h2>
-                    {/* <form action="/action_page.php" className="formContainer">
+                    <form action="/action_page.php" className="formContainer">
                         <h2>Please Log in</h2>
                         <label for="email">
                             <strong>E-mail</strong>
@@ -39,7 +39,7 @@ const PopupMsg = () => {
                         <input type="password" id="psw" placeholder="Your Password" name="psw" required />
                         <button type="submit" className="btn">Log in</button>
                         <button type="button" className="btn cancel" onClick={closeForm}>Close</button>
-                    </form> */}
+                    </form>
                 </div>
             </div>
         </div>

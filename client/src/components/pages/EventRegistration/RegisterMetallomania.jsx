@@ -31,20 +31,20 @@ export default function RegisterMetallomania() {
             [event.target.name]: event.target.value,
         })
     }
-    const onClickHandler = async (e, source) => {
+    const onClickHandler = async (e, eventName) => {
         e.preventDefault()
         try {
-            await axios.post(`/eventRegistration/${source}/${participantId}`, participantId)
-            setState({ displayMsg: `Dear ${userData.name}. You have Successfully registered for ${source}.` })
+            await axios.post(`/eventRegistration/${eventName}/${participantId}`, participantId)
+            setState({ displayMsg: `Dear ${userData.name}. You have Successfully registered for ${eventName}.` })
             openForm()
         }
         catch (error) {
             if (error.response.data.message.split(" ")[0] === "E11000") {
-                setState({ displayMsg: `Dear ${userData.name}. You are already registered for ${source}` })
+                setState({ displayMsg: `Dear ${userData.name}. You are already registered for ${eventName}` })
                 openForm()
             }
             else {
-                setState({ displayMsg: `${error.response.data.message} for ${source}` })
+                setState({ displayMsg: `${error.response.data.message} for ${eventName}` })
                 openForm()
             }
         }
@@ -71,16 +71,16 @@ export default function RegisterMetallomania() {
                                 />
                             </div>
                             <button type="submit" className="btn-modal btn-primary" onClick={(event) => onClickHandler(event, "metallomania")}>Register</button>
-                            {state && <p>{state.displayMsg}</p>}
-                            <div className="loginPopup" id='loginPopup'>
-                                <div className="formPopup" id="popupForm">
-                                    <h2>{state.displayMsg}</h2>
-                                    <Link to="/events" className='popupTextLink'>Register for other events.</Link>
-                                </div>
-                            </div>
+                            <button type="reset" className="btn-modal btn-primary">Reset</button>
                             <p>Already registered for Metallomania? <Link to="/events">Register for other events.</Link></p>
                         </form>
                     </div>
+                </div>
+            </div>
+            <div className="loginPopup" id='loginPopup'>
+                <div className="formPopup" id="popupForm">
+                    <h2>{state.displayMsg}</h2>
+                    <Link to="/events" className='popupTextLink'>Register for other events.</Link>
                 </div>
             </div>
         </section>

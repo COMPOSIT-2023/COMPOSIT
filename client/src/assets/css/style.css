@@ -3713,6 +3713,11 @@ Signup CSS
   font-size: 13px;
 }
 
+.signup-area .signup-form form .profile-page .form-control {
+  background: transparent;
+  font-size: 17px;
+}
+
 .signup-area .signup-form .btn {
   display: block;
   width: 100%;

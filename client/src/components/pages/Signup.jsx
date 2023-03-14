@@ -168,6 +168,17 @@ export default function Signup() {
                                 </select>
                             </div>
 
+                            <div className="form-group">
+                                <label>Campus Ambassador ID</label>
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    placeholder="Enter Referral ID, if applicable"
+                                    name="referral"
+                                    onChange={handleChange}
+                                />
+                            </div>
+
                             <button type="submit" className="btn-modal btn-primary" onClick={handleSubmit}>Signup</button>
                             <p>Already a registered user? <Link to="/login">Login!</Link></p>
                         </form>

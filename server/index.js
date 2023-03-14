@@ -6,6 +6,7 @@ import usersRoute from "./routes/users.js";
 import eventRegistrationRoute from "./routes/eventRegistration.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
+const PORT = process.env.PORT || 8800;
 
 const app = express();
 
@@ -44,7 +45,7 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(8800, () => {
+app.listen(PORT, () => {
     connect()
     console.log("Connected to backend!!")
 })

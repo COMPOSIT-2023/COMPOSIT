@@ -45,6 +45,18 @@ Default CSS
 :root {
   scroll-behavior: initial;
 }
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #610094;
+}
+::-webkit-scrollbar-thumb {
+  background: #efa506;
+}
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #610094;
+} */
 
 body {
   font-family: "Poppins", sans-serif;

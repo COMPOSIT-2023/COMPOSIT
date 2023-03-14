@@ -9,8 +9,6 @@ import { v4 } from 'uuid';
 
 export const register = async (req, res, next) => {
   try {
-    console.log("e1")
-    // console.log(req.body)
     const salt = bcrypt.genSaltSync(10);
     const hash = bcrypt.hashSync(req.body.password, salt);
 
@@ -18,14 +16,8 @@ export const register = async (req, res, next) => {
       ...req.body,
       password: hash,
     });
-    // console.log(newUser,"serveruser")
-    console.log("e2")
     await newUser.save();
-    console.log("e3")
     const user = await User.findOne({ email: req.body.email });
-    console.log("e4")
-    // const rId = user.__v;
-    // console.log(rId)
 
     // mailing
     const transporter = nodemailer.createTransport({
@@ -59,8 +51,6 @@ export const register = async (req, res, next) => {
     console.log(err)
     next(err);
     // res.status(500).send(err);
-    console.log('Error is here')
-    // next(err);
   }
 };
 export const login = async (req, res, next) => {
@@ -74,7 +64,7 @@ export const login = async (req, res, next) => {
       user.password
     );
     if (!isPasswordCorrect)
-      return next(createError(400, "Wrong password or eamil!"));
+      return next(createError(400, "Wrong password!"));
 
     const token = jwt.sign(
       { id: user._id },

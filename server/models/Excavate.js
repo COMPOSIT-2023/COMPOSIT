@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-const IdeathonSchema = new mongoose.Schema(
+const ExcavateSchema = new mongoose.Schema(
   {
     individualPid: {
       type: [String],
@@ -9,4 +9,4 @@ const IdeathonSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-export default mongoose.model("Ideathon", IdeathonSchema);
+export default mongoose.model("Excavate", ExcavateSchema);

@@ -1,25 +1,29 @@
 import express from "express";
 import {
-  registerUser,
-  deregisterUser,
   registerMetaclix,
   registerMetallomania,
-  registerEnigma
+  registerTechtoon,
+  registerEnigma,
+  registerSchoolQuiz,
+  registerCad,
+  registerCaseStudy,
+  registerExcavate,
+  registerIdeathon,
+  registerTechnova
 } from "../controllers/eventRegistration.js";
 import { verifyToken, verifyUser } from "../utils/verifyToken.js";
 
 const router = express.Router();
 
-// EVENT REGISTRATION
-router.post("/register", verifyUser, registerUser)
-// router.post("/technova/:id", verifyUser, registerTechnova)
 router.post("/metaclix/:id", verifyUser, registerMetaclix)
 router.post("/metallomania/:id", verifyUser, registerMetallomania)
+router.post("/techtoon/:id", verifyUser, registerTechtoon)
 router.post("/enigma/:id", verifyUser, registerEnigma)
-//DELETE
-router.delete("/:id", verifyUser, deregisterUser);
-
-//GET
-// router.get("/:id", verifyUser, getMyRegistration);
+router.post("/schoolQuiz/:id", verifyUser, registerSchoolQuiz)
+router.post("/cad/:id", verifyUser, registerCad)
+router.post("/caseStudy/:id", verifyUser, registerCaseStudy)
+router.post("/excavate/:id", verifyUser, registerExcavate)
+router.post("/ideathon/:id", verifyUser, registerIdeathon)
+router.post("/technova/:id", verifyUser, registerTechnova)
 
 export default router;

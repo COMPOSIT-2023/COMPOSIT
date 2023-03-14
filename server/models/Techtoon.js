@@ -4,6 +4,7 @@ const TechtoonSchema = new mongoose.Schema(
     participantId: {
       type: String,
       required: true,
+      unique: true,
     },
   },
   { timestamps: true }

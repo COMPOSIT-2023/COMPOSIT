@@ -6,11 +6,10 @@ const EnigmaSchema = new mongoose.Schema(
             required: true,
             unique: true,
         },
-        // pid2: {
-        //     type: String,
-        //     required: true,
-        //     unique: true,
-        // },
+        pid2: {
+            type: String,
+            unique: true,
+        },
     },
     { timestamps: true }
 );

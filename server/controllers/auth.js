@@ -9,7 +9,8 @@ import { v4 } from 'uuid';
 
 export const register = async (req, res, next) => {
   try {
-    console.log(req.body)
+    console.log("e1")
+    // console.log(req.body)
     const salt = bcrypt.genSaltSync(10);
     const hash = bcrypt.hashSync(req.body.password, salt);
 
@@ -17,9 +18,12 @@ export const register = async (req, res, next) => {
       ...req.body,
       password: hash,
     });
-
+    // console.log(newUser,"serveruser")
+    console.log("e2")
     await newUser.save();
+    console.log("e3")
     const user = await User.findOne({ email: req.body.email });
+    console.log("e4")
     // const rId = user.__v;
     // console.log(rId)
 
@@ -53,7 +57,8 @@ export const register = async (req, res, next) => {
     // res.status(200).send("User has been created.");
   } catch (err) {
     console.log(err)
-    res.status(500).send(err);
+    next(err);
+    // res.status(500).send(err);
     console.log('Error is here')
     // next(err);
   }

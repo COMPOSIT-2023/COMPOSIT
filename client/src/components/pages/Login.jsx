@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios'
  
@@ -12,21 +12,23 @@ class Login extends React.Component {
       userData: null,
   };
   }
+  // registeredData = JSON.parse(localStorage.getItem("COMPuser"))
+  
   handleClick = async (e) => {
+    // console.log(localStorage.getItem("COMPuser"))
+    // console.log(registeredData)
     e.preventDefault();
     try {
       const res = await axios.post("/auth/login", this.state);
-    //   console.log(res.data.details);
-      const a = res.data.details;
-      console.log(a)
-      localStorage.setItem("COMPOSITuser", JSON.stringify(a));
-      this.setState({ errorr: "Login Successful"+a._id })
-    //   this.setState({ userData: a._id })
-      // this.setState({ errorr: err.response.data.message })
+      const compUser = res.data.details;
+      localStorage.setItem("COMPOSITuser", JSON.stringify(compUser));
+      this.setState({ errorr: "Login Successful"+compUser._id })
       console.log("logged in")
-      const b = JSON.parse(localStorage.getItem("COMPOSITuser"))
-      console.log(b)
-      window.location = `/events/${a._id}`
+      const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
+
+      console.log(userData)
+    //   window.location = `/events/${compUser._id}`
+    window.location = `/events`
     } catch (err) {
       this.setState({ errorr: err.response.data.message })
       console.log(err.response.data.message, "error")
@@ -39,15 +41,19 @@ class Login extends React.Component {
     // }
 
     render(){
-        
         return (
             <section className="login-area">
                 <div className="d-table">
                     <div className="d-table-cell">
                         <div className="login-form">
-                            
                             <Link to="/" className="btn-modal btn-primary">&#xab; Back to Home</Link>
-                            <h3>Welcome Back!</h3>
+                            <h3>Welcome Back!{this.registeredData}</h3>
+                              {/* {
+                              this.registeredData ? <h3>Welcome {this.registeredData}</h3>
+                              :
+                              <h3>Welcome Back!</h3>
+                            } */}
+                            
                             
 
                             <form onSubmit={this.onSubmit}>
@@ -74,6 +80,7 @@ class Login extends React.Component {
                                 </div>
 
                                 <button type="submit" className="btn-modal btn-primary" onClick={this.handleClick}>Login</button>
+                                
                                 {this.state.errorr && <p>{this.state.errorr}</p>}
                                 {/* <p>pp</p> */}
                             

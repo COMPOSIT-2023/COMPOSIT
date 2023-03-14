@@ -1,36 +1,57 @@
-// import React from 'react';
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from "axios"
-import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
+import '../Popup/PopupMsg.css'
 
 export default function RegisterMetaclix() {
-
+    const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
+    const participantId = userData._id
     const [registerMetaclixData, setRegisterMetaclixData] = useState({});
+    const [state, setState] = useState({})
 
+    function openForm() {
+        document.getElementById("popupForm").style.display = "block";
+    }
+    function closeForm() {
+        document.getElementById("popupForm").style.display = "none";
+    }
+    window.onclick = function (event) {
+        let modal = document.getElementById('loginPopup');
+        let popupBtn = document.getElementById('popupBtn');
+        if (event.target !== modal) {
+            closeForm();
+        }
+        if (event.target === popupBtn) {
+            openForm();
+        }
+    }
     const handleChange = (event) => {
         setRegisterMetaclixData({
             ...registerMetaclixData,
             [event.target.name]: event.target.value,
         })
     }
-
-    const handleSubmit = async (e) => {
+    const onClickHandler = async (e, source) => {
         e.preventDefault()
-        console.log(registerMetaclixData)
-
-        // try {
-        //     await axios.post("/auth/register",  registerTechnovaData )
-        //     console.log(registerTechnovaData)
-        //     window.location = '/login'
-        // }
-        // catch(error){
-        //     console.log(error)
-        // }
-            
-    }
-
+        try {
+            await axios.post(`/eventRegistration/${source}/${participantId}`, participantId)
+            console.log(source, "nmv")
+            setState({ displayMsg: `Dear ${userData.name}. You have Successfully registered for ${source}.` })
+            openForm()
+        }
+        catch (error) {
+            if (error.response.data.message.split(" ")[0] === "E11000") {
+                console.log("errrrrrrrrrr in if")
+                setState({ displayMsg: `Dear ${userData.name}. You are already registered for ${source}` })
+                openForm()
+            }
+            else {
+                console.log("in else")
+                setState({ displayMsg: `${error.response.data.message} for ${source}` })
+                openForm()
+            }
+        }
+    };
     return (
         <section className="signup-area">
             <div className="d-table">
@@ -38,7 +59,6 @@ export default function RegisterMetaclix() {
                     <div className="signup-form">
                         <Link to="/" className="btn-modal btn-primary">&#xab; Back to Home</Link>
                         <h3>Register for Metaclix</h3>
-
                         <form>
                             <div className="form-group">
                                 <label>Participant's Id</label>
@@ -46,19 +66,22 @@ export default function RegisterMetaclix() {
                                     type="text"
                                     className="form-control"
                                     placeholder="Participant's Id"
+                                    value={userData._id}
                                     name="pid1"
                                     onChange={handleChange}
                                     required
+                                    disabled
                                 />
                             </div>
-
-                            
-                            <Popup trigger=
-                                {<button className="btn-modal btn-primary">Register</button>}>
-                                <p>Thankyou for Registering!!</p>
-                            </Popup>
-                            <button type="reset" className="btn-modal btn-primary">Reset</button>
-                            <p>Already registered for Metaclix? <Link to="/login">Login!</Link></p>
+                            <button type="submit" className="btn-modal btn-primary" onClick={(event) => onClickHandler(event, "metaclix")}>Register</button>
+                            {state && <p>{state.displayMsg}</p>}
+                            <div className="loginPopup" id='loginPopup'>
+                                <div className="formPopup" id="popupForm">
+                                    <h2>{state.displayMsg}</h2>
+                                    <Link to="/events" className='popupTextLink'>Register for other events.</Link>
+                                </div>
+                            </div>
+                            <p>Already registered for Metaclix? <Link to="/events">Register for other events.</Link></p>
                         </form>
                     </div>
                 </div>

@@ -1,12 +1,32 @@
-// import React from 'react';
 import React, { useContext, useState } from 'react';
+import Popup from 'reactjs-popup';
+import MyPopup from './Popup/MyPopup';
 import { Link } from 'react-router-dom';
 import axios from "axios"
+import './Popup/PopupMsg.css'
+// import PopupMsg from '../Popup/PopupMsg'
 
 export default function Signup() {
 
     const [signupData, setSignupData] = useState({});
-
+    const [errorr, setErrorr] = useState(null);
+    const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
+    function openForm() {
+        document.getElementById("popupForm").style.display = "block";
+    }
+    function closeForm() {
+        document.getElementById("popupForm").style.display = "none";
+    }
+    window.onclick = function (event) {
+        let modal = document.getElementById('loginPopup');
+        let popupBtn = document.getElementById('popupBtn');
+        if (event.target !== modal) {
+            closeForm();
+        }
+        if (event.target === popupBtn) {
+            openForm();
+        }
+    }
     const handleChange = (event) => {
         setSignupData({
             ...signupData,
@@ -18,14 +38,28 @@ export default function Signup() {
         e.preventDefault()
 
         try {
-            await axios.post("/auth/register",  signupData )
-            window.location = '/login'
+            await axios.post("/auth/register", signupData)
+            // const res = await axios.post("/auth/login", this.state);
+            // const compUser = signupData.name;
+            // localStorage.setItem("COMPuser", compUser);
+            openForm()
+            // window.location = '/login'
         }
-        catch(error){
-            console.log(error)
-        }
+        catch (error) {
             
+            console.log(error)
+            if (error.response.data.message.split(" ")[0] === "E11000") {
+                setErrorr("Email or Phone already in use")
+                openForm()
+            }
+            else {
+                setErrorr(error.response.data.message)
+                openForm()
+            }
+        }
+
     }
+
 
     return (
         <section className="signup-area">
@@ -123,7 +157,7 @@ export default function Signup() {
                                     className="form-control"
                                     name="contact"
                                     placeholder="Contact Number"
-                                    maxlength="10"  max="9999999999" min="0" step="1" pattern="[0-9]{10}"
+                                    maxlength="10" max="9999999999" min="0" step="1" pattern="[0-9]{10}"
 
 
                                     onChange={handleChange}
@@ -167,19 +201,24 @@ export default function Signup() {
                                     <option value="O">Others</option>
                                 </select>
                             </div>
-
                             <div className="form-group">
-                                <label>Campus Ambassador ID</label>
+                                <label>Referral Id</label>
                                 <input
                                     type="text"
                                     className="form-control"
-                                    placeholder="Enter Referral ID, if applicable"
-                                    name="referral"
+                                    placeholder="Leave blank if no Student Ambassador has referred"
+                                    name="refId"
                                     onChange={handleChange}
                                 />
                             </div>
-
+                            {errorr && <p>{errorr}</p>}
                             <button type="submit" className="btn-modal btn-primary" onClick={handleSubmit}>Signup</button>
+                            <div className="loginPopup" id='loginPopup'>
+                                <div className="formPopup" id="popupForm">
+                                    {errorr ? <h2>{errorr}</h2> : <h2>Dear ${signupData.name}. You have Successfully Registered for COMPOSIT 2023. Your participation id is COMP23${signupData.contact}</h2>}
+
+                                </div>
+                            </div>
                             <p>Already a registered user? <Link to="/login">Login!</Link></p>
                         </form>
                     </div>

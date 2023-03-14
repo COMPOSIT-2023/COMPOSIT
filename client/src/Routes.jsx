@@ -36,6 +36,7 @@ import RegisterSchoolquiz from "./components/pages/EventRegistration/RegisterSch
 import RegisterCad from "./components/pages/EventRegistration/RegisterCad";
 import RegisterCasestudy from "./components/pages/EventRegistration/RegisterCasestudy";
 import Popup from "./components/pages/MyPopup";
+import PopupMsg from "./components/pages/Popup/PopupMsg"
 
 // Conditionally render Navigation
 const renderNavigation = () => {
@@ -52,6 +53,7 @@ const AppRouter = () => {
                 <Route path="/" exact component={Home} />
                 <Route path="/about" exact component={About} />
                 <Route path="/events" exact component={Events} />
+                <Route path="/events/:id" exact component={Events} />
                 <Route path="/event_cad" exact component={EventCadPage} />
                 <Route path="/event_casestudy" exact component={EventCasestudyPage} />
                 <Route path="/event_enigma" exact component={EventEnigmaPage} />
@@ -83,6 +85,7 @@ const AppRouter = () => {
                 <Route path="/profile" exact component={Profile} />
                 <Route path="/edit-profile" exact component={EditProfile} />
                 <Route path="/popup" exact component={Popup} />
+                <Route path="/popupMsg" exact component={PopupMsg} />
                 <Route path="/error-404" exact component={NotFound} />
                 <Route component={NotFound} />
             </Switch>

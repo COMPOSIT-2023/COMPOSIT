@@ -255,7 +255,7 @@ class SpeakersOne extends React.Component {
           <div className="col-lg-3 col-md-6 p-0">
             <div className="single-speakers">
               <img
-                src={require("../../assets/images/speakers1.jpg")}
+                src={require("../../assets/images/ishan.jpg")}
                 alt="speakers"
               />
 
@@ -264,23 +264,31 @@ class SpeakersOne extends React.Component {
                 <span>Design Head</span>
               </div>
               <ul>
-                <li>
+                {/* <li>
                   <a href="#" target="_blank" className="facebook">
                     <i className="icofont-facebook"></i>
                   </a>
-                </li>
+                </li> */}
                 {/* <li>
                                     <Link to="#" target="_blank" className="twitter">
                                         <i className="icofont-twitter"></i>
                                     </Link>
                                 </li> */}
                 <li>
-                  <a href="#" target="_blank" className="twitter">
+                  <a
+                    href="mailto:ishangupta3210805@gmail.com"
+                    target="_blank"
+                    className="twitter"
+                  >
                     <i className="icofont-envelope"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" className="linkedin">
+                  <a
+                    href="https://www.linkedin.com/in/ishan-gupta-367a75200?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8amW4cktS7qYnPUXFo6m9A%3D%3D"
+                    target="_blank"
+                    className="linkedin"
+                  >
                     <i className="icofont-linkedin"></i>
                   </a>
                 </li>
@@ -359,8 +367,12 @@ class SpeakersOne extends React.Component {
                                     </Link>
                                 </li> */}
                 <li>
-                  <a href="#" target="_blank" className="instagram">
-                    <i className="icofont-instagram"></i>
+                  <a
+                    href="mailto:ramonakodkani@gmail.com"
+                    target="_blank"
+                    className="twitter"
+                  >
+                    <i className="icofont-envelope"></i>
                   </a>
                 </li>
                 <li>
@@ -647,7 +659,7 @@ class SpeakersOne extends React.Component {
           <div className="col-lg-3 col-md-6 p-0">
             <div className="single-speakers">
               <img
-                src={require("../../assets/images/speakers1.jpg")}
+                src={require("../../assets/images/sudarshana.jpg")}
                 alt="speakers"
               />
 
@@ -656,23 +668,31 @@ class SpeakersOne extends React.Component {
                 <span>Sponsorship Head</span>
               </div>
               <ul>
-                <li>
+                {/* <li>
                   <a href="#" target="_blank" className="facebook">
                     <i className="icofont-facebook"></i>
                   </a>
-                </li>
+                </li> */}
                 {/* <li>
                                     <Link to="#" target="_blank" className="twitter">
                                         <i className="icofont-twitter"></i>
                                     </Link>
                                 </li> */}
                 <li>
-                  <a href="#" target="_blank" className="twitter">
+                  <a
+                    href="mailto:sudarshana.composit@gmail.com"
+                    target="_blank"
+                    className="twitter"
+                  >
                     <i className="icofont-envelope"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" className="linkedin">
+                  <a
+                    href="https://www.linkedin.com/in/sudarshanajaiswal"
+                    target="_blank"
+                    className="linkedin"
+                  >
                     <i className="icofont-linkedin"></i>
                   </a>
                 </li>
@@ -703,7 +723,11 @@ class SpeakersOne extends React.Component {
                                     </Link>
                                 </li> */}
                 <li>
-                  <a href="#" target="_blank" className="twitter">
+                  <a
+                    href="mailto:abhyudaya03@gmail.com"
+                    target="_blank"
+                    className="twitter"
+                  >
                     <i className="icofont-envelope"></i>
                   </a>
                 </li>
@@ -1767,6 +1791,102 @@ class SpeakersOne extends React.Component {
                 <li>
                   <a
                     href="https://www.linkedin.com/in/jagori-bandyopadhyay-b05760229"
+                    target="_blank"
+                    className="linkedin"
+                  >
+                    <i className="icofont-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="col-lg-3 col-md-6 p-0">
+            <div className="single-speakers">
+              <img
+                src={require("../../assets/images/satyam.jpg")}
+                alt="speakers"
+              />
+
+              <div className="speakers-content">
+                <h3 style={{ color: "#fec66d" }}>Satyam Raj</h3>
+                {/* <span>Guest Lecture and Webinar Head</span> */}
+              </div>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.facebook.com/satyam.raj.17/"
+                    target="_blank"
+                    className="facebook"
+                  >
+                    <i className="icofont-facebook"></i>
+                  </a>
+                </li>
+                {/* <li>
+                                    <Link to="#" target="_blank" className="twitter">
+                                        <i className="icofont-twitter"></i>
+                                    </Link>
+                                </li> */}
+                <li>
+                  <a
+                    href="mailto:satyamraj85@gmail.com"
+                    target="_blank"
+                    className="twitter"
+                  >
+                    <i className="icofont-envelope"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/satyam-raj-24437a226/"
+                    target="_blank"
+                    className="linkedin"
+                  >
+                    <i className="icofont-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="col-lg-3 col-md-6 p-0">
+            <div className="single-speakers">
+              <img
+                src={require("../../assets/images/shreyansh.jpg")}
+                alt="speakers"
+              />
+
+              <div className="speakers-content">
+                <h3 style={{ color: "#fec66d" }}>Shreyansh Vansh Verma </h3>
+                {/* <span>Guest Lecture and Webinar Head</span> */}
+              </div>
+              <ul>
+                {/* <li>
+                  <a
+                    href="https://www.facebook.com/swetalina.sahoo.5661?mibextid=ZbWKwL"
+                    target="_blank"
+                    className="facebook"
+                  >
+                    <i className="icofont-facebook"></i>
+                  </a>
+                </li> */}
+                {/* <li>
+                                    <Link to="#" target="_blank" className="twitter">
+                                        <i className="icofont-twitter"></i>
+                                    </Link>
+                                </li> */}
+                <li>
+                  <a
+                    href="mailto:biswaspinki.skv@gmail.com"
+                    target="_blank"
+                    className="twitter"
+                  >
+                    <i className="icofont-envelope"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/shreyansh-vansh-verma-86017526a"
                     target="_blank"
                     className="linkedin"
                   >

@@ -15,7 +15,7 @@ class Login extends React.Component {
   handleClick = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("/auth/login", this.state);
+      const res = await axios.post("server/auth/login", this.state);
       const compUser = res.data.details;
       localStorage.setItem("COMPOSITuser", JSON.stringify(compUser));
       

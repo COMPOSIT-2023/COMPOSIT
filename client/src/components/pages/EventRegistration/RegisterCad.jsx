@@ -34,7 +34,9 @@ export default function RegisterCAD() {
     const handleSubmit = async (e, eventName) => {
         e.preventDefault()
         try {
-            const res = await axios.post(`/eventRegistration/${eventName}/${participantId}`, registerCADData)
+            const res = await axios.post(`server/eventRegistration/${eventName}/${participantId}`, registerCADData)
+            // const res = await axios.get(`server/eventRegistration/gethealth`)
+            console.log(res)
             setState({ displayMsg: `Dear ${userData.name}. You have Successfully registered for ${eventName}.` })
             openForm()
         }

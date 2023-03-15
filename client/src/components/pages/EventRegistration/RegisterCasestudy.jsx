@@ -34,7 +34,7 @@ export default function RegisterCasestudy() {
     const handleSubmit = async (e, eventName) => {
         e.preventDefault()
         try {
-            const res = await axios.post(`/eventRegistration/${eventName}/${participantId}`, registerCasestudyData)
+            const res = await axios.post(`server/eventRegistration/${eventName}/${participantId}`, registerCasestudyData)
             setState({ displayMsg: `Dear ${userData.name}. You have Successfully registered for ${eventName}.` })
             openForm()
         }

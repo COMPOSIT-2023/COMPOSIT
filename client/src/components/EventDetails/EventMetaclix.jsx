@@ -23,7 +23,7 @@ class EventMetaclix extends React.Component {
             <section className="event-area bg-image ptb-120">
                 <div className="col-lg-3 col-sm-6 p-0" style={{textAlign:"center"}}>
                         <div className="single-events">
-                            <img src={require("../../assets/images/speakers2.jpg")} alt="Speaker" />
+                            <img src={require("../../assets/images/MetaClix.jpg")} alt="Speaker" />
 
                             <div className="events-content">
                                 <h4>Metaclix</h4>
@@ -174,8 +174,8 @@ class EventMetaclix extends React.Component {
                                                     <div className="schedule-info">
                                                         <h3>Contact Info</h3>
 
-                                                        <p>Name: <i className="icofont-user-suited"></i> <b>User Name</b></p>
-                                                        <p>Contact: <i className="icofont-phone-circle"></i> <b>8754326921</b></p>
+                                                        <p>Name: <i className="icofont-user-suited"></i> <b>Gouri Vignesh Jawalkar</b></p>
+                                                        <p>Contact: <i className="icofont-phone-circle"></i> <b>6302468417</b></p>
 
                                                     </div>
                                                 </Link>

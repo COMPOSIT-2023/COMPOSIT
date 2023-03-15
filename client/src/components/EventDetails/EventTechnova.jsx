@@ -23,7 +23,7 @@ class EventTechnova extends React.Component {
             <section className="event-area bg-image ptb-120">
                 <div className="col-lg-3 col-sm-6 p-0" style={{textAlign:"center"}}>
                         <div className="single-events">
-                            <img src={require("../../assets/images/speakers2.jpg")} alt="Speaker" />
+                            <img src={require("../../assets/images/Technova.jpg")} alt="Speaker" />
 
                             <div className="events-content">
                                 <h4>Technova</h4>
@@ -35,7 +35,7 @@ class EventTechnova extends React.Component {
                         <div className="col-lg-13">
                     <div className="btn-box" style={{marginBottom: "20px"}}>
                         <Link to="#" className="btn btn-primary">Problem Statement</Link>
-                        <a href = "https://docs.google.com/document/d/1tIn9Gi6wFebs5pkho4DA1B7UA74fQktTCLWmuFsUqj8/edit" target="_blank" className="btn btn-secondary">Rules & Regulations</a>
+                        <a href = "https://drive.google.com/file/d/1igyWimZqQLkQxfXFYYp6Qlsg8r6PSzGH/view?usp=sharing" target="_blank" download className="btn btn-secondary">Rules & Regulations</a>
                     </div>
                 </div>
                 </div>

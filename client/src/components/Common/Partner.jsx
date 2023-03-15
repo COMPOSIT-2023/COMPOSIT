@@ -60,9 +60,9 @@ class Partner extends React.Component {
               Our<b>Sponsors</b>
             </h2>
 
-            <Link to="/sponsors" className="btn btn-primary">
+            {/* <Link to="/sponsors" className="btn btn-primary">
               Become Link Sponsor
-            </Link>
+            </Link> */}
 
             <div className="bar"></div>
           </div>

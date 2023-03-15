@@ -49,7 +49,7 @@ class PricingOne extends React.Component {
                                 <ul className="pricing-content">
                                     <p>Test your research acumen and get a glimpse of presenting scientific work in a conference-like environment!</p>
                                 </ul>
-                                <Link to="/event_ideathon" className="btn btn-primary">READ MORE</Link>
+                                <Link to="/event_technova" className="btn btn-primary">READ MORE</Link>
                                 {userData ?
                                     <Link to="/register_technova" className="btn btn-secondary">Register</Link>
                                     :
@@ -161,7 +161,7 @@ class PricingOne extends React.Component {
                                     <h3 className="title">CAD</h3>
                                 </div>
                                 <ul className="pricing-content">
-                                    <p>CAD paragraph</p>
+                                    <p>Test your problem solving skills as you analyse real life structure failures and present solutions using modelling softwares.</p>
                                 </ul>
                                 <Link to="/event_cad" className="btn btn-primary">READ MORE</Link>
                                 {userData ?
@@ -193,7 +193,7 @@ class PricingOne extends React.Component {
                                     <h3 className="title">Metallomania</h3>
                                 </div>
                                 <ul className="pricing-content">
-                                    <p>Metallomania paragraph</p>
+                                    <p>The grand technical poster presentation competition involving the diverse areas of metallurgy and materials science.</p>
                                 </ul>
                                 <Link to="/event_metallomania" className="btn btn-primary">READ MORE</Link>
                                 {userData ?

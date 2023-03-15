@@ -35,14 +35,14 @@ class FunFact extends React.Component {
                                             start={0}
                                             end={
                                                 this.state.didViewCountUp
-                                                    ? 80
+                                                    ? 15000
                                                     : 0
                                             }
                                             duration={3}
                                         />
                                     </VisibilitySensor>
                                 </h3>
-                                <p>Total Topics</p>
+                                <p>Total Footfall</p>
                             </div>
                         </div>
                         
@@ -63,14 +63,14 @@ class FunFact extends React.Component {
                                             start={0}
                                             end={
                                                 this.state.didViewCountUp
-                                                    ? 70
+                                                    ? 10
                                                     : 0
                                             }
                                             duration={3}
                                         />
                                     </VisibilitySensor>
                                 </h3>
-                                <p>Total Speakers</p>
+                                <p>Total Events</p>
                             </div>
                         </div>
 
@@ -91,14 +91,14 @@ class FunFact extends React.Component {
                                             start={0}
                                             end={
                                                 this.state.didViewCountUp
-                                                    ? 100
+                                                    ? 25000
                                                     : 0
                                             }
                                             duration={3}
                                         />
                                     </VisibilitySensor>
                                 </h3>
-                                <p>Sponsors</p>
+                                <p>Social Media Reach</p>
                             </div>
                         </div>
 
@@ -119,14 +119,14 @@ class FunFact extends React.Component {
                                             start={0}
                                             end={
                                                 this.state.didViewCountUp
-                                                    ? 99
+                                                    ? 600
                                                     : 0
                                             }
                                             duration={3}
                                         />
                                     </VisibilitySensor>
                                 </h3>
-                                <p>Total Attendance</p>
+                                <p>Total Participants</p>
                             </div>
                         </div>
                     </div>

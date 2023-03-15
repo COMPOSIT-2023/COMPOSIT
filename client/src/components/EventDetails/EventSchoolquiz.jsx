@@ -23,7 +23,7 @@ class EventSchoolquiz extends React.Component {
             <section className="event-area bg-image ptb-120">
                 <div className="col-lg-3 col-sm-6 p-0" style={{textAlign:"center"}}>
                         <div className="single-events">
-                            <img src={require("../../assets/images/speakers2.jpg")} alt="Speaker" />
+                            <img src={require("../../assets/images/SchoolQuiz.jpg")} alt="Speaker" />
 
                             <div className="events-content">
                                 <h4>School Quiz</h4>

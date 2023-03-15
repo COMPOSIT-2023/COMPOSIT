@@ -18,6 +18,7 @@ class EventCasestudy extends React.Component {
         evt.currentTarget.className += "current";
     }
     render(){
+        const userData = JSON.parse(localStorage.getItem("COMPOSITuser"));
         return (
             <div className="event-details-area ptb-120">
             <section className="event-area bg-image ptb-120">
@@ -26,7 +27,7 @@ class EventCasestudy extends React.Component {
                             <img src={require("../../assets/images/CaseStudy.jpg")} alt="Speaker" />
 
                             <div className="events-content">
-                                <h4>Case Study</h4>
+                                <h2>Case Study</h2>
                                 <h3>Cash Prize worth 18K</h3>
                                 {/* <span>12000</span> */}
                             </div>
@@ -34,8 +35,13 @@ class EventCasestudy extends React.Component {
                         </div>
                         <div className="col-lg-13">
                     <div className="btn-box" style={{marginBottom: "20px"}}>
-                        <Link to="#" className="btn btn-primary">Problem Statement</Link>
-                        <a href = "https://docs.google.com/document/d/1hkkGSfTFoFFgpTNe7VO6OQn6RBrEoCR1ToUcT097pEY/edit" target="_blank" className="btn btn-secondary">Rules & Regulations</a>
+                    {userData ?
+                                    <Link to="/register_caseStudy" className="btn btn-secondary">Register</Link>
+                                    :
+                                    <Link to="/signup" className="btn btn-secondary">Register</Link>
+                                }
+                        <Link to="#" className="btn btn-primary" disabled>Problem Statement</Link>
+                        <Link to = "#" className="btn btn-secondary" disabled>Rules & Regulations</Link>
                     </div>
                 </div>
                 </div>
@@ -173,8 +179,8 @@ class EventCasestudy extends React.Component {
                                                     <div className="schedule-info">
                                                         <h3>Contact Info</h3>
 
-                                                        <p>Name: <i className="icofont-user-suited"></i> <b>User Name</b></p>
-                                                        <p>Contact: <i className="icofont-phone-circle"></i> <b>8754326921</b></p>
+                                                        <p>Name: <i className="icofont-user-suited"></i> <b>Ramona Kodkani</b></p>
+                                                        <p>Contact: <i className="icofont-phone-circle"></i> <b>9834467788</b></p>
 
                                                     </div>
                                                 </Link>

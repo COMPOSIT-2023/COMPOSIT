@@ -193,7 +193,7 @@ class PricingOne extends React.Component {
                                     <h3 className="title">Metallomania</h3>
                                 </div>
                                 <ul className="pricing-content">
-                                    <p>The grand technical poster presentation competition involving the diverse areas of metallurgy and materials science.</p>
+                                <p>The grand technical materials characterization competition involving the diverse areas of metallurgy and materials science.</p>
                                 </ul>
                                 <Link to="/event_metallomania" className="btn btn-primary">READ MORE</Link>
                                 {userData ?

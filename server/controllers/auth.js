@@ -16,7 +16,9 @@ export const register = async (req, res, next) => {
       ...req.body,
       password: hash,
     });
+    console.log("e1")
     await newUser.save();
+    console.log("e2")
     const user = await User.findOne({ email: req.body.email });
 
     // mailing
@@ -48,7 +50,8 @@ export const register = async (req, res, next) => {
   })
     // res.status(200).send("User has been created.");
   } catch (err) {
-    console.log(err)
+    console.log(err, "jkjk")
+    // console.log("first")
     next(err);
     // res.status(500).send(err);
   }

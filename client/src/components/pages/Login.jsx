@@ -12,21 +12,15 @@ class Login extends React.Component {
       userData: null,
   };
   }
-  // registeredData = JSON.parse(localStorage.getItem("COMPuser"))
-  
   handleClick = async (e) => {
-    // console.log(localStorage.getItem("COMPuser"))
-    // console.log(registeredData)
     e.preventDefault();
     try {
       const res = await axios.post("/auth/login", this.state);
       const compUser = res.data.details;
       localStorage.setItem("COMPOSITuser", JSON.stringify(compUser));
-      this.setState({ errorr: "Login Successful"+compUser._id })
-      console.log("logged in")
-      const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
-
-      console.log(userData)
+      
+    //   const userData = JSON.parse(localStorage.getItem("COMPOSITuser"))
+      this.setState({ errorr: `Login Successful ${compUser.name}` })
     //   window.location = `/events/${compUser._id}`
     window.location = `/events`
     } catch (err) {

@@ -22,7 +22,7 @@ const PopupMsg = () => {
     return (
         <div className='popupDiv'>
             <div className="openBtn">
-            <Link className="pull-left openButton" id='popupBtn' onClick={openForm}>Create a new account</Link>
+            <Link className="pull-left openButton" id='popupBtn' onClick={openForm}>open popup</Link>
             </div>
             <div className="loginPopup" id='loginPopup'>
                 <div className="formPopup" id="popupForm">

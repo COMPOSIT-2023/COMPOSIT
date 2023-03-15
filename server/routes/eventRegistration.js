@@ -9,7 +9,8 @@ import {
   registerCaseStudy,
   registerExcavate,
   registerIdeathon,
-  registerTechnova
+  registerTechnova,
+  gethealth
 } from "../controllers/eventRegistration.js";
 import { verifyToken, verifyUser } from "../utils/verifyToken.js";
 
@@ -25,5 +26,6 @@ router.post("/caseStudy/:id", verifyUser, registerCaseStudy)
 router.post("/excavate/:id", verifyUser, registerExcavate)
 router.post("/ideathon/:id", verifyUser, registerIdeathon)
 router.post("/technova/:id", verifyUser, registerTechnova)
+router.get("/gethealth", gethealth)
 
 export default router;

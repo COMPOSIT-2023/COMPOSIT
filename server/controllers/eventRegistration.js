@@ -279,3 +279,31 @@ export const registerTechnova = async (req, res, next) => {
     next(err);
   }
 };
+
+
+export const gethealth = async (req, res, next) => {
+  // const IdeathonMongoId = "6410a3bd2df9aea1303581ae"
+  // try {
+  //   const ideathon = await Ideathon.findById(IdeathonMongoId);
+  //   console.log(ideathon)
+  //   res.status(200).json(ideathon);
+  // } catch (err) {
+  //   next(err);
+  // }
+  res.status(200).json("From server");
+  // try {
+  //   const ideathon = await Ideathon.find({}, { individualPid: 1, _id:0 })
+  //   console.log(ideathon[3].individualPid)
+  //   res.status(200).json(ideathon);
+  // } catch (err) {
+  //   next(err);
+  // }
+  // await Ideathon.find({}, { individualPid: 1, _id:0 }, function(err, result) {
+  //   if (err) {
+  //     console.log(err);
+  //   } else {
+  //     console.log(result)
+  //     // res.json(result);
+  //   }
+  // });
+};

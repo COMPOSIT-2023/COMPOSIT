@@ -34,7 +34,7 @@ export default function RegisterMetaclix() {
     const onClickHandler = async (e, eventName) => {
         e.preventDefault()
         try {
-            await axios.post(`/eventRegistration/${eventName}/${participantId}`, participantId)
+            await axios.post(`${process.env.REACT_APP_API_KEY}/eventRegistration/${eventName}/${participantId}`, participantId)
             setState({ displayMsg: `Dear ${userData.name}. You have Successfully registered for ${eventName}.` })
             openForm()
         }

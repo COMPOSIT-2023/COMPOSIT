@@ -15,7 +15,8 @@ class Login extends React.Component {
   handleClick = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("/auth/login", this.state);
+      const res = await axios.post(`${process.env.REACT_APP_API_KEY}/auth/login`, this.state);
+      console.log(res, "success")
       const compUser = res.data.details;
       localStorage.setItem("COMPOSITuser", JSON.stringify(compUser));
       
@@ -24,8 +25,9 @@ class Login extends React.Component {
     //   window.location = `/events/${compUser._id}`
     window.location = `/events`
     } catch (err) {
+      console.log(err,"error1")
       this.setState({ errorr: err.response.data.message })
-      console.log(err.response.data.message, "error")
+      console.log(err, "error2")
     }
   };
     

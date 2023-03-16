@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './PopupMsg.css'
+import axios from 'axios'
 
 const PopupMsg = () => {
     function openForm() {
@@ -9,20 +10,34 @@ const PopupMsg = () => {
     function closeForm() {
         document.getElementById("popupForm").style.display = "none";
     }
-      window.onclick = function (event) {
+    window.onclick = function (event) {
         let modal = document.getElementById('loginPopup');
         let popupBtn = document.getElementById('popupBtn');
         if (event.target !== modal) {
-          closeForm();
+            closeForm();
         }
         if (event.target === popupBtn) {
             openForm();
-          }
+        }
+
     }
+    const handleSubmit = async (e, eventName) => {
+        e.preventDefault()
+        try {
+            const res = await axios.get(`/eventRegistration/gethealth`)
+            console.log(res, "Seeee")
+            openForm()
+        }
+        catch (error) {
+            console.log(error)
+        }
+    };
     return (
         <div className='popupDiv'>
             <div className="openBtn">
-            <Link className="pull-left openButton" id='popupBtn' onClick={openForm}>open popup</Link>
+                <Link className="pull-left openButton" id='popupBtn' onClick={handleSubmit}>open popup</Link>
+                <Link className="pull-left openButton" id='popupBtn' onClick={openForm}>open popup</Link>
+
             </div>
             <div className="loginPopup" id='loginPopup'>
                 <div className="formPopup" id="popupForm">
